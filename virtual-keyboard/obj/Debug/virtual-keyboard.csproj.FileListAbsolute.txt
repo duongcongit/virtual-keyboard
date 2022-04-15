@@ -1,0 +1,11 @@
+E:\CongCon\virtual-keyboard\virtual-keyboard\bin\Debug\virtual-keyboard.exe.config
+E:\CongCon\virtual-keyboard\virtual-keyboard\bin\Debug\virtual-keyboard.exe
+E:\CongCon\virtual-keyboard\virtual-keyboard\bin\Debug\virtual-keyboard.pdb
+E:\CongCon\virtual-keyboard\virtual-keyboard\obj\Debug\virtual-keyboard.csproj.AssemblyReference.cache
+E:\CongCon\virtual-keyboard\virtual-keyboard\obj\Debug\virtual-keyboard.csproj.SuggestedBindingRedirects.cache
+E:\CongCon\virtual-keyboard\virtual-keyboard\obj\Debug\virtual_keyboard.Properties.Resources.resources
+E:\CongCon\virtual-keyboard\virtual-keyboard\obj\Debug\virtual_keyboard.virtualkeyboard.resources
+E:\CongCon\virtual-keyboard\virtual-keyboard\obj\Debug\virtual-keyboard.csproj.GenerateResource.cache
+E:\CongCon\virtual-keyboard\virtual-keyboard\obj\Debug\virtual-keyboard.csproj.CoreCompileInputs.cache
+E:\CongCon\virtual-keyboard\virtual-keyboard\obj\Debug\virtual-keyboard.exe
+E:\CongCon\virtual-keyboard\virtual-keyboard\obj\Debug\virtual-keyboard.pdb
