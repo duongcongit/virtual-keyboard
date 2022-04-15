@@ -813,6 +813,7 @@
             this.shift.TabIndex = 156;
             this.shift.Text = "Shift";
             this.shift.UseVisualStyleBackColor = true;
+            this.shift.Click += new System.EventHandler(this.shift_Click);
             // 
             // button43
             // 

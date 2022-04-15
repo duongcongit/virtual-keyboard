@@ -194,6 +194,68 @@ namespace virtual_keyboard
 
         }
 
+        private void shift_Click(object sender, EventArgs e)
+        {
+            if ((Control.ModifierKeys & Keys.Shift) == Keys.Shift)
+            {
+                Input[] inputs = new Input[]
+                {
+                    new Input
+                    {
+                        type = (int)InputType.Keyboard,
+                        u = new InputUnion
+                        {
+                            ki = new KeyboardInput
+                            {
+                                wVk = (ushort)KeyCode.SHIFT,
+                                wScan = 0,
+                                dwFlags = 2,
+                                dwExtraInfo = GetMessageExtraInfo()
+                            }
+                        }
+                    }
+                 };
+                //
+                SendInput((uint)inputs.Length, inputs, Marshal.SizeOf(typeof(Input)));
+                foreach (Control control in Controls)
+                {
+                    if (control.TabIndex == 1)
+                    {
+                        control.Text = control.Text.ToLower();
+                    }
+                }
+            }
+            else
+            {
+                Input[] inputs = new Input[]
+                {
+                    new Input
+                    {
+                        type = (int)InputType.Keyboard,
+                        u = new InputUnion
+                        {
+                            ki = new KeyboardInput
+                            {
+                                wVk = (ushort)KeyCode.SHIFT,
+                                wScan = 0,
+                                dwFlags = 0,
+                                dwExtraInfo = GetMessageExtraInfo()
+                            }
+                        }
+                    }
+                 };
+                //
+                SendInput((uint)inputs.Length, inputs, Marshal.SizeOf(typeof(Input)));
+                foreach (Control control in Controls)
+                {
+                    if (control.TabIndex == 1)
+                    {
+                        control.Text = control.Text.ToUpper();
+                    }
+                }
+            }
+        }
+
         // 
     }
 
