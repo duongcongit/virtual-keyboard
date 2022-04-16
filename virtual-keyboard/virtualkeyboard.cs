@@ -153,11 +153,8 @@ namespace virtual_keyboard
 
         // ===================
 
-        private void btn_char_Click(object sender, EventArgs e)
+        public static void SendKeyDown(KeyCode keyCode)
         {
-            Button btn = (Button)sender;
-            // MessageBox.Show(btn.Name);
-
             Input[] inputs = new Input[]
                 {
                     new Input
@@ -167,38 +164,23 @@ namespace virtual_keyboard
                         {
                             ki = new KeyboardInput
                             {
-                                wVk = (ushort)KeyCode.KEY_S,
-                                wScan = 0, // W
+                                wVk = (ushort)keyCode,
+                                wScan = 0,
                                 dwFlags = 0,
                                 dwExtraInfo = GetMessageExtraInfo()
                             }
                         }
-                    },
-                    new Input
-                    {
-                        type = (int)InputType.Keyboard,
-                        u = new InputUnion
-                        {
-                            ki = new KeyboardInput
-                            {
-                                wVk = (ushort)KeyCode.KEY_S,
-                                wScan = 0, // W
-                                dwFlags = 2,
-                                dwExtraInfo = GetMessageExtraInfo()
-                            }
-                        }
                     }
-                };
-
+                 };
+            //
             SendInput((uint)inputs.Length, inputs, Marshal.SizeOf(typeof(Input)));
-
         }
 
-        private void shift_Click(object sender, EventArgs e)
+        //
+
+        public static void SendKeyUP(KeyCode keyCode)
         {
-            if ((Control.ModifierKeys & Keys.Shift) == Keys.Shift)
-            {
-                Input[] inputs = new Input[]
+            Input[] inputs = new Input[]
                 {
                     new Input
                     {
@@ -207,7 +189,7 @@ namespace virtual_keyboard
                         {
                             ki = new KeyboardInput
                             {
-                                wVk = (ushort)KeyCode.SHIFT,
+                                wVk = (ushort)keyCode,
                                 wScan = 0,
                                 dwFlags = 2,
                                 dwExtraInfo = GetMessageExtraInfo()
@@ -215,8 +197,26 @@ namespace virtual_keyboard
                         }
                     }
                  };
-                //
-                SendInput((uint)inputs.Length, inputs, Marshal.SizeOf(typeof(Input)));
+            //
+            SendInput((uint)inputs.Length, inputs, Marshal.SizeOf(typeof(Input)));
+        }
+
+
+        // ===================
+
+        private void btn_char_Click(object sender, EventArgs e)
+        {
+            Control btn = (Button)sender;
+            KeyCode key;
+            Enum.TryParse<KeyCode>(btn.Name.ToString(), out key);
+
+            //
+            SendKeyDown(key);
+            SendKeyUP(key);
+            //
+            if ((Control.ModifierKeys & Keys.Shift) == Keys.Shift)
+            {
+                SendKeyUP(KeyCode.SHIFT);
                 foreach (Control control in Controls)
                 {
                     if (control.TabIndex == 1)
@@ -224,28 +224,53 @@ namespace virtual_keyboard
                         control.Text = control.Text.ToLower();
                     }
                 }
+                //
+                LSHIFT.BackColor = Color.White;
+                LSHIFT.ForeColor = Color.Black;
+
+            }
+
+        }
+
+        private void FunctionKey_Click(object sender, EventArgs e)
+        {
+            Control btn = (Button)sender;
+            KeyCode key;
+            Enum.TryParse<KeyCode>(btn.Name.ToString(), out key);
+
+            //
+            SendKeyDown(key);
+            SendKeyUP(key);
+            //
+
+            Reset_Special_Key(sender, e);
+        }
+
+        private void shift_Click(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+
+            KeyCode key;
+            Enum.TryParse<KeyCode>(btn.Name.ToString(), out key);
+
+            if ((Control.ModifierKeys & Keys.Shift) == Keys.Shift)
+            {
+                SendKeyUP(key);
+                foreach (Control control in Controls)
+                {
+                    if (control.TabIndex == 1)
+                    {
+                        control.Text = control.Text.ToLower();
+                    }
+                }
+                //
+
+                btn.BackColor = Color.White;
+                btn.ForeColor = Color.Black;
             }
             else
             {
-                Input[] inputs = new Input[]
-                {
-                    new Input
-                    {
-                        type = (int)InputType.Keyboard,
-                        u = new InputUnion
-                        {
-                            ki = new KeyboardInput
-                            {
-                                wVk = (ushort)KeyCode.SHIFT,
-                                wScan = 0,
-                                dwFlags = 0,
-                                dwExtraInfo = GetMessageExtraInfo()
-                            }
-                        }
-                    }
-                 };
-                //
-                SendInput((uint)inputs.Length, inputs, Marshal.SizeOf(typeof(Input)));
+                SendKeyDown(key);
                 foreach (Control control in Controls)
                 {
                     if (control.TabIndex == 1)
@@ -253,16 +278,135 @@ namespace virtual_keyboard
                         control.Text = control.Text.ToUpper();
                     }
                 }
+                //
+                btn.BackColor = Color.RoyalBlue;
+                btn.ForeColor = Color.White;
+
             }
         }
 
-        // 
-    }
+        private void CAPS_LOCK_Click(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+
+            KeyCode key = KeyCode.CAPS_LOCK;
+
+            if (Control.IsKeyLocked(Keys.CapsLock))
+            {
+                foreach (Control control in Controls)
+                {
+                    if (control.TabIndex == 1)
+                    {
+                        control.Text = control.Text.ToLower();
+                    }
+                }
+                btn.BackColor = Color.White;
+                btn.ForeColor = Color.Black;
+            }
+            else
+            {
+                foreach (Control control in Controls)
+                {
+                    if (control.TabIndex == 1)
+                    {
+                        control.Text = control.Text.ToUpper();
+                    }
+                }
+                btn.BackColor = Color.RoyalBlue;
+                btn.ForeColor = Color.White;
+            }
+
+            SendKeyDown(key);
+            SendKeyUP(key);
+        }
+
+        //
+
+        private void CONTROL_Click(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+
+            KeyCode key;
+            Enum.TryParse<KeyCode>(btn.Name.ToString(), out key);
+
+            if ((Control.ModifierKeys & Keys.Control) == Keys.Control)
+            {
+                SendKeyUP(key);
+
+                btn.BackColor = Color.White;
+                btn.ForeColor = Color.Black;
+            }
+            else
+            {
+                SendKeyDown(key);
+
+                btn.BackColor = Color.RoyalBlue;
+                btn.ForeColor = Color.White;
+
+            }
+        }
+
+        private void ALT_Click(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+
+            KeyCode key = KeyCode.ALT;
+            // Enum.TryParse<KeyCode>(btn.Name.ToString(), out key);
+
+            if ((Control.ModifierKeys & Keys.Alt) == Keys.Alt)
+            {
+                SendKeyUP(key);
+
+                btn.BackColor = Color.White;
+                btn.ForeColor = Color.Black;
+            }
+            else
+            {
+                SendKeyDown(key);
+
+                btn.BackColor = Color.RoyalBlue;
+                btn.ForeColor = Color.White;
+
+            }
+
+        }
+
+        //
+        public void Reset_Special_Key(object sender, EventArgs e)
+        {
+            
+            if((Control.ModifierKeys & Keys.Shift) == Keys.Shift)
+            {
+                SendKeyUP(KeyCode.SHIFT);
+                LSHIFT.BackColor = Color.White;
+                LSHIFT.ForeColor = Color.Black;
+            }
+            if((Control.ModifierKeys & Keys.Control) == Keys.Control)
+            {
+                SendKeyUP(KeyCode.CONTROL);
+                LCONTROL.BackColor = Color.White;
+                LCONTROL.ForeColor = Color.Black;
+            }
+            if((Control.ModifierKeys & Keys.Alt) == Keys.Alt)
+            {
+                SendKeyUP(KeyCode.ALT);
+                LALT.BackColor = Color.White;
+                LALT.ForeColor = Color.Black;
+            }
+
+            foreach (Control control in Controls)
+            {
+                if (control.TabIndex == 1)
+                {
+                    control.Text = control.Text.ToLower();
+                }
+            }
+        }
 
 
+        // =========
 
-
-    public enum KeyCode : ushort
+        public enum KeyCode : ushort
         {
 
             /// <summary>
@@ -861,6 +1005,26 @@ namespace virtual_keyboard
             UP = 0x26,
 
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // 
+    }
+
+
+
+
+    
 
         
 }

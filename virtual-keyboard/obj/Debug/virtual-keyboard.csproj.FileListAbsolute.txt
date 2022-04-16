@@ -9,3 +9,14 @@ E:\CongCon\virtual-keyboard\virtual-keyboard\obj\Debug\virtual-keyboard.csproj.G
 E:\CongCon\virtual-keyboard\virtual-keyboard\obj\Debug\virtual-keyboard.csproj.CoreCompileInputs.cache
 E:\CongCon\virtual-keyboard\virtual-keyboard\obj\Debug\virtual-keyboard.exe
 E:\CongCon\virtual-keyboard\virtual-keyboard\obj\Debug\virtual-keyboard.pdb
+D:\HOC\Hệ điều hành\virtual-keyboard\virtual-keyboard\bin\Debug\virtual-keyboard.exe.config
+D:\HOC\Hệ điều hành\virtual-keyboard\virtual-keyboard\bin\Debug\virtual-keyboard.exe
+D:\HOC\Hệ điều hành\virtual-keyboard\virtual-keyboard\bin\Debug\virtual-keyboard.pdb
+D:\HOC\Hệ điều hành\virtual-keyboard\virtual-keyboard\obj\Debug\virtual-keyboard.csproj.AssemblyReference.cache
+D:\HOC\Hệ điều hành\virtual-keyboard\virtual-keyboard\obj\Debug\virtual-keyboard.csproj.SuggestedBindingRedirects.cache
+D:\HOC\Hệ điều hành\virtual-keyboard\virtual-keyboard\obj\Debug\virtual_keyboard.Properties.Resources.resources
+D:\HOC\Hệ điều hành\virtual-keyboard\virtual-keyboard\obj\Debug\virtual_keyboard.virtualkeyboard.resources
+D:\HOC\Hệ điều hành\virtual-keyboard\virtual-keyboard\obj\Debug\virtual-keyboard.csproj.GenerateResource.cache
+D:\HOC\Hệ điều hành\virtual-keyboard\virtual-keyboard\obj\Debug\virtual-keyboard.csproj.CoreCompileInputs.cache
+D:\HOC\Hệ điều hành\virtual-keyboard\virtual-keyboard\obj\Debug\virtual-keyboard.exe
+D:\HOC\Hệ điều hành\virtual-keyboard\virtual-keyboard\obj\Debug\virtual-keyboard.pdb
