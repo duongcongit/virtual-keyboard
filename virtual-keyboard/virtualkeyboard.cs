@@ -413,12 +413,15 @@ namespace virtual_keyboard
                 LALT.ForeColor = Color.Black;
             }
 
-            foreach (Control control in Controls)
+            //
+
+            foreach (Control control in panel1.Controls)
             {
                 if (control.TabIndex == 1)
                 {
                     control.Text = control.Text.ToLower();
                 }
+
             }
         }
 
@@ -1030,14 +1033,16 @@ namespace virtual_keyboard
 
         }
 
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Control btn = (Button)sender;
+            KeyCode key;
+            Enum.TryParse<KeyCode>(btn.Tag.ToString(), out key);
 
-
-
-
-
-
-
-
+            //
+            SendKeyDown(key);
+            SendKeyUP(key);
+        }
 
 
 
