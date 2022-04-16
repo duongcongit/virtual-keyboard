@@ -41,6 +41,9 @@ namespace virtual_keyboard
             // Gọi hàm SetWindowPos
             // Bàn phím ảo sẽ luôn ở trên các chương trình khác trên màn hình
             SetWindowPos(this.Handle, HWND_TOPMOST, 0, 0, 0, 0, TOPMOST_FLAGS);
+
+            panel2.Left = panel1.Left;
+            panel2.Top = panel1.Bottom;
         }
 
         // Ghi đè phương thức
@@ -203,6 +206,21 @@ namespace virtual_keyboard
 
 
         // ===================
+        private void Switch_Layout_To_Main(object sender, EventArgs e)
+        {
+            panel2.Left = panel1.Left;
+            panel2.Top = panel1.Bottom;
+        }
+
+        private void Switch_Layout_To_L2(object sender, EventArgs e)
+        {
+            panel2.Left = panel1.Left;
+            panel2.Top = panel1.Top;            
+        }
+
+
+
+        // ===================
 
         private void btn_char_Click(object sender, EventArgs e)
         {
@@ -214,21 +232,7 @@ namespace virtual_keyboard
             SendKeyDown(key);
             SendKeyUP(key);
             //
-            if ((Control.ModifierKeys & Keys.Shift) == Keys.Shift)
-            {
-                SendKeyUP(KeyCode.SHIFT);
-                foreach (Control control in Controls)
-                {
-                    if (control.TabIndex == 1)
-                    {
-                        control.Text = control.Text.ToLower();
-                    }
-                }
-                //
-                LSHIFT.BackColor = Color.White;
-                LSHIFT.ForeColor = Color.Black;
-
-            }
+            Reset_Special_Key();
 
         }
 
@@ -243,7 +247,21 @@ namespace virtual_keyboard
             SendKeyUP(key);
             //
 
-            Reset_Special_Key(sender, e);
+            Reset_Special_Key();
+        }
+
+        private void Navigation_Key(object sender, EventArgs e)
+        {
+            Control btn = (Button)sender;
+            KeyCode key;
+            Enum.TryParse<KeyCode>(btn.Name.ToString(), out key);
+
+            //
+            SendKeyDown(key);
+            SendKeyUP(key);
+            //
+
+
         }
 
         private void shift_Click(object sender, EventArgs e)
@@ -256,7 +274,7 @@ namespace virtual_keyboard
             if ((Control.ModifierKeys & Keys.Shift) == Keys.Shift)
             {
                 SendKeyUP(key);
-                foreach (Control control in Controls)
+                foreach (Control control in panel1.Controls)
                 {
                     if (control.TabIndex == 1)
                     {
@@ -271,7 +289,7 @@ namespace virtual_keyboard
             else
             {
                 SendKeyDown(key);
-                foreach (Control control in Controls)
+                foreach (Control control in panel1.Controls)
                 {
                     if (control.TabIndex == 1)
                     {
@@ -281,6 +299,7 @@ namespace virtual_keyboard
                 //
                 btn.BackColor = Color.RoyalBlue;
                 btn.ForeColor = Color.White;
+
 
             }
         }
@@ -293,7 +312,7 @@ namespace virtual_keyboard
 
             if (Control.IsKeyLocked(Keys.CapsLock))
             {
-                foreach (Control control in Controls)
+                foreach (Control control in panel1.Controls)
                 {
                     if (control.TabIndex == 1)
                     {
@@ -305,7 +324,7 @@ namespace virtual_keyboard
             }
             else
             {
-                foreach (Control control in Controls)
+                foreach (Control control in panel1.Controls)
                 {
                     if (control.TabIndex == 1)
                     {
@@ -372,7 +391,7 @@ namespace virtual_keyboard
         }
 
         //
-        public void Reset_Special_Key(object sender, EventArgs e)
+        public void Reset_Special_Key()
         {
             
             if((Control.ModifierKeys & Keys.Shift) == Keys.Shift)
@@ -943,6 +962,11 @@ namespace virtual_keyboard
             /// </summary>
             LWIN = 0x5b,
 
+            //
+            SCROLL_LOCK = 0x91,
+
+            //
+            PAUSE_BREAK = 0x13,
 
             /// <summary>
             /// Next "page down"
