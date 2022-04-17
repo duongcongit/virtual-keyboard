@@ -868,7 +868,7 @@
             this.KEY_5.Name = "KEY_5";
             this.KEY_5.Size = new System.Drawing.Size(56, 54);
             this.KEY_5.TabIndex = 245;
-            this.KEY_5.Text = "%\r\n";
+            this.KEY_5.Text = "%\r\n5";
             this.KEY_5.UseVisualStyleBackColor = true;
             this.KEY_5.Click += new System.EventHandler(this.btn_char_Click);
             // 
@@ -917,7 +917,7 @@
             this.KEY_7.Name = "KEY_7";
             this.KEY_7.Size = new System.Drawing.Size(56, 54);
             this.KEY_7.TabIndex = 247;
-            this.KEY_7.Text = "&\r\n7";
+            this.KEY_7.Text = "&&\r\n7";
             this.KEY_7.UseVisualStyleBackColor = true;
             this.KEY_7.Click += new System.EventHandler(this.btn_char_Click);
             // 
@@ -1919,7 +1919,7 @@
             this.button41.Size = new System.Drawing.Size(56, 54);
             this.button41.TabIndex = 247;
             this.button41.Tag = "KEY_7";
-            this.button41.Text = "&";
+            this.button41.Text = "&&";
             this.button41.UseVisualStyleBackColor = true;
             this.button41.Click += new System.EventHandler(this.Key_With_Shift);
             // 
