@@ -231,7 +231,7 @@ namespace virtual_keyboard
         // XỬ LÝ CÁC SỰ KIỆN NHẤN PHÍM
 
         // Các phím A-Z, 0-9, (NUMPAD) 0-9
-        private void btn_char_Click(object sender, EventArgs e)
+        private void Char_Key_Click(object sender, EventArgs e)
         {
             Control btn = (Button)sender;
             KeyCode key;
@@ -281,7 +281,7 @@ namespace virtual_keyboard
 
 
         // Các phím ESC, TAB, SPACE BAR, ENTER, BACKSPACE, các phím kí tự đặc biệt trên layout phím chính
-        private void Special_Key_Click(object sender, EventArgs e)
+        private void Special_Char_Key_Click(object sender, EventArgs e)
         {
             Control btn = (Button)sender;
             KeyCode key;
@@ -598,6 +598,11 @@ namespace virtual_keyboard
 
         public enum KeyCode : ushort
         {
+            // Left mouse button
+            LMOUSE = 0x01,
+            // Right mouse button
+            RMOUSE = 0x02,
+
             // Next track if a song is playing
             MEDIA_NEXT_TRACK = 0xb0,
                         

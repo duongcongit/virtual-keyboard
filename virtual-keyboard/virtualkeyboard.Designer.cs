@@ -153,7 +153,6 @@
             this.button35 = new System.Windows.Forms.Button();
             this.button36 = new System.Windows.Forms.Button();
             this.button37 = new System.Windows.Forms.Button();
-            this.button38 = new System.Windows.Forms.Button();
             this.button39 = new System.Windows.Forms.Button();
             this.button40 = new System.Windows.Forms.Button();
             this.button41 = new System.Windows.Forms.Button();
@@ -455,7 +454,7 @@
             this.ESC.Tag = "ESC";
             this.ESC.Text = "Esc";
             this.ESC.UseVisualStyleBackColor = true;
-            this.ESC.Click += new System.EventHandler(this.Special_Key_Click);
+            this.ESC.Click += new System.EventHandler(this.Special_Char_Key_Click);
             // 
             // RCONTROL
             // 
@@ -493,7 +492,7 @@
             this.RMENU.Tag = "RMENU";
             this.RMENU.Text = "🧾";
             this.RMENU.UseVisualStyleBackColor = true;
-            this.RMENU.Click += new System.EventHandler(this.Special_Key_Click);
+            this.RMENU.Click += new System.EventHandler(this.Special_Char_Key_Click);
             // 
             // F2
             // 
@@ -542,7 +541,7 @@
             this.OEM_7.TabIndex = 271;
             this.OEM_7.Text = "\"\r\n\'\r\n";
             this.OEM_7.UseVisualStyleBackColor = true;
-            this.OEM_7.Click += new System.EventHandler(this.Special_Key_Click);
+            this.OEM_7.Click += new System.EventHandler(this.Special_Char_Key_Click);
             // 
             // F4
             // 
@@ -567,7 +566,7 @@
             this.ENTER.Tag = "ENTER";
             this.ENTER.Text = "Enter";
             this.ENTER.UseVisualStyleBackColor = true;
-            this.ENTER.Click += new System.EventHandler(this.Special_Key_Click);
+            this.ENTER.Click += new System.EventHandler(this.Special_Char_Key_Click);
             // 
             // F5
             // 
@@ -591,7 +590,7 @@
             this.OEM_6.TabIndex = 269;
             this.OEM_6.Text = "}\r\n]\r\n";
             this.OEM_6.UseVisualStyleBackColor = true;
-            this.OEM_6.Click += new System.EventHandler(this.Special_Key_Click);
+            this.OEM_6.Click += new System.EventHandler(this.Special_Char_Key_Click);
             // 
             // F6
             // 
@@ -616,7 +615,7 @@
             this.OEM_5.Tag = "OEM_5";
             this.OEM_5.Text = "|\r\n\\";
             this.OEM_5.UseVisualStyleBackColor = true;
-            this.OEM_5.Click += new System.EventHandler(this.Special_Key_Click);
+            this.OEM_5.Click += new System.EventHandler(this.Special_Char_Key_Click);
             // 
             // F7
             // 
@@ -640,7 +639,7 @@
             this.OEM_MINUS.TabIndex = 267;
             this.OEM_MINUS.Text = "_\r\n-\r\n";
             this.OEM_MINUS.UseVisualStyleBackColor = true;
-            this.OEM_MINUS.Click += new System.EventHandler(this.Special_Key_Click);
+            this.OEM_MINUS.Click += new System.EventHandler(this.Special_Char_Key_Click);
             // 
             // F8
             // 
@@ -664,7 +663,7 @@
             this.OEM_PLUS.TabIndex = 266;
             this.OEM_PLUS.Text = "+\r\n=";
             this.OEM_PLUS.UseVisualStyleBackColor = true;
-            this.OEM_PLUS.Click += new System.EventHandler(this.Special_Key_Click);
+            this.OEM_PLUS.Click += new System.EventHandler(this.Special_Char_Key_Click);
             // 
             // F10
             // 
@@ -689,7 +688,7 @@
             this.BACKSPACE.Tag = "BACKSPACE";
             this.BACKSPACE.Text = "Backspace";
             this.BACKSPACE.UseVisualStyleBackColor = true;
-            this.BACKSPACE.Click += new System.EventHandler(this.Special_Key_Click);
+            this.BACKSPACE.Click += new System.EventHandler(this.Special_Char_Key_Click);
             // 
             // F9
             // 
@@ -713,7 +712,7 @@
             this.OEM_4.TabIndex = 264;
             this.OEM_4.Text = "{\r\n[\r\n";
             this.OEM_4.UseVisualStyleBackColor = true;
-            this.OEM_4.Click += new System.EventHandler(this.Special_Key_Click);
+            this.OEM_4.Click += new System.EventHandler(this.Special_Char_Key_Click);
             // 
             // KEY_1
             // 
@@ -725,7 +724,7 @@
             this.KEY_1.TabIndex = 239;
             this.KEY_1.Text = "!\r\n1";
             this.KEY_1.UseVisualStyleBackColor = true;
-            this.KEY_1.Click += new System.EventHandler(this.btn_char_Click);
+            this.KEY_1.Click += new System.EventHandler(this.Char_Key_Click);
             // 
             // F12
             // 
@@ -749,7 +748,7 @@
             this.KEY_2.TabIndex = 240;
             this.KEY_2.Text = "@\r\n2";
             this.KEY_2.UseVisualStyleBackColor = true;
-            this.KEY_2.Click += new System.EventHandler(this.btn_char_Click);
+            this.KEY_2.Click += new System.EventHandler(this.Char_Key_Click);
             // 
             // F11
             // 
@@ -773,7 +772,7 @@
             this.OEM_3.TabIndex = 241;
             this.OEM_3.Text = "~\r\n`";
             this.OEM_3.UseVisualStyleBackColor = true;
-            this.OEM_3.Click += new System.EventHandler(this.Special_Key_Click);
+            this.OEM_3.Click += new System.EventHandler(this.Special_Char_Key_Click);
             // 
             // RALT
             // 
@@ -798,7 +797,7 @@
             this.KEY_3.TabIndex = 242;
             this.KEY_3.Text = "#\r\n3";
             this.KEY_3.UseVisualStyleBackColor = true;
-            this.KEY_3.Click += new System.EventHandler(this.btn_char_Click);
+            this.KEY_3.Click += new System.EventHandler(this.Char_Key_Click);
             // 
             // SPACE_BAR
             // 
@@ -810,7 +809,7 @@
             this.SPACE_BAR.TabIndex = 260;
             this.SPACE_BAR.Tag = "SPACE_BAR";
             this.SPACE_BAR.UseVisualStyleBackColor = true;
-            this.SPACE_BAR.Click += new System.EventHandler(this.Special_Key_Click);
+            this.SPACE_BAR.Click += new System.EventHandler(this.Special_Char_Key_Click);
             // 
             // KEY_4
             // 
@@ -822,7 +821,7 @@
             this.KEY_4.TabIndex = 243;
             this.KEY_4.Text = "$\r\n4";
             this.KEY_4.UseVisualStyleBackColor = true;
-            this.KEY_4.Click += new System.EventHandler(this.btn_char_Click);
+            this.KEY_4.Click += new System.EventHandler(this.Char_Key_Click);
             // 
             // OEM_COMMA
             // 
@@ -834,7 +833,7 @@
             this.OEM_COMMA.TabIndex = 259;
             this.OEM_COMMA.Text = "<\r\n,";
             this.OEM_COMMA.UseVisualStyleBackColor = true;
-            this.OEM_COMMA.Click += new System.EventHandler(this.Special_Key_Click);
+            this.OEM_COMMA.Click += new System.EventHandler(this.Special_Char_Key_Click);
             // 
             // KEY_6
             // 
@@ -846,7 +845,7 @@
             this.KEY_6.TabIndex = 244;
             this.KEY_6.Text = "^\r\n6";
             this.KEY_6.UseVisualStyleBackColor = true;
-            this.KEY_6.Click += new System.EventHandler(this.btn_char_Click);
+            this.KEY_6.Click += new System.EventHandler(this.Char_Key_Click);
             // 
             // OEM_PERIOD
             // 
@@ -858,7 +857,7 @@
             this.OEM_PERIOD.TabIndex = 258;
             this.OEM_PERIOD.Text = ">\r\n.";
             this.OEM_PERIOD.UseVisualStyleBackColor = true;
-            this.OEM_PERIOD.Click += new System.EventHandler(this.Special_Key_Click);
+            this.OEM_PERIOD.Click += new System.EventHandler(this.Special_Char_Key_Click);
             // 
             // KEY_5
             // 
@@ -870,7 +869,7 @@
             this.KEY_5.TabIndex = 245;
             this.KEY_5.Text = "%\r\n5";
             this.KEY_5.UseVisualStyleBackColor = true;
-            this.KEY_5.Click += new System.EventHandler(this.btn_char_Click);
+            this.KEY_5.Click += new System.EventHandler(this.Char_Key_Click);
             // 
             // OEM_2
             // 
@@ -882,7 +881,7 @@
             this.OEM_2.TabIndex = 257;
             this.OEM_2.Text = "?\r\n/";
             this.OEM_2.UseVisualStyleBackColor = true;
-            this.OEM_2.Click += new System.EventHandler(this.Special_Key_Click);
+            this.OEM_2.Click += new System.EventHandler(this.Special_Char_Key_Click);
             // 
             // KEY_8
             // 
@@ -894,7 +893,7 @@
             this.KEY_8.TabIndex = 246;
             this.KEY_8.Text = "*\r\n8";
             this.KEY_8.UseVisualStyleBackColor = true;
-            this.KEY_8.Click += new System.EventHandler(this.btn_char_Click);
+            this.KEY_8.Click += new System.EventHandler(this.Char_Key_Click);
             // 
             // LCONTROL
             // 
@@ -919,7 +918,7 @@
             this.KEY_7.TabIndex = 247;
             this.KEY_7.Text = "&&\r\n7";
             this.KEY_7.UseVisualStyleBackColor = true;
-            this.KEY_7.Click += new System.EventHandler(this.btn_char_Click);
+            this.KEY_7.Click += new System.EventHandler(this.Char_Key_Click);
             // 
             // LWIN
             // 
@@ -932,7 +931,7 @@
             this.LWIN.Tag = "LWIN";
             this.LWIN.Text = "🪟";
             this.LWIN.UseVisualStyleBackColor = true;
-            this.LWIN.Click += new System.EventHandler(this.Special_Key_Click);
+            this.LWIN.Click += new System.EventHandler(this.Special_Char_Key_Click);
             // 
             // KEY_0
             // 
@@ -944,7 +943,7 @@
             this.KEY_0.TabIndex = 248;
             this.KEY_0.Text = ")\r\n0";
             this.KEY_0.UseVisualStyleBackColor = true;
-            this.KEY_0.Click += new System.EventHandler(this.btn_char_Click);
+            this.KEY_0.Click += new System.EventHandler(this.Char_Key_Click);
             // 
             // LALT
             // 
@@ -969,7 +968,7 @@
             this.KEY_9.TabIndex = 249;
             this.KEY_9.Text = "(\r\n9";
             this.KEY_9.UseVisualStyleBackColor = true;
-            this.KEY_9.Click += new System.EventHandler(this.btn_char_Click);
+            this.KEY_9.Click += new System.EventHandler(this.Char_Key_Click);
             // 
             // KEY_N
             // 
@@ -981,7 +980,7 @@
             this.KEY_N.TabIndex = 1;
             this.KEY_N.Text = "n";
             this.KEY_N.UseVisualStyleBackColor = true;
-            this.KEY_N.Click += new System.EventHandler(this.btn_char_Click);
+            this.KEY_N.Click += new System.EventHandler(this.Char_Key_Click);
             // 
             // KEY_W
             // 
@@ -994,7 +993,7 @@
             this.KEY_W.Tag = "KEY_W";
             this.KEY_W.Text = "w";
             this.KEY_W.UseVisualStyleBackColor = true;
-            this.KEY_W.Click += new System.EventHandler(this.btn_char_Click);
+            this.KEY_W.Click += new System.EventHandler(this.Char_Key_Click);
             // 
             // KEY_M
             // 
@@ -1006,7 +1005,7 @@
             this.KEY_M.TabIndex = 1;
             this.KEY_M.Text = "m";
             this.KEY_M.UseVisualStyleBackColor = true;
-            this.KEY_M.Click += new System.EventHandler(this.btn_char_Click);
+            this.KEY_M.Click += new System.EventHandler(this.Char_Key_Click);
             // 
             // KEY_Q
             // 
@@ -1020,7 +1019,7 @@
             this.KEY_Q.Tag = "KEY_Q";
             this.KEY_Q.Text = "q";
             this.KEY_Q.UseVisualStyleBackColor = true;
-            this.KEY_Q.Click += new System.EventHandler(this.btn_char_Click);
+            this.KEY_Q.Click += new System.EventHandler(this.Char_Key_Click);
             // 
             // KEY_V
             // 
@@ -1032,7 +1031,7 @@
             this.KEY_V.TabIndex = 1;
             this.KEY_V.Text = "v";
             this.KEY_V.UseVisualStyleBackColor = true;
-            this.KEY_V.Click += new System.EventHandler(this.btn_char_Click);
+            this.KEY_V.Click += new System.EventHandler(this.Char_Key_Click);
             // 
             // KEY_T
             // 
@@ -1044,7 +1043,7 @@
             this.KEY_T.TabIndex = 1;
             this.KEY_T.Text = "t";
             this.KEY_T.UseVisualStyleBackColor = true;
-            this.KEY_T.Click += new System.EventHandler(this.btn_char_Click);
+            this.KEY_T.Click += new System.EventHandler(this.Char_Key_Click);
             // 
             // KEY_B
             // 
@@ -1057,7 +1056,7 @@
             this.KEY_B.Tag = "char";
             this.KEY_B.Text = "b";
             this.KEY_B.UseVisualStyleBackColor = true;
-            this.KEY_B.Click += new System.EventHandler(this.btn_char_Click);
+            this.KEY_B.Click += new System.EventHandler(this.Char_Key_Click);
             // 
             // TAB
             // 
@@ -1070,7 +1069,7 @@
             this.TAB.Tag = "TAB";
             this.TAB.Text = "Tab";
             this.TAB.UseVisualStyleBackColor = true;
-            this.TAB.Click += new System.EventHandler(this.Special_Key_Click);
+            this.TAB.Click += new System.EventHandler(this.Special_Char_Key_Click);
             // 
             // KEY_X
             // 
@@ -1082,7 +1081,7 @@
             this.KEY_X.TabIndex = 1;
             this.KEY_X.Text = "x";
             this.KEY_X.UseVisualStyleBackColor = true;
-            this.KEY_X.Click += new System.EventHandler(this.btn_char_Click);
+            this.KEY_X.Click += new System.EventHandler(this.Char_Key_Click);
             // 
             // KEY_E
             // 
@@ -1095,7 +1094,7 @@
             this.KEY_E.Tag = "KEY_E";
             this.KEY_E.Text = "e";
             this.KEY_E.UseVisualStyleBackColor = true;
-            this.KEY_E.Click += new System.EventHandler(this.btn_char_Click);
+            this.KEY_E.Click += new System.EventHandler(this.Char_Key_Click);
             // 
             // KEY_C
             // 
@@ -1107,7 +1106,7 @@
             this.KEY_C.TabIndex = 1;
             this.KEY_C.Text = "c";
             this.KEY_C.UseVisualStyleBackColor = true;
-            this.KEY_C.Click += new System.EventHandler(this.btn_char_Click);
+            this.KEY_C.Click += new System.EventHandler(this.Char_Key_Click);
             // 
             // KEY_R
             // 
@@ -1120,7 +1119,7 @@
             this.KEY_R.Tag = "KEY_R";
             this.KEY_R.Text = "r";
             this.KEY_R.UseVisualStyleBackColor = true;
-            this.KEY_R.Click += new System.EventHandler(this.btn_char_Click);
+            this.KEY_R.Click += new System.EventHandler(this.Char_Key_Click);
             // 
             // OEM_1
             // 
@@ -1132,7 +1131,7 @@
             this.OEM_1.TabIndex = 253;
             this.OEM_1.Text = ":\r\n;";
             this.OEM_1.UseVisualStyleBackColor = true;
-            this.OEM_1.Click += new System.EventHandler(this.Special_Key_Click);
+            this.OEM_1.Click += new System.EventHandler(this.Special_Char_Key_Click);
             // 
             // KEY_Y
             // 
@@ -1144,7 +1143,7 @@
             this.KEY_Y.TabIndex = 1;
             this.KEY_Y.Text = "y";
             this.KEY_Y.UseVisualStyleBackColor = true;
-            this.KEY_Y.Click += new System.EventHandler(this.btn_char_Click);
+            this.KEY_Y.Click += new System.EventHandler(this.Char_Key_Click);
             // 
             // KEY_L
             // 
@@ -1156,7 +1155,7 @@
             this.KEY_L.TabIndex = 1;
             this.KEY_L.Text = "l";
             this.KEY_L.UseVisualStyleBackColor = true;
-            this.KEY_L.Click += new System.EventHandler(this.btn_char_Click);
+            this.KEY_L.Click += new System.EventHandler(this.Char_Key_Click);
             // 
             // KEY_I
             // 
@@ -1168,7 +1167,7 @@
             this.KEY_I.TabIndex = 1;
             this.KEY_I.Text = "i";
             this.KEY_I.UseVisualStyleBackColor = true;
-            this.KEY_I.Click += new System.EventHandler(this.btn_char_Click);
+            this.KEY_I.Click += new System.EventHandler(this.Char_Key_Click);
             // 
             // KEY_K
             // 
@@ -1180,7 +1179,7 @@
             this.KEY_K.TabIndex = 1;
             this.KEY_K.Text = "k";
             this.KEY_K.UseVisualStyleBackColor = true;
-            this.KEY_K.Click += new System.EventHandler(this.btn_char_Click);
+            this.KEY_K.Click += new System.EventHandler(this.Char_Key_Click);
             // 
             // KEY_O
             // 
@@ -1192,7 +1191,7 @@
             this.KEY_O.TabIndex = 1;
             this.KEY_O.Text = "o";
             this.KEY_O.UseVisualStyleBackColor = true;
-            this.KEY_O.Click += new System.EventHandler(this.btn_char_Click);
+            this.KEY_O.Click += new System.EventHandler(this.Char_Key_Click);
             // 
             // LSHIFT
             // 
@@ -1217,7 +1216,7 @@
             this.KEY_U.TabIndex = 1;
             this.KEY_U.Text = "u";
             this.KEY_U.UseVisualStyleBackColor = true;
-            this.KEY_U.Click += new System.EventHandler(this.btn_char_Click);
+            this.KEY_U.Click += new System.EventHandler(this.Char_Key_Click);
             // 
             // KEY_Z
             // 
@@ -1229,7 +1228,7 @@
             this.KEY_Z.TabIndex = 1;
             this.KEY_Z.Text = "z";
             this.KEY_Z.UseVisualStyleBackColor = true;
-            this.KEY_Z.Click += new System.EventHandler(this.btn_char_Click);
+            this.KEY_Z.Click += new System.EventHandler(this.Char_Key_Click);
             // 
             // CAPS_LOCK
             // 
@@ -1254,7 +1253,7 @@
             this.KEY_F.TabIndex = 1;
             this.KEY_F.Text = "f";
             this.KEY_F.UseVisualStyleBackColor = true;
-            this.KEY_F.Click += new System.EventHandler(this.btn_char_Click);
+            this.KEY_F.Click += new System.EventHandler(this.Char_Key_Click);
             // 
             // KEY_A
             // 
@@ -1266,7 +1265,7 @@
             this.KEY_A.TabIndex = 1;
             this.KEY_A.Text = "a";
             this.KEY_A.UseVisualStyleBackColor = true;
-            this.KEY_A.Click += new System.EventHandler(this.btn_char_Click);
+            this.KEY_A.Click += new System.EventHandler(this.Char_Key_Click);
             // 
             // KEY_D
             // 
@@ -1278,7 +1277,7 @@
             this.KEY_D.TabIndex = 1;
             this.KEY_D.Text = "d";
             this.KEY_D.UseVisualStyleBackColor = true;
-            this.KEY_D.Click += new System.EventHandler(this.btn_char_Click);
+            this.KEY_D.Click += new System.EventHandler(this.Char_Key_Click);
             // 
             // KEY_P
             // 
@@ -1290,7 +1289,7 @@
             this.KEY_P.TabIndex = 1;
             this.KEY_P.Text = "p";
             this.KEY_P.UseVisualStyleBackColor = true;
-            this.KEY_P.Click += new System.EventHandler(this.btn_char_Click);
+            this.KEY_P.Click += new System.EventHandler(this.Char_Key_Click);
             // 
             // KEY_J
             // 
@@ -1302,7 +1301,7 @@
             this.KEY_J.TabIndex = 1;
             this.KEY_J.Text = "j";
             this.KEY_J.UseVisualStyleBackColor = true;
-            this.KEY_J.Click += new System.EventHandler(this.btn_char_Click);
+            this.KEY_J.Click += new System.EventHandler(this.Char_Key_Click);
             // 
             // KEY_G
             // 
@@ -1314,7 +1313,7 @@
             this.KEY_G.TabIndex = 1;
             this.KEY_G.Text = "g";
             this.KEY_G.UseVisualStyleBackColor = true;
-            this.KEY_G.Click += new System.EventHandler(this.btn_char_Click);
+            this.KEY_G.Click += new System.EventHandler(this.Char_Key_Click);
             // 
             // KEY_S
             // 
@@ -1326,7 +1325,7 @@
             this.KEY_S.TabIndex = 1;
             this.KEY_S.Text = "s";
             this.KEY_S.UseVisualStyleBackColor = true;
-            this.KEY_S.Click += new System.EventHandler(this.btn_char_Click);
+            this.KEY_S.Click += new System.EventHandler(this.Char_Key_Click);
             // 
             // KEY_H
             // 
@@ -1338,7 +1337,7 @@
             this.KEY_H.TabIndex = 1;
             this.KEY_H.Text = "h";
             this.KEY_H.UseVisualStyleBackColor = true;
-            this.KEY_H.Click += new System.EventHandler(this.btn_char_Click);
+            this.KEY_H.Click += new System.EventHandler(this.Char_Key_Click);
             // 
             // panel2
             // 
@@ -1378,7 +1377,6 @@
             this.panel2.Controls.Add(this.button35);
             this.panel2.Controls.Add(this.button36);
             this.panel2.Controls.Add(this.button37);
-            this.panel2.Controls.Add(this.button38);
             this.panel2.Controls.Add(this.button39);
             this.panel2.Controls.Add(this.button40);
             this.panel2.Controls.Add(this.button41);
@@ -1424,7 +1422,7 @@
             // button28
             // 
             this.button28.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button28.Location = new System.Drawing.Point(749, 78);
+            this.button28.Location = new System.Drawing.Point(765, 78);
             this.button28.Margin = new System.Windows.Forms.Padding(4);
             this.button28.Name = "button28";
             this.button28.Size = new System.Drawing.Size(56, 54);
@@ -1437,7 +1435,7 @@
             // button26
             // 
             this.button26.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button26.Location = new System.Drawing.Point(819, 78);
+            this.button26.Location = new System.Drawing.Point(829, 78);
             this.button26.Margin = new System.Windows.Forms.Padding(4);
             this.button26.Name = "button26";
             this.button26.Size = new System.Drawing.Size(56, 54);
@@ -1470,7 +1468,7 @@
             this.button2.Tag = "ESC";
             this.button2.Text = "Esc";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Special_Key_Click);
+            this.button2.Click += new System.EventHandler(this.Special_Char_Key_Click);
             // 
             // button3
             // 
@@ -1495,7 +1493,7 @@
             this.NUMPAD1.TabIndex = 229;
             this.NUMPAD1.Text = "1";
             this.NUMPAD1.UseVisualStyleBackColor = true;
-            this.NUMPAD1.Click += new System.EventHandler(this.btn_char_Click);
+            this.NUMPAD1.Click += new System.EventHandler(this.Char_Key_Click);
             // 
             // button5
             // 
@@ -1508,27 +1506,27 @@
             this.button5.Tag = "RMENU";
             this.button5.Text = "🧾";
             this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.Special_Key_Click);
+            this.button5.Click += new System.EventHandler(this.Special_Char_Key_Click);
             // 
             // NUMPAD2
             // 
             this.NUMPAD2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NUMPAD2.Location = new System.Drawing.Point(149, 11);
+            this.NUMPAD2.Location = new System.Drawing.Point(157, 11);
             this.NUMPAD2.Margin = new System.Windows.Forms.Padding(4);
             this.NUMPAD2.Name = "NUMPAD2";
             this.NUMPAD2.Size = new System.Drawing.Size(56, 54);
             this.NUMPAD2.TabIndex = 230;
             this.NUMPAD2.Text = "2";
             this.NUMPAD2.UseVisualStyleBackColor = true;
-            this.NUMPAD2.Click += new System.EventHandler(this.btn_char_Click);
+            this.NUMPAD2.Click += new System.EventHandler(this.Char_Key_Click);
             // 
             // button7
             // 
             this.button7.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(749, 269);
+            this.button7.Location = new System.Drawing.Point(709, 269);
             this.button7.Margin = new System.Windows.Forms.Padding(4);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(136, 54);
+            this.button7.Size = new System.Drawing.Size(176, 54);
             this.button7.TabIndex = 272;
             this.button7.Tag = "RSHIFT";
             this.button7.Text = "Shift";
@@ -1538,14 +1536,14 @@
             // NUMPAD3
             // 
             this.NUMPAD3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NUMPAD3.Location = new System.Drawing.Point(209, 11);
+            this.NUMPAD3.Location = new System.Drawing.Point(221, 11);
             this.NUMPAD3.Margin = new System.Windows.Forms.Padding(4);
             this.NUMPAD3.Name = "NUMPAD3";
             this.NUMPAD3.Size = new System.Drawing.Size(56, 54);
             this.NUMPAD3.TabIndex = 231;
             this.NUMPAD3.Text = "3";
             this.NUMPAD3.UseVisualStyleBackColor = true;
-            this.NUMPAD3.Click += new System.EventHandler(this.btn_char_Click);
+            this.NUMPAD3.Click += new System.EventHandler(this.Char_Key_Click);
             // 
             // button9
             // 
@@ -1563,14 +1561,14 @@
             // NUMPAD4
             // 
             this.NUMPAD4.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NUMPAD4.Location = new System.Drawing.Point(269, 11);
+            this.NUMPAD4.Location = new System.Drawing.Point(285, 11);
             this.NUMPAD4.Margin = new System.Windows.Forms.Padding(4);
             this.NUMPAD4.Name = "NUMPAD4";
             this.NUMPAD4.Size = new System.Drawing.Size(56, 54);
             this.NUMPAD4.TabIndex = 232;
             this.NUMPAD4.Text = "4";
             this.NUMPAD4.UseVisualStyleBackColor = true;
-            this.NUMPAD4.Click += new System.EventHandler(this.btn_char_Click);
+            this.NUMPAD4.Click += new System.EventHandler(this.Char_Key_Click);
             // 
             // button11
             // 
@@ -1583,19 +1581,19 @@
             this.button11.Tag = "ENTER";
             this.button11.Text = "Enter";
             this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.Special_Key_Click);
+            this.button11.Click += new System.EventHandler(this.Special_Char_Key_Click);
             // 
             // NUMPAD5
             // 
             this.NUMPAD5.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NUMPAD5.Location = new System.Drawing.Point(339, 11);
+            this.NUMPAD5.Location = new System.Drawing.Point(349, 11);
             this.NUMPAD5.Margin = new System.Windows.Forms.Padding(4);
             this.NUMPAD5.Name = "NUMPAD5";
             this.NUMPAD5.Size = new System.Drawing.Size(56, 54);
             this.NUMPAD5.TabIndex = 233;
             this.NUMPAD5.Text = "5";
             this.NUMPAD5.UseVisualStyleBackColor = true;
-            this.NUMPAD5.Click += new System.EventHandler(this.btn_char_Click);
+            this.NUMPAD5.Click += new System.EventHandler(this.Char_Key_Click);
             // 
             // button13
             // 
@@ -1613,14 +1611,14 @@
             // NUMPAD6
             // 
             this.NUMPAD6.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NUMPAD6.Location = new System.Drawing.Point(399, 11);
+            this.NUMPAD6.Location = new System.Drawing.Point(413, 11);
             this.NUMPAD6.Margin = new System.Windows.Forms.Padding(4);
             this.NUMPAD6.Name = "NUMPAD6";
             this.NUMPAD6.Size = new System.Drawing.Size(56, 54);
             this.NUMPAD6.TabIndex = 234;
             this.NUMPAD6.Text = "6";
             this.NUMPAD6.UseVisualStyleBackColor = true;
-            this.NUMPAD6.Click += new System.EventHandler(this.btn_char_Click);
+            this.NUMPAD6.Click += new System.EventHandler(this.Char_Key_Click);
             // 
             // button16
             // 
@@ -1638,19 +1636,19 @@
             // NUMPAD7
             // 
             this.NUMPAD7.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NUMPAD7.Location = new System.Drawing.Point(459, 11);
+            this.NUMPAD7.Location = new System.Drawing.Point(477, 11);
             this.NUMPAD7.Margin = new System.Windows.Forms.Padding(4);
             this.NUMPAD7.Name = "NUMPAD7";
             this.NUMPAD7.Size = new System.Drawing.Size(56, 54);
             this.NUMPAD7.TabIndex = 235;
             this.NUMPAD7.Text = "7";
             this.NUMPAD7.UseVisualStyleBackColor = true;
-            this.NUMPAD7.Click += new System.EventHandler(this.btn_char_Click);
+            this.NUMPAD7.Click += new System.EventHandler(this.Char_Key_Click);
             // 
             // button18
             // 
             this.button18.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button18.Location = new System.Drawing.Point(616, 78);
+            this.button18.Location = new System.Drawing.Point(637, 78);
             this.button18.Margin = new System.Windows.Forms.Padding(4);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(56, 54);
@@ -1663,19 +1661,19 @@
             // NUMPAD8
             // 
             this.NUMPAD8.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NUMPAD8.Location = new System.Drawing.Point(519, 11);
+            this.NUMPAD8.Location = new System.Drawing.Point(541, 11);
             this.NUMPAD8.Margin = new System.Windows.Forms.Padding(4);
             this.NUMPAD8.Name = "NUMPAD8";
             this.NUMPAD8.Size = new System.Drawing.Size(56, 54);
             this.NUMPAD8.TabIndex = 236;
             this.NUMPAD8.Text = "8";
             this.NUMPAD8.UseVisualStyleBackColor = true;
-            this.NUMPAD8.Click += new System.EventHandler(this.btn_char_Click);
+            this.NUMPAD8.Click += new System.EventHandler(this.Char_Key_Click);
             // 
             // button20
             // 
             this.button20.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button20.Location = new System.Drawing.Point(676, 78);
+            this.button20.Location = new System.Drawing.Point(701, 78);
             this.button20.Margin = new System.Windows.Forms.Padding(4);
             this.button20.Name = "button20";
             this.button20.Size = new System.Drawing.Size(56, 54);
@@ -1688,19 +1686,19 @@
             // NUMPAD0
             // 
             this.NUMPAD0.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NUMPAD0.Location = new System.Drawing.Point(649, 11);
+            this.NUMPAD0.Location = new System.Drawing.Point(669, 11);
             this.NUMPAD0.Margin = new System.Windows.Forms.Padding(4);
             this.NUMPAD0.Name = "NUMPAD0";
             this.NUMPAD0.Size = new System.Drawing.Size(56, 54);
             this.NUMPAD0.TabIndex = 237;
             this.NUMPAD0.Text = "0";
             this.NUMPAD0.UseVisualStyleBackColor = true;
-            this.NUMPAD0.Click += new System.EventHandler(this.btn_char_Click);
+            this.NUMPAD0.Click += new System.EventHandler(this.Char_Key_Click);
             // 
             // button22
             // 
             this.button22.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button22.Location = new System.Drawing.Point(722, 11);
+            this.button22.Location = new System.Drawing.Point(733, 11);
             this.button22.Margin = new System.Windows.Forms.Padding(4);
             this.button22.Name = "button22";
             this.button22.Size = new System.Drawing.Size(152, 54);
@@ -1708,19 +1706,19 @@
             this.button22.Tag = "BACKSPACE";
             this.button22.Text = "Backspace";
             this.button22.UseVisualStyleBackColor = true;
-            this.button22.Click += new System.EventHandler(this.Special_Key_Click);
+            this.button22.Click += new System.EventHandler(this.Special_Char_Key_Click);
             // 
             // NUMPAD9
             // 
             this.NUMPAD9.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NUMPAD9.Location = new System.Drawing.Point(590, 11);
+            this.NUMPAD9.Location = new System.Drawing.Point(605, 11);
             this.NUMPAD9.Margin = new System.Windows.Forms.Padding(4);
             this.NUMPAD9.Name = "NUMPAD9";
             this.NUMPAD9.Size = new System.Drawing.Size(56, 54);
             this.NUMPAD9.TabIndex = 238;
             this.NUMPAD9.Text = "9";
             this.NUMPAD9.UseVisualStyleBackColor = true;
-            this.NUMPAD9.Click += new System.EventHandler(this.btn_char_Click);
+            this.NUMPAD9.Click += new System.EventHandler(this.Char_Key_Click);
             // 
             // button24
             // 
@@ -1810,7 +1808,7 @@
             this.button32.TabIndex = 260;
             this.button32.Tag = "SPACE_BAR";
             this.button32.UseVisualStyleBackColor = true;
-            this.button32.Click += new System.EventHandler(this.Special_Key_Click);
+            this.button32.Click += new System.EventHandler(this.Special_Char_Key_Click);
             // 
             // button33
             // 
@@ -1828,13 +1826,15 @@
             // button34
             // 
             this.button34.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button34.Location = new System.Drawing.Point(569, 269);
+            this.button34.Location = new System.Drawing.Point(589, 269);
             this.button34.Margin = new System.Windows.Forms.Padding(4);
             this.button34.Name = "button34";
             this.button34.Size = new System.Drawing.Size(56, 54);
             this.button34.TabIndex = 259;
-            this.button34.Text = "0";
+            this.button34.Tag = "BROWSER_FORWARD";
+            this.button34.Text = "🌐→";
             this.button34.UseVisualStyleBackColor = true;
+            this.button34.Click += new System.EventHandler(this.Key_Without_Shift);
             // 
             // button35
             // 
@@ -1852,13 +1852,15 @@
             // button36
             // 
             this.button36.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button36.Location = new System.Drawing.Point(629, 269);
+            this.button36.Location = new System.Drawing.Point(649, 269);
             this.button36.Margin = new System.Windows.Forms.Padding(4);
             this.button36.Name = "button36";
             this.button36.Size = new System.Drawing.Size(56, 54);
             this.button36.TabIndex = 258;
-            this.button36.Text = "0";
+            this.button36.Tag = "BROWSER_REFRESH";
+            this.button36.Text = "🌐↻";
             this.button36.UseVisualStyleBackColor = true;
+            this.button36.Click += new System.EventHandler(this.Key_Without_Shift);
             // 
             // button37
             // 
@@ -1873,21 +1875,10 @@
             this.button37.UseVisualStyleBackColor = true;
             this.button37.Click += new System.EventHandler(this.Key_With_Shift);
             // 
-            // button38
-            // 
-            this.button38.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button38.Location = new System.Drawing.Point(689, 269);
-            this.button38.Margin = new System.Windows.Forms.Padding(4);
-            this.button38.Name = "button38";
-            this.button38.Size = new System.Drawing.Size(56, 54);
-            this.button38.TabIndex = 257;
-            this.button38.Text = "0";
-            this.button38.UseVisualStyleBackColor = true;
-            // 
             // button39
             // 
             this.button39.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button39.Location = new System.Drawing.Point(436, 78);
+            this.button39.Location = new System.Drawing.Point(445, 78);
             this.button39.Margin = new System.Windows.Forms.Padding(4);
             this.button39.Name = "button39";
             this.button39.Size = new System.Drawing.Size(56, 54);
@@ -1913,7 +1904,7 @@
             // button41
             // 
             this.button41.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button41.Location = new System.Drawing.Point(373, 78);
+            this.button41.Location = new System.Drawing.Point(380, 78);
             this.button41.Margin = new System.Windows.Forms.Padding(4);
             this.button41.Name = "button41";
             this.button41.Size = new System.Drawing.Size(56, 54);
@@ -1934,12 +1925,12 @@
             this.button42.Tag = "LWIN";
             this.button42.Text = "🪟";
             this.button42.UseVisualStyleBackColor = true;
-            this.button42.Click += new System.EventHandler(this.Special_Key_Click);
+            this.button42.Click += new System.EventHandler(this.Special_Char_Key_Click);
             // 
             // button43
             // 
             this.button43.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button43.Location = new System.Drawing.Point(556, 78);
+            this.button43.Location = new System.Drawing.Point(573, 78);
             this.button43.Margin = new System.Windows.Forms.Padding(4);
             this.button43.Name = "button43";
             this.button43.Size = new System.Drawing.Size(56, 54);
@@ -1965,7 +1956,7 @@
             // button45
             // 
             this.button45.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button45.Location = new System.Drawing.Point(496, 78);
+            this.button45.Location = new System.Drawing.Point(509, 78);
             this.button45.Margin = new System.Windows.Forms.Padding(4);
             this.button45.Name = "button45";
             this.button45.Size = new System.Drawing.Size(56, 54);
@@ -1978,13 +1969,15 @@
             // button46
             // 
             this.button46.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button46.Location = new System.Drawing.Point(451, 267);
+            this.button46.Location = new System.Drawing.Point(469, 269);
             this.button46.Margin = new System.Windows.Forms.Padding(4);
             this.button46.Name = "button46";
             this.button46.Size = new System.Drawing.Size(56, 54);
             this.button46.TabIndex = 1;
-            this.button46.Text = "0";
+            this.button46.Tag = "MEDIA_NEXT_TRACK";
+            this.button46.Text = "⏭️";
             this.button46.UseVisualStyleBackColor = true;
+            this.button46.Click += new System.EventHandler(this.Key_Without_Shift);
             // 
             // button48
             // 
@@ -2002,24 +1995,28 @@
             // button49
             // 
             this.button49.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button49.Location = new System.Drawing.Point(509, 269);
+            this.button49.Location = new System.Drawing.Point(529, 269);
             this.button49.Margin = new System.Windows.Forms.Padding(4);
             this.button49.Name = "button49";
             this.button49.Size = new System.Drawing.Size(56, 54);
             this.button49.TabIndex = 1;
-            this.button49.Text = "0";
+            this.button49.Tag = "BROWSER_BACK";
+            this.button49.Text = "↩🌐";
             this.button49.UseVisualStyleBackColor = true;
+            this.button49.Click += new System.EventHandler(this.Key_Without_Shift);
             // 
             // button51
             // 
             this.button51.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button51.Location = new System.Drawing.Point(329, 269);
+            this.button51.Location = new System.Drawing.Point(349, 269);
             this.button51.Margin = new System.Windows.Forms.Padding(4);
             this.button51.Name = "button51";
             this.button51.Size = new System.Drawing.Size(56, 54);
             this.button51.TabIndex = 1;
-            this.button51.Text = "0";
+            this.button51.Tag = "MEDIA_PREV_TRACK";
+            this.button51.Text = "⏮️";
             this.button51.UseVisualStyleBackColor = true;
+            this.button51.Click += new System.EventHandler(this.Key_Without_Shift);
             // 
             // button52
             // 
@@ -2037,14 +2034,15 @@
             // button53
             // 
             this.button53.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button53.Location = new System.Drawing.Point(389, 269);
+            this.button53.Location = new System.Drawing.Point(409, 269);
             this.button53.Margin = new System.Windows.Forms.Padding(4);
             this.button53.Name = "button53";
             this.button53.Size = new System.Drawing.Size(56, 54);
             this.button53.TabIndex = 1;
-            this.button53.Tag = "char";
-            this.button53.Text = "0";
+            this.button53.Tag = "MEDIA_PLAY_PAUSE";
+            this.button53.Text = "⏯️";
             this.button53.UseVisualStyleBackColor = true;
+            this.button53.Click += new System.EventHandler(this.Key_Without_Shift);
             // 
             // button54
             // 
@@ -2057,18 +2055,20 @@
             this.button54.Tag = "TAB";
             this.button54.Text = "Tab";
             this.button54.UseVisualStyleBackColor = true;
-            this.button54.Click += new System.EventHandler(this.Special_Key_Click);
+            this.button54.Click += new System.EventHandler(this.Special_Char_Key_Click);
             // 
             // button55
             // 
             this.button55.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button55.Location = new System.Drawing.Point(209, 269);
+            this.button55.Location = new System.Drawing.Point(229, 269);
             this.button55.Margin = new System.Windows.Forms.Padding(4);
             this.button55.Name = "button55";
             this.button55.Size = new System.Drawing.Size(56, 54);
             this.button55.TabIndex = 1;
-            this.button55.Text = "0";
+            this.button55.Tag = "VOLUME_UP";
+            this.button55.Text = "🔊";
             this.button55.UseVisualStyleBackColor = true;
+            this.button55.Click += new System.EventHandler(this.Key_Without_Shift);
             // 
             // button56
             // 
@@ -2086,13 +2086,15 @@
             // button60
             // 
             this.button60.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button60.Location = new System.Drawing.Point(269, 269);
+            this.button60.Location = new System.Drawing.Point(289, 269);
             this.button60.Margin = new System.Windows.Forms.Padding(4);
             this.button60.Name = "button60";
             this.button60.Size = new System.Drawing.Size(56, 54);
             this.button60.TabIndex = 1;
-            this.button60.Text = "0";
+            this.button60.Tag = "VOLUME_MUTE";
+            this.button60.Text = "🔇";
             this.button60.UseVisualStyleBackColor = true;
+            this.button60.Click += new System.EventHandler(this.Key_Without_Shift);
             // 
             // button61
             // 
@@ -2187,7 +2189,7 @@
             this.button68.Location = new System.Drawing.Point(16, 269);
             this.button68.Margin = new System.Windows.Forms.Padding(4);
             this.button68.Name = "button68";
-            this.button68.Size = new System.Drawing.Size(132, 54);
+            this.button68.Size = new System.Drawing.Size(145, 54);
             this.button68.TabIndex = 252;
             this.button68.Tag = "LSHIFT";
             this.button68.Text = "Shift";
@@ -2208,13 +2210,15 @@
             // button70
             // 
             this.button70.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button70.Location = new System.Drawing.Point(149, 269);
+            this.button70.Location = new System.Drawing.Point(169, 269);
             this.button70.Margin = new System.Windows.Forms.Padding(4);
             this.button70.Name = "button70";
             this.button70.Size = new System.Drawing.Size(56, 54);
             this.button70.TabIndex = 1;
-            this.button70.Text = "0";
+            this.button70.Tag = "VOLUME_DOWN";
+            this.button70.Text = "🔈";
             this.button70.UseVisualStyleBackColor = true;
+            this.button70.Click += new System.EventHandler(this.Key_Without_Shift);
             // 
             // button71
             // 
@@ -2491,7 +2495,6 @@
         private System.Windows.Forms.Button button35;
         private System.Windows.Forms.Button button36;
         private System.Windows.Forms.Button button37;
-        private System.Windows.Forms.Button button38;
         private System.Windows.Forms.Button button39;
         private System.Windows.Forms.Button button40;
         private System.Windows.Forms.Button button41;
