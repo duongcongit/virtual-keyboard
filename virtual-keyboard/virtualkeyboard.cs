@@ -13,20 +13,22 @@ namespace virtual_keyboard
 {
     public partial class virtualkeyboard : Form
     {
-        // Khai báo hằng số cho hàm SetWindowPos
+        // Const for SetWindowPos()
         private static readonly IntPtr HWND_TOPMOST = new IntPtr(-1);
         private const UInt32 SWP_NOSIZE = 0x0001;
         private const UInt32 SWP_NOMOVE = 0x0002;
         private const UInt32 TOPMOST_FLAGS = SWP_NOMOVE | SWP_NOSIZE;
 
-        // Import hàm SetWindowPos
+        // Import function SetWindowPos
         [DllImport("user32.dll")]
         [return: MarshalAs(UnmanagedType.Bool)]
         public static extern bool SetWindowPos(IntPtr hWnd, IntPtr hWndInsertAfter, int X, int Y, int cx, int cy, uint uFlags);
 
+        // Import function SendInput
         [DllImport("user32.dll")]
         private static extern uint SendInput(uint nInputs, Input[] pInputs, int cbSize);
 
+        // Import function GetMessageExtraInfo
         [DllImport("user32.dll")]
         private static extern IntPtr GetMessageExtraInfo();
 
@@ -38,16 +40,21 @@ namespace virtual_keyboard
 
         private void virtualkeyboard_Load(object sender, EventArgs e)
         {
-            // Gọi hàm SetWindowPos
-            // Bàn phím ảo sẽ luôn ở trên các chương trình khác trên màn hình
+            // Set size
+            this.Size = new Size(1141, 435);
+
+            // Call function SetWindowPos
+            // Virtual keyboard will Always on top (over all program)
             SetWindowPos(this.Handle, HWND_TOPMOST, 0, 0, 0, 0, TOPMOST_FLAGS);
 
+            // Set positon of layout 2
             panel2.Left = panel1.Left;
             panel2.Top = panel1.Bottom;
+            
         }
 
-        // Ghi đè phương thức
-        // Khi thao tác trên bàn phím (click) thì vẫn focus ở ô nhận liệu
+        // Overide method
+        // Windows will not focus to virtual keyboard when typing
         protected override CreateParams CreateParams
         {
             get
@@ -154,8 +161,7 @@ namespace virtual_keyboard
         }
 
 
-        // ===================
-
+        // Send key down
         public static void SendKeyDown(KeyCode keyCode)
         {
             Input[] inputs = new Input[]
@@ -169,7 +175,7 @@ namespace virtual_keyboard
                             {
                                 wVk = (ushort)keyCode,
                                 wScan = 0,
-                                dwFlags = 0,
+                                dwFlags = 0, // 0 = Key down
                                 dwExtraInfo = GetMessageExtraInfo()
                             }
                         }
@@ -179,8 +185,8 @@ namespace virtual_keyboard
             SendInput((uint)inputs.Length, inputs, Marshal.SizeOf(typeof(Input)));
         }
 
-        //
 
+        // Send key up
         public static void SendKeyUP(KeyCode keyCode)
         {
             Input[] inputs = new Input[]
@@ -194,7 +200,7 @@ namespace virtual_keyboard
                             {
                                 wVk = (ushort)keyCode,
                                 wScan = 0,
-                                dwFlags = 2,
+                                dwFlags = 2, // 2 = Key up
                                 dwExtraInfo = GetMessageExtraInfo()
                             }
                         }
@@ -205,13 +211,14 @@ namespace virtual_keyboard
         }
 
 
-        // ===================
+        // Switch layout 2 to layout 1 (main)
         private void Switch_Layout_To_Main(object sender, EventArgs e)
         {
             panel2.Left = panel1.Left;
             panel2.Top = panel1.Bottom;
         }
 
+        // Switch to layout 2
         private void Switch_Layout_To_L2(object sender, EventArgs e)
         {
             panel2.Left = panel1.Left;
@@ -220,36 +227,43 @@ namespace virtual_keyboard
 
 
 
-        // ===================
+        // PROCESS KEYS EVENT
 
+        // For A-Z, 0-9 keys
         private void btn_char_Click(object sender, EventArgs e)
         {
             Control btn = (Button)sender;
             KeyCode key;
             Enum.TryParse<KeyCode>(btn.Name.ToString(), out key);
 
-            //
+            // Send key
             SendKeyDown(key);
             SendKeyUP(key);
-            //
+
+            // Reset all special key to original state
             Reset_Special_Key();
 
         }
 
+
+        // For Function Keys F1-F12
         private void FunctionKey_Click(object sender, EventArgs e)
         {
             Control btn = (Button)sender;
             KeyCode key;
             Enum.TryParse<KeyCode>(btn.Name.ToString(), out key);
 
-            //
+            // Send key
             SendKeyDown(key);
             SendKeyUP(key);
-            //
 
+            // Reset all special key to original state
             Reset_Special_Key();
         }
 
+
+        /* For PrtSc, ScrLk, Pause, Insert, Home, Page Up, Page Down, Delete, End
+           Up, Down, Left, Right Keys */
         private void Navigation_Key(object sender, EventArgs e)
         {
             Control btn = (Button)sender;
@@ -260,20 +274,39 @@ namespace virtual_keyboard
             SendKeyDown(key);
             SendKeyUP(key);
             //
-
-
         }
 
+
+        // For ESC, TAB, SPACE BAR, ENTER, BACKSPACE keys
+        private void Special_Key_Click(object sender, EventArgs e)
+        {
+            Control btn = (Button)sender;
+            KeyCode key;
+            Enum.TryParse<KeyCode>(btn.Tag.ToString(), out key);
+
+            // Send Key
+            SendKeyDown(key);
+            SendKeyUP(key);
+
+            // Reset all special key to original state
+            Reset_Special_Key();
+        }
+
+
+        // For Left Shift and Right Shift key
         private void shift_Click(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
-
             KeyCode key;
-            Enum.TryParse<KeyCode>(btn.Name.ToString(), out key);
+            // Get Tag of key and change to Keycode type
+            Enum.TryParse<KeyCode>(btn.Tag.ToString(), out key);
 
+            // If Shift key is pressing, send key up
             if ((Control.ModifierKeys & Keys.Shift) == Keys.Shift)
             {
                 SendKeyUP(key);
+
+                // Set all character keys to lowcase
                 foreach (Control control in panel1.Controls)
                 {
                     if (control.TabIndex == 1)
@@ -281,14 +314,17 @@ namespace virtual_keyboard
                         control.Text = control.Text.ToLower();
                     }
                 }
-                //
 
+                // Reset color of button
                 btn.BackColor = Color.White;
                 btn.ForeColor = Color.Black;
             }
+            // If Shift key is not pressing, send key down
             else
             {
                 SendKeyDown(key);
+
+                // Set all character keys to upcase
                 foreach (Control control in panel1.Controls)
                 {
                     if (control.TabIndex == 1)
@@ -296,7 +332,8 @@ namespace virtual_keyboard
                         control.Text = control.Text.ToUpper();
                     }
                 }
-                //
+
+                // Set color for button
                 btn.BackColor = Color.RoyalBlue;
                 btn.ForeColor = Color.White;
 
@@ -304,14 +341,17 @@ namespace virtual_keyboard
             }
         }
 
+
+        // For Caps Lock key
         private void CAPS_LOCK_Click(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
-
             KeyCode key = KeyCode.CAPS_LOCK;
-
+                    
+            // If Caps lock key is pressing, send key up
             if (Control.IsKeyLocked(Keys.CapsLock))
             {
+                // Set all character keys to lowcase
                 foreach (Control control in panel1.Controls)
                 {
                     if (control.TabIndex == 1)
@@ -319,11 +359,15 @@ namespace virtual_keyboard
                         control.Text = control.Text.ToLower();
                     }
                 }
+
+                // Reset color of button
                 btn.BackColor = Color.White;
                 btn.ForeColor = Color.Black;
             }
+            // If Caps lock key is not pressing, send key down
             else
             {
+                // Set all character keys to upcase
                 foreach (Control control in panel1.Controls)
                 {
                     if (control.TabIndex == 1)
@@ -331,8 +375,12 @@ namespace virtual_keyboard
                         control.Text = control.Text.ToUpper();
                     }
                 }
+
+                // Set color for button
                 btn.BackColor = Color.RoyalBlue;
                 btn.ForeColor = Color.White;
+
+
             }
 
             SendKeyDown(key);
@@ -341,30 +389,37 @@ namespace virtual_keyboard
 
         //
 
+
+        // For Left Control and Right Control key
         private void CONTROL_Click(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
-
             KeyCode key;
-            Enum.TryParse<KeyCode>(btn.Name.ToString(), out key);
+            // Get Tag of key and change to Keycode type
+            Enum.TryParse<KeyCode>(btn.Tag.ToString(), out key);
 
+            // If Control key is pressing, send key up
             if ((Control.ModifierKeys & Keys.Control) == Keys.Control)
             {
                 SendKeyUP(key);
 
+                // Reset color of button
                 btn.BackColor = Color.White;
                 btn.ForeColor = Color.Black;
             }
+            // If Control key is not pressing, send key down
             else
             {
                 SendKeyDown(key);
 
+                // Set color for button
                 btn.BackColor = Color.RoyalBlue;
                 btn.ForeColor = Color.White;
-
             }
         }
 
+
+        // For Left Alt and Right Alt key
         private void ALT_Click(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
@@ -372,25 +427,30 @@ namespace virtual_keyboard
             KeyCode key = KeyCode.ALT;
             // Enum.TryParse<KeyCode>(btn.Name.ToString(), out key);
 
+            // If Alt key is pressing, send key up
             if ((Control.ModifierKeys & Keys.Alt) == Keys.Alt)
             {
                 SendKeyUP(key);
 
+                // Reset color of button
                 btn.BackColor = Color.White;
                 btn.ForeColor = Color.Black;
             }
+            // If Alt key is not pressing, send key down
             else
             {
                 SendKeyDown(key);
 
+                // Set color for button
                 btn.BackColor = Color.RoyalBlue;
                 btn.ForeColor = Color.White;
-
             }
 
         }
 
-        //
+
+
+        // Reset all special key to original state (CAPSLOCK, SHIFT, CONTROL, ALT WINDOW KEY)
         public void Reset_Special_Key()
         {
             
@@ -426,543 +486,410 @@ namespace virtual_keyboard
         }
 
 
-        // =========
+        // Keys code
 
         public enum KeyCode : ushort
         {
-
-            /// <summary>
-            /// Next track if a song is playing
-            /// </summary>
+            // Next track if a song is playing
             MEDIA_NEXT_TRACK = 0xb0,
-
-            /// <summary>
-            /// Play pause
-            /// </summary>
+                        
+            // Play pause            
             MEDIA_PLAY_PAUSE = 0xb3,
-
-            /// <summary>
-            /// Previous track
-            /// </summary>
+                        
+            // Previous track            
             MEDIA_PREV_TRACK = 0xb1,
-
-            /// <summary>
-            /// Stop
-            /// </summary>
+            
+            // Stop            
             MEDIA_STOP = 0xb2,
 
-
-            /// <summary>Key "+"</summary>
+            
+            // Key "+"            
             ADD = 0x6b,
-            /// <summary>
-            /// "*" key
-            /// </summary>
+            
+            // "*" key            
             MULTIPLY = 0x6a,
-
-            /// <summary>
-            /// "/" key
-            /// </summary>
+            
+            // "/" key            
             DIVIDE = 0x6f,
-
-            /// <summary>
-            /// Subtract key "-"
-            /// </summary>
+            
+            // Subtract key "-"            
             SUBTRACT = 0x6d,
 
-
-            /// <summary>
-            /// Go Back
-            /// </summary>
+            
+            // Go Back            
             BROWSER_BACK = 0xa6,
-            /// <summary>
-            /// Favorites
-            /// </summary>
+            
+            // Favorites            
             BROWSER_FAVORITES = 0xab,
-            /// <summary>
-            /// Forward
-            /// </summary>
+            
+            // Forward            
             BROWSER_FORWARD = 0xa7,
-            /// <summary>
-            /// Home
-            /// </summary>
+            
+            // Home            
             BROWSER_HOME = 0xac,
-            /// <summary>
-            /// Refresh
-            /// </summary>
+            
+            // Refresh            
             BROWSER_REFRESH = 0xa8,
-            /// <summary>
-            /// browser search
-            /// </summary>
+            
+            // browser search            
             BROWSER_SEARCH = 170,
-            /// <summary>
-            /// Stop
-            /// </summary>
+            
+            // Stop            
             BROWSER_STOP = 0xa9,
 
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             NUMPAD0 = 0x60,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             NUMPAD1 = 0x61,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             NUMPAD2 = 0x62,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             NUMPAD3 = 0x63,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             NUMPAD4 = 100,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             NUMPAD5 = 0x65,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             NUMPAD6 = 0x66,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             NUMPAD7 = 0x67,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             NUMPAD8 = 0x68,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             NUMPAD9 = 0x69,
 
 
-            /// <summary>
-            /// F1
-            /// </summary>
+            
+            // F1            
             F1 = 0x70,
-            /// <summary>
-            /// F10
-            /// </summary>
+            
+            // F10            
             F10 = 0x79,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             F11 = 0x7a,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             F12 = 0x7b,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             F13 = 0x7c,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             F14 = 0x7d,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             F15 = 0x7e,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             F16 = 0x7f,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             F17 = 0x80,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             F18 = 0x81,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             F19 = 130,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             F2 = 0x71,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             F20 = 0x83,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             F21 = 0x84,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             F22 = 0x85,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             F23 = 0x86,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             F24 = 0x87,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             F3 = 0x72,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             F4 = 0x73,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             F5 = 0x74,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             F6 = 0x75,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             F7 = 0x76,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             F8 = 0x77,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             F9 = 120,
 
 
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             OEM_1 = 0xba,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             OEM_102 = 0xe2,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             OEM_2 = 0xbf,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             OEM_3 = 0xc0,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             OEM_4 = 0xdb,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             OEM_5 = 220,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             OEM_6 = 0xdd,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             OEM_7 = 0xde,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             OEM_8 = 0xdf,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             OEM_CLEAR = 0xfe,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             OEM_COMMA = 0xbc,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             OEM_MINUS = 0xbd,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             OEM_PERIOD = 190,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             OEM_PLUS = 0xbb,
 
-
-            /// <summary>
-            /// 
-            /// </summary>
+                        
+            //             
             KEY_0 = 0x30,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             KEY_1 = 0x31,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             KEY_2 = 50,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             KEY_3 = 0x33,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             KEY_4 = 0x34,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             KEY_5 = 0x35,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             KEY_6 = 0x36,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             KEY_7 = 0x37,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             KEY_8 = 0x38,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             KEY_9 = 0x39,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             KEY_A = 0x41,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             KEY_B = 0x42,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             KEY_C = 0x43,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             KEY_D = 0x44,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             KEY_E = 0x45,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             KEY_F = 70,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             KEY_G = 0x47,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             KEY_H = 0x48,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             KEY_I = 0x49,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             KEY_J = 0x4a,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             KEY_K = 0x4b,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             KEY_L = 0x4c,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             KEY_M = 0x4d,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             KEY_N = 0x4e,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             KEY_O = 0x4f,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             KEY_P = 80,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             KEY_Q = 0x51,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             KEY_R = 0x52,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             KEY_S = 0x53,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             KEY_T = 0x54,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             KEY_U = 0x55,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             KEY_V = 0x56,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             KEY_W = 0x57,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             KEY_X = 0x58,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             KEY_Y = 0x59,
-            /// <summary>
-            /// 
-            /// </summary>
+            
+            //             
             KEY_Z = 90,
 
-            /// <summary>
-            /// Decrese volume
-            /// </summary>
+            
+            // Decrese volume            
             VOLUME_DOWN = 0xae,
 
-            /// <summary>
-            /// Mute volume
-            /// </summary>
+            
+            // Mute volume            
             VOLUME_MUTE = 0xad,
 
-            /// <summary>
-            /// Increase volue
-            /// </summary>
+            
+            // Increase volue            
             VOLUME_UP = 0xaf,
 
 
-
-            /// <summary>
-            /// Take snapshot of the screen and place it on the clipboard
-            /// </summary>
+            
+            // Take snapshot of the screen and place it on the clipboard            
             SNAPSHOT = 0x2c,
 
-            /// <summary>Send right click from keyboard "key that is 2 keys to the right of space bar"</summary>
+            // Send right click from keyboard
             RightClick = 0x5d,
 
-            /// <summary>
-            /// Go Back or delete
-            /// </summary>
+            
+            // Go Back or delete            
             BACKSPACE = 8,
 
-            /// <summary>
-            /// Control + Break "When debuging if you step into an infinite loop this will stop debug"
-            /// </summary>
+            
+            // Control + Break "When debuging if you step into an infinite loop this will stop debug"            
             CANCEL = 3,
-            /// <summary>
-            /// Caps lock key to send cappital letters
-            /// </summary>
+            
+            // Caps lock key to send cappital letters            
             CAPS_LOCK = 20,
-            /// <summary>
-            /// Ctlr key
-            /// </summary>
+            
+            // Ctlr key            
             CONTROL = 0x11,
 
-            /// <summary>
-            /// Alt key
-            /// </summary>
+            
+            // Alt key            
             ALT = 18,
 
-            /// <summary>
-            /// "." key
-            /// </summary>
+            
+            // "." key            
             DECIMAL = 110,
 
-            /// <summary>
-            /// Delete Key
-            /// </summary>
+            
+            // Delete Key            
             DELETE = 0x2e,
 
-
-            /// <summary>
-            /// Arrow down key
-            /// </summary>
+            
+            // Arrow down key            
             DOWN = 40,
 
-            /// <summary>
-            /// End key
-            /// </summary>
+            
+            // End key            
             END = 0x23,
 
-            /// <summary>
-            /// Escape key
-            /// </summary>
+            
+            // Escape key            
             ESC = 0x1b,
 
-            /// <summary>
-            /// Home key
-            /// </summary>
+            
+            // Home key            
             HOME = 0x24,
 
-            /// <summary>
-            /// Insert key
-            /// </summary>
+            
+            // Insert key            
             INSERT = 0x2d,
 
-            /// <summary>
-            /// Open my computer
-            /// </summary>
+            
+            // Open my computer            
             LAUNCH_APP1 = 0xb6,
-            /// <summary>
-            /// Open calculator
-            /// </summary>
+            
+            // Open calculator            
             LAUNCH_APP2 = 0xb7,
 
-            /// <summary>
-            /// Open default email in my case outlook
-            /// </summary>
+            
+            // Open default email in my case outlook            
             LAUNCH_MAIL = 180,
 
-            /// <summary>
-            /// Opend default media player (itunes, winmediaplayer, etc)
-            /// </summary>
+            
+            // Opend default media player (itunes, winmediaplayer, etc)            
             LAUNCH_MEDIA_SELECT = 0xb5,
 
-            /// <summary>
-            /// Left control
-            /// </summary>
+            
+            // Left control            
             LCONTROL = 0xa2,
 
-            /// <summary>
-            /// Left arrow
-            /// </summary>
+            
+            // Left arrow            
             LEFT = 0x25,
 
-            /// <summary>
-            /// Left shift
-            /// </summary>
+            
+            // Left shift            
             LSHIFT = 160,
 
-            /// <summary>
-            /// left windows key
-            /// </summary>
+            
+            // left windows key            
             LWIN = 0x5b,
 
             //
@@ -970,90 +897,50 @@ namespace virtual_keyboard
 
             //
             PAUSE_BREAK = 0x13,
-
-            /// <summary>
-            /// Next "page down"
-            /// </summary>
+            
+            // Next "page down"            
             PAGEDOWN = 0x22,
-
-            /// <summary>
-            /// Num lock to enable typing numbers
-            /// </summary>
+            
+            // Num lock to enable typing numbers            
             NUMLOCK = 0x90,
-
-            /// <summary>
-            /// Page up key
-            /// </summary>
+            
+            // Page up key            
             PAGE_UP = 0x21,
-
-            /// <summary>
-            /// Right control
-            /// </summary>
+            
+            // Right control            
             RCONTROL = 0xa3,
-
-            /// <summary>
-            /// Return key
-            /// </summary>
+            
+            // Return key            
             ENTER = 13,
-
-            /// <summary>
-            /// Right arrow key
-            /// </summary>
+            
+            // Right arrow key            
             RIGHT = 0x27,
-
-            /// <summary>
-            /// Right shift
-            /// </summary>
+            
+            // Right shift            
             RSHIFT = 0xa1,
-
-            /// <summary>
-            /// Right windows key
-            /// </summary>
+            
+            // Right windows key            
             RWIN = 0x5c,
-
-            /// <summary>
-            /// Shift key
-            /// </summary>
+            
+            // Shift key            
             SHIFT = 0x10,
-
-            /// <summary>
-            /// Space back key
-            /// </summary>
+            
+            // Space back key            
             SPACE_BAR = 0x20,
-
-            /// <summary>
-            /// Tab key
-            /// </summary>
+            
+            // Tab key            
             TAB = 9,
-
-            /// <summary>
-            /// Up arrow key
-            /// </summary>
+            
+            // Up arrow key            
             UP = 0x26,
 
         }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            Control btn = (Button)sender;
-            KeyCode key;
-            Enum.TryParse<KeyCode>(btn.Tag.ToString(), out key);
-
-            //
-            SendKeyDown(key);
-            SendKeyUP(key);
-        }
-
-
-
 
         // 
     }
 
 
 
-
-    
 
         
 }
