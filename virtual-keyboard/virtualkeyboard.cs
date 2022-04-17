@@ -13,22 +13,22 @@ namespace virtual_keyboard
 {
     public partial class virtualkeyboard : Form
     {
-        // Const for SetWindowPos()
+        // Khai báo giá trị tham số cho hàm SetWindowPos
         private static readonly IntPtr HWND_TOPMOST = new IntPtr(-1);
         private const UInt32 SWP_NOSIZE = 0x0001;
         private const UInt32 SWP_NOMOVE = 0x0002;
         private const UInt32 TOPMOST_FLAGS = SWP_NOMOVE | SWP_NOSIZE;
 
-        // Import function SetWindowPos
+        // Import hàm SetWindowPos
         [DllImport("user32.dll")]
         [return: MarshalAs(UnmanagedType.Bool)]
         public static extern bool SetWindowPos(IntPtr hWnd, IntPtr hWndInsertAfter, int X, int Y, int cx, int cy, uint uFlags);
 
-        // Import function SendInput
+        // Import hàm SendInput
         [DllImport("user32.dll")]
         private static extern uint SendInput(uint nInputs, Input[] pInputs, int cbSize);
 
-        // Import function GetMessageExtraInfo
+        // Import hàm GetMessageExtraInfo
         [DllImport("user32.dll")]
         private static extern IntPtr GetMessageExtraInfo();
 
@@ -40,21 +40,23 @@ namespace virtual_keyboard
 
         private void virtualkeyboard_Load(object sender, EventArgs e)
         {
-            // Set size
+            // Thiết lập kích thước cửa sổ của chương trình
             this.Size = new Size(1141, 435);
 
-            // Call function SetWindowPos
-            // Virtual keyboard will Always on top (over all program)
+            // Gọi hàm SetWindowPos
+            // Bàn phím ảo sẽ luôn được đặt ở trên các chương trình khác
             SetWindowPos(this.Handle, HWND_TOPMOST, 0, 0, 0, 0, TOPMOST_FLAGS);
 
-            // Set positon of layout 2
+            // Thiết lập vị trí cuare layout phím phụ
+            // Hiển thị layout phím chính
             panel2.Left = panel1.Left;
             panel2.Top = panel1.Bottom;
             
         }
 
         // Overide method
-        // Windows will not focus to virtual keyboard when typing
+        // Windows sẽ không focus vào bàn phím ảo khi thao tác 
+        // mà vẫn focus vào ô nhập liệu
         protected override CreateParams CreateParams
         {
             get
@@ -66,20 +68,19 @@ namespace virtual_keyboard
         }
 
 
-        // ==============
-
+        // Chứa thông tin về sự kiện mô phỏng bàn phím
         [StructLayout(LayoutKind.Sequential)]
         public struct KeyboardInput
         {
-            public ushort wVk;
+            public ushort wVk; //
             public ushort wScan;
-            public uint dwFlags;
+            public uint dwFlags; // 0 = nhấn phím, 2 = nhả phím
             public uint time;
             public IntPtr dwExtraInfo;
         }
 
-        //
-
+        
+        // Chứa thông tin về sự kiện mô phỏng chuột
         [StructLayout(LayoutKind.Sequential)]
         public struct MouseInput
         {
@@ -91,8 +92,7 @@ namespace virtual_keyboard
             public IntPtr dwExtraInfo;
         }
 
-        //
-
+        // Chứa thông tin về sự kiện mô phỏng phần cứng
         [StructLayout(LayoutKind.Sequential)]
         public struct HardwareInput
         {
@@ -101,8 +101,7 @@ namespace virtual_keyboard
             public ushort wParamH;
         }
 
-        //
-
+        // Cấu trúc loại sự kiện mô phỏng (chuột, bàn phím, phần cứng)
         [StructLayout(LayoutKind.Explicit)]
         public struct InputUnion
         {
@@ -111,14 +110,14 @@ namespace virtual_keyboard
             [FieldOffset(0)] public HardwareInput hi;
         }
 
-        //
-
+        // Cấu trúc struct Input
         public struct Input
         {
             public int type;
             public InputUnion u;
         }
 
+        // Định nghĩa loại phương thức nhập tương ứng (0 = chuột, 1 = bàn phím, 2 = phần cứng)
         [Flags]
         public enum InputType
         {
@@ -127,8 +126,7 @@ namespace virtual_keyboard
             Hardware = 2
         }
 
-        //
-
+        // Các sự kiện bàn phím
         [Flags]
         public enum KeyEventF
         {
@@ -139,8 +137,7 @@ namespace virtual_keyboard
             Scancode = 0x0008
         }
 
-        //
-
+        // Các sự kiện chuột
         [Flags]
         public enum MouseEventF
         {
@@ -161,9 +158,10 @@ namespace virtual_keyboard
         }
 
 
-        // Send key down
+        // Hàm gửi sự kiện nhấn phím
         public static void SendKeyDown(KeyCode keyCode)
         {
+            // Tạo một sự kiện mới và đưa vào mảng cấu trúc
             Input[] inputs = new Input[]
                 {
                     new Input
@@ -173,22 +171,23 @@ namespace virtual_keyboard
                         {
                             ki = new KeyboardInput
                             {
-                                wVk = (ushort)keyCode,
+                                wVk = (ushort)keyCode, // Giá trị value của kí tự
                                 wScan = 0,
-                                dwFlags = 0, // 0 = Key down
+                                dwFlags = 0, // 0 = Sự kiện nhấn phím xuống
                                 dwExtraInfo = GetMessageExtraInfo()
                             }
                         }
                     }
                  };
-            //
+            // Hàm API gửi luồng các sự kiện input
             SendInput((uint)inputs.Length, inputs, Marshal.SizeOf(typeof(Input)));
         }
 
 
-        // Send key up
+        // Hàm gửi sự kiện nhả phím
         public static void SendKeyUP(KeyCode keyCode)
         {
+            // Tạo một sự kiện mới và đưa vào mảng cấu trúc
             Input[] inputs = new Input[]
                 {
                     new Input
@@ -198,115 +197,123 @@ namespace virtual_keyboard
                         {
                             ki = new KeyboardInput
                             {
-                                wVk = (ushort)keyCode,
+                                wVk = (ushort)keyCode, // Giá trị value của kí tự
                                 wScan = 0,
-                                dwFlags = 2, // 2 = Key up
+                                dwFlags = 2, // 2 = Sự kiện nhả phím
                                 dwExtraInfo = GetMessageExtraInfo()
                             }
                         }
                     }
                  };
-            //
+            // Hàm API gửi luồng các sự kiện input
             SendInput((uint)inputs.Length, inputs, Marshal.SizeOf(typeof(Input)));
         }
 
+        // Chuyển sang layout nhập các kí tự đặc biệt
+        private void Switch_Layout_To_L2(object sender, EventArgs e)
+        {
+            panel2.Left = panel1.Left;
+            panel2.Top = panel1.Top;
+        }
 
-        // Switch layout 2 to layout 1 (main)
+
+        // Chuyển sang layout nhập các kí tự chính
         private void Switch_Layout_To_Main(object sender, EventArgs e)
         {
             panel2.Left = panel1.Left;
             panel2.Top = panel1.Bottom;
         }
 
-        // Switch to layout 2
-        private void Switch_Layout_To_L2(object sender, EventArgs e)
-        {
-            panel2.Left = panel1.Left;
-            panel2.Top = panel1.Top;            
-        }
+        
 
 
 
-        // PROCESS KEYS EVENT
+        // XỬ LÝ CÁC SỰ KIỆN NHẤN PHÍM
 
-        // For A-Z, 0-9 keys
+        // Các phím A-Z, 0-9, (NUMPAD) 0-9
         private void btn_char_Click(object sender, EventArgs e)
         {
             Control btn = (Button)sender;
             KeyCode key;
+            // Lấy giá trị Name của phím và ép kiểu thành KeyCode tương ứng
             Enum.TryParse<KeyCode>(btn.Name.ToString(), out key);
 
-            // Send key
+            // Gửi sự kiện phím
             SendKeyDown(key);
             SendKeyUP(key);
 
-            // Reset all special key to original state
+            // Đưa các phím đặc biệt về trạng thái ban đầu
             Reset_Special_Key();
 
         }
 
 
-        // For Function Keys F1-F12
+        // Các phím chức năng F1-F12
         private void FunctionKey_Click(object sender, EventArgs e)
         {
             Control btn = (Button)sender;
             KeyCode key;
+            // Lấy giá trị Name của phím và ép kiểu thành KeyCode tương ứng
             Enum.TryParse<KeyCode>(btn.Name.ToString(), out key);
 
-            // Send key
+            // Gửi sự kiện phím
             SendKeyDown(key);
             SendKeyUP(key);
 
-            // Reset all special key to original state
+            // Đưa các phím đặc biệt về trạng thái ban đầu
             Reset_Special_Key();
         }
 
 
-        /* For PrtSc, ScrLk, Pause, Insert, Home, Page Up, Page Down, Delete, End
-           Up, Down, Left, Right Keys */
+        /* Các phím PrtSc, ScrLk, Pause, Insert, Home, Page Up, Page Down, Delete, End
+           Up, Down, Left, Right */
         private void Navigation_Key(object sender, EventArgs e)
         {
             Control btn = (Button)sender;
             KeyCode key;
+            // Lấy giá trị Name của phím và ép kiểu thành KeyCode tương ứng
             Enum.TryParse<KeyCode>(btn.Name.ToString(), out key);
 
-            //
+            // Gửi sự kiện phím
             SendKeyDown(key);
             SendKeyUP(key);
-            //
         }
 
 
-        // For ESC, TAB, SPACE BAR, ENTER, BACKSPACE keys
+        // Các phím ESC, TAB, SPACE BAR, ENTER, BACKSPACE, các phím kí tự đặc biệt trên layout phím chính
         private void Special_Key_Click(object sender, EventArgs e)
         {
             Control btn = (Button)sender;
             KeyCode key;
-            Enum.TryParse<KeyCode>(btn.Tag.ToString(), out key);
+            // Lấy giá trị Name của phím và ép kiểu thành KeyCode tương ứng
+            Enum.TryParse<KeyCode>(btn.Name.ToString(), out key);
 
-            // Send Key
+            // Gửi sự kiện phím
             SendKeyDown(key);
             SendKeyUP(key);
 
-            // Reset all special key to original state
+            // Đưa các phím đặc biệt về trạng thái ban đầu
             Reset_Special_Key();
         }
 
 
-        // For Left Shift and Right Shift key
+        // Phím Shift trái và Shift phải
         private void shift_Click(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
             KeyCode key;
-            // Get Tag of key and change to Keycode type
+            // Lấy giá trị Tag của phím và ép kiểu thành KeyCode tương ứng
             Enum.TryParse<KeyCode>(btn.Tag.ToString(), out key);
 
-            // If Shift key is pressing, send key up
+            // Kiểm tra phím Shift có đang được nhấn hay không
+            // Nếu có, gửi sự kiện nhả phím
             if ((Control.ModifierKeys & Keys.Shift) == Keys.Shift)
             {
-                SendKeyUP(key);
+                SendKeyUP(KeyCode.LSHIFT);
+                SendKeyUP(KeyCode.RSHIFT);
 
-                // Set all character keys to lowcase
+
+                // Chuyển các phím kí tự thành dạng chữ thường
                 foreach (Control control in panel1.Controls)
                 {
                     if (control.TabIndex == 1)
@@ -315,16 +322,16 @@ namespace virtual_keyboard
                     }
                 }
 
-                // Reset color of button
-                btn.BackColor = Color.White;
-                btn.ForeColor = Color.Black;
+                // Đưa nút trở về trạng thái ban đầu
+                Set_Status_Off("Shift");
+                
             }
-            // If Shift key is not pressing, send key down
+            // Nếu không, gửi sự kiện nhấn phím
             else
             {
                 SendKeyDown(key);
 
-                // Set all character keys to upcase
+                // Chuyển các phím kí tự thành dạng chữ hoa
                 foreach (Control control in panel1.Controls)
                 {
                     if (control.TabIndex == 1)
@@ -333,25 +340,23 @@ namespace virtual_keyboard
                     }
                 }
 
-                // Set color for button
-                btn.BackColor = Color.RoyalBlue;
-                btn.ForeColor = Color.White;
-
+                // Chuyển màu trạng thái của nút
+                Set_Status_On("Shift");
 
             }
         }
 
 
-        // For Caps Lock key
+        // Phím Caps Lock
         private void CAPS_LOCK_Click(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
             KeyCode key = KeyCode.CAPS_LOCK;
-                    
-            // If Caps lock key is pressing, send key up
+
+            // Kiểm tra phím Caps Lock có đang được kích hoạt hay không có đang được nhấn hay không
+            // Nếu có, chuyển các phím kí tự thành dạng chữ thường
             if (Control.IsKeyLocked(Keys.CapsLock))
             {
-                // Set all character keys to lowcase
                 foreach (Control control in panel1.Controls)
                 {
                     if (control.TabIndex == 1)
@@ -360,29 +365,29 @@ namespace virtual_keyboard
                     }
                 }
 
-                // Reset color of button
+                // Đưa nút trở về trạng thái ban đầu
                 btn.BackColor = Color.White;
                 btn.ForeColor = Color.Black;
             }
-            // If Caps lock key is not pressing, send key down
+            // Nếu không, chuyển các phím kí tự thành dạng chữ hoa
             else
             {
-                // Set all character keys to upcase
                 foreach (Control control in panel1.Controls)
                 {
                     if (control.TabIndex == 1)
                     {
                         control.Text = control.Text.ToUpper();
                     }
-                }
+                }                                      
 
-                // Set color for button
+                // Chuyển màu trạng thái của nút
                 btn.BackColor = Color.RoyalBlue;
                 btn.ForeColor = Color.White;
 
 
             }
 
+            // Gửi sự kiện phím
             SendKeyDown(key);
             SendKeyUP(key);
         }
@@ -390,36 +395,39 @@ namespace virtual_keyboard
         //
 
 
-        // For Left Control and Right Control key
+        // Phím Control trái và Control phải
         private void CONTROL_Click(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
             KeyCode key;
-            // Get Tag of key and change to Keycode type
+            // Lấy giá trị Tag của phím và ép kiểu thành KeyCode tương ứng
             Enum.TryParse<KeyCode>(btn.Tag.ToString(), out key);
 
-            // If Control key is pressing, send key up
+            // Kiểm tra phím Control có đang được nhấn hay không
+            // Nếu có, gửi sự kiện nhả phím
             if ((Control.ModifierKeys & Keys.Control) == Keys.Control)
             {
-                SendKeyUP(key);
+                SendKeyUP(KeyCode.LCONTROL);
+                SendKeyUP(KeyCode.RCONTROL);
 
-                // Reset color of button
-                btn.BackColor = Color.White;
-                btn.ForeColor = Color.Black;
+                // Đưa nút trở về trạng thái ban đầu
+                Set_Status_Off("Ctrl");
+                
             }
-            // If Control key is not pressing, send key down
+            // Nếu không, gửi sự kiện nhấn phím
             else
             {
                 SendKeyDown(key);
 
-                // Set color for button
-                btn.BackColor = Color.RoyalBlue;
-                btn.ForeColor = Color.White;
+                // Chuyển màu trạng thái của nút
+                Set_Status_On("Ctrl");
             }
         }
 
+        
 
-        // For Left Alt and Right Alt key
+
+        // Phím Alt trái và Alt phải
         private void ALT_Click(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
@@ -427,66 +435,166 @@ namespace virtual_keyboard
             KeyCode key = KeyCode.ALT;
             // Enum.TryParse<KeyCode>(btn.Name.ToString(), out key);
 
-            // If Alt key is pressing, send key up
+            // Kiểm tra phím Alt có đang được nhấn hay không
+            // Nếu có, gửi sự kiện nhả phím
             if ((Control.ModifierKeys & Keys.Alt) == Keys.Alt)
             {
                 SendKeyUP(key);
 
-                // Reset color of button
-                btn.BackColor = Color.White;
-                btn.ForeColor = Color.Black;
+                // Đưa nút trở về trạng thái ban đầu
+                Set_Status_Off("Alt");
+
             }
-            // If Alt key is not pressing, send key down
+            // Nếu không, gửi sự kiện nhấn phím
             else
             {
                 SendKeyDown(key);
 
-                // Set color for button
-                btn.BackColor = Color.RoyalBlue;
-                btn.ForeColor = Color.White;
+                // Chuyển màu trạng thái của nút
+                Set_Status_On("Alt");
+
             }
 
         }
 
+        // Xử lý các phím kí tự đặc biệt trên layout phím phụ
+        // Các phím cần đi kèm với phím shift
+        private void Key_With_Shift(object sender, EventArgs e)
+        {
+            Control btn = (Button)sender;
+            KeyCode key;
+            // Lấy giá trị Tag của phím và ép kiểu thành KeyCode tương ứng
+            Enum.TryParse<KeyCode>(btn.Tag.ToString(), out key);
 
+            // Gửi sự kiện phím
+            // Thực hiện nhấn phím Shift sau đó mới thực hiện nhấn phím kí tự để ra kí tự phụ cần
+            SendKeyDown(KeyCode.SHIFT);
+            SendKeyDown(key);
+            SendKeyUP(key);
+            SendKeyUP(KeyCode.SHIFT);
 
-        // Reset all special key to original state (CAPSLOCK, SHIFT, CONTROL, ALT WINDOW KEY)
+            // Đưa các phím đặc biệt về trạng thái ban đầu
+            Reset_Special_Key();
+        }
+
+        // Các phím không cần đi kèm với phím shift
+        private void Key_Without_Shift(object sender, EventArgs e)
+        {
+            Control btn = (Button)sender;
+            KeyCode key;
+            // Lấy giá trị Tag của phím và ép kiểu thành KeyCode tương ứng
+            Enum.TryParse<KeyCode>(btn.Tag.ToString(), out key);
+
+            // Gửi sự kiện phím
+            SendKeyDown(key);
+            SendKeyUP(key);
+
+            // Đưa các phím đặc biệt về trạng thái ban đầu
+            Reset_Special_Key();
+        }
+
+        // Hàm chuyển đổi trạng thái của nút (SHIFT, CONTROL, ALT)
+        // Chuyển sang trạng thái đang được nhấn
+        private void Set_Status_On(string key)
+        {
+            // Các nút trên layout phím chính
+            foreach (Control control in panel1.Controls)
+            {
+                if (control.Text == key)
+                {
+                    control.BackColor = Color.RoyalBlue;
+                    control.ForeColor = Color.White;
+                }
+            }
+
+            // Các nút trên layout phím phụ
+            foreach (Control control in panel2.Controls)
+            {
+                if (control.Text == key)
+                {
+                    control.BackColor = Color.RoyalBlue;
+                    control.ForeColor = Color.White;
+                }
+            }
+        }
+
+        // Chuyển về trạng thái ban đầu
+        private void Set_Status_Off(string key)
+        {
+            // Các nút trên layout phím chính
+            foreach (Control control in panel1.Controls)
+            {
+                if (control.Text == key)
+                {
+                    control.BackColor = Color.White;
+                    control.ForeColor = Color.Black;
+                }
+            }
+
+            // Các nút trên layout phím phụ
+            foreach (Control control in panel2.Controls)
+            {
+                if (control.Text == key)
+                {
+                    control.BackColor = Color.White;
+                    control.ForeColor = Color.Black;
+                }
+            }
+        }
+
+        // Reset các nút (CAPSLOCK, SHIFT, CONTROL, ALT WINDOW KEY) về trạng thái ban đầu
         public void Reset_Special_Key()
         {
-            
+            // Shift
             if((Control.ModifierKeys & Keys.Shift) == Keys.Shift)
             {
-                SendKeyUP(KeyCode.SHIFT);
-                LSHIFT.BackColor = Color.White;
-                LSHIFT.ForeColor = Color.Black;
+                SendKeyUP(KeyCode.LSHIFT);
+                SendKeyUP(KeyCode.LSHIFT);
+
+                // Đưa về trạng thái ban đầu
+                Set_Status_Off("Shift");
+
+                // Chuyển các phím kí tự thành dạng chữ thường
+                foreach (Control control in panel1.Controls)
+                {
+                    if (control.TabIndex == 1)
+                    {
+                        control.Text = control.Text.ToLower();
+                    }
+
+                }
             }
-            if((Control.ModifierKeys & Keys.Control) == Keys.Control)
+
+            // Control
+            if ((Control.ModifierKeys & Keys.Control) == Keys.Control)
             {
-                SendKeyUP(KeyCode.CONTROL);
-                LCONTROL.BackColor = Color.White;
-                LCONTROL.ForeColor = Color.Black;
+                SendKeyUP(KeyCode.LCONTROL);
+                SendKeyUP(KeyCode.RCONTROL);
+
+                // Đưa về trạng thái ban đầu
+                Set_Status_Off("Ctrl");
+
+
             }
-            if((Control.ModifierKeys & Keys.Alt) == Keys.Alt)
+
+            // Alt
+            if ((Control.ModifierKeys & Keys.Alt) == Keys.Alt)
             {
                 SendKeyUP(KeyCode.ALT);
-                LALT.BackColor = Color.White;
-                LALT.ForeColor = Color.Black;
+                // Đưa về trạng thái ban đầu
+                Set_Status_Off("Alt");
+
             }
 
             //
 
-            foreach (Control control in panel1.Controls)
-            {
-                if (control.TabIndex == 1)
-                {
-                    control.Text = control.Text.ToLower();
-                }
 
-            }
         }
 
 
         // Keys code
+        // Định nghĩa các phím thành các key tương ứng với Virtual-Key Codes dùng cho hàm API SendInput
+        // Link: https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes
 
         public enum KeyCode : ushort
         {
@@ -884,6 +992,9 @@ namespace virtual_keyboard
             // Left arrow            
             LEFT = 0x25,
 
+            // Left menu
+            LMENU = 0xa4,
+
             
             // Left shift            
             LSHIFT = 160,
@@ -915,7 +1026,10 @@ namespace virtual_keyboard
             
             // Right arrow key            
             RIGHT = 0x27,
-            
+
+            // Right menu
+            RMENU = 0xa5,
+
             // Right shift            
             RSHIFT = 0xa1,
             

@@ -42,31 +42,105 @@
             this.PAUSE_BREAK = new System.Windows.Forms.Button();
             this.INSERT = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_change_to_num = new System.Windows.Forms.Button();
+            this.ESC = new System.Windows.Forms.Button();
+            this.RCONTROL = new System.Windows.Forms.Button();
+            this.F1 = new System.Windows.Forms.Button();
+            this.RMENU = new System.Windows.Forms.Button();
+            this.F2 = new System.Windows.Forms.Button();
+            this.RSHIFT = new System.Windows.Forms.Button();
+            this.F3 = new System.Windows.Forms.Button();
+            this.OEM_7 = new System.Windows.Forms.Button();
+            this.F4 = new System.Windows.Forms.Button();
+            this.ENTER = new System.Windows.Forms.Button();
+            this.F5 = new System.Windows.Forms.Button();
+            this.OEM_6 = new System.Windows.Forms.Button();
+            this.F6 = new System.Windows.Forms.Button();
+            this.OEM_5 = new System.Windows.Forms.Button();
+            this.F7 = new System.Windows.Forms.Button();
+            this.OEM_MINUS = new System.Windows.Forms.Button();
+            this.F8 = new System.Windows.Forms.Button();
+            this.OEM_PLUS = new System.Windows.Forms.Button();
+            this.F10 = new System.Windows.Forms.Button();
+            this.BACKSPACE = new System.Windows.Forms.Button();
+            this.F9 = new System.Windows.Forms.Button();
+            this.OEM_4 = new System.Windows.Forms.Button();
+            this.KEY_1 = new System.Windows.Forms.Button();
+            this.F12 = new System.Windows.Forms.Button();
+            this.KEY_2 = new System.Windows.Forms.Button();
+            this.F11 = new System.Windows.Forms.Button();
+            this.OEM_3 = new System.Windows.Forms.Button();
+            this.RALT = new System.Windows.Forms.Button();
+            this.KEY_3 = new System.Windows.Forms.Button();
+            this.SPACE_BAR = new System.Windows.Forms.Button();
+            this.KEY_4 = new System.Windows.Forms.Button();
+            this.OEM_COMMA = new System.Windows.Forms.Button();
+            this.KEY_6 = new System.Windows.Forms.Button();
+            this.OEM_PERIOD = new System.Windows.Forms.Button();
+            this.KEY_5 = new System.Windows.Forms.Button();
+            this.OEM_2 = new System.Windows.Forms.Button();
+            this.KEY_8 = new System.Windows.Forms.Button();
+            this.LCONTROL = new System.Windows.Forms.Button();
+            this.KEY_7 = new System.Windows.Forms.Button();
+            this.LWIN = new System.Windows.Forms.Button();
+            this.KEY_0 = new System.Windows.Forms.Button();
+            this.LALT = new System.Windows.Forms.Button();
+            this.KEY_9 = new System.Windows.Forms.Button();
+            this.KEY_N = new System.Windows.Forms.Button();
+            this.KEY_W = new System.Windows.Forms.Button();
+            this.KEY_M = new System.Windows.Forms.Button();
+            this.KEY_Q = new System.Windows.Forms.Button();
+            this.KEY_V = new System.Windows.Forms.Button();
+            this.KEY_T = new System.Windows.Forms.Button();
+            this.KEY_B = new System.Windows.Forms.Button();
+            this.TAB = new System.Windows.Forms.Button();
+            this.KEY_X = new System.Windows.Forms.Button();
+            this.KEY_E = new System.Windows.Forms.Button();
+            this.KEY_C = new System.Windows.Forms.Button();
+            this.KEY_R = new System.Windows.Forms.Button();
+            this.OEM_1 = new System.Windows.Forms.Button();
+            this.KEY_Y = new System.Windows.Forms.Button();
+            this.KEY_L = new System.Windows.Forms.Button();
+            this.KEY_I = new System.Windows.Forms.Button();
+            this.KEY_K = new System.Windows.Forms.Button();
+            this.KEY_O = new System.Windows.Forms.Button();
+            this.LSHIFT = new System.Windows.Forms.Button();
+            this.KEY_U = new System.Windows.Forms.Button();
+            this.KEY_Z = new System.Windows.Forms.Button();
+            this.CAPS_LOCK = new System.Windows.Forms.Button();
+            this.KEY_F = new System.Windows.Forms.Button();
+            this.KEY_A = new System.Windows.Forms.Button();
+            this.KEY_D = new System.Windows.Forms.Button();
+            this.KEY_P = new System.Windows.Forms.Button();
+            this.KEY_J = new System.Windows.Forms.Button();
+            this.KEY_G = new System.Windows.Forms.Button();
+            this.KEY_S = new System.Windows.Forms.Button();
+            this.KEY_H = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button28 = new System.Windows.Forms.Button();
             this.button26 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.NUMPAD1 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.NUMPAD2 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.NUMPAD3 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
+            this.NUMPAD4 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
+            this.NUMPAD5 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
+            this.NUMPAD6 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
+            this.NUMPAD7 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
+            this.NUMPAD8 = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
-            this.button21 = new System.Windows.Forms.Button();
+            this.NUMPAD0 = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
-            this.button23 = new System.Windows.Forms.Button();
+            this.NUMPAD9 = new System.Windows.Forms.Button();
             this.button24 = new System.Windows.Forms.Button();
             this.button25 = new System.Windows.Forms.Button();
             this.button27 = new System.Windows.Forms.Button();
@@ -116,80 +190,6 @@
             this.button77 = new System.Windows.Forms.Button();
             this.button79 = new System.Windows.Forms.Button();
             this.button84 = new System.Windows.Forms.Button();
-            this.btn_change_to_num = new System.Windows.Forms.Button();
-            this.ESC = new System.Windows.Forms.Button();
-            this.RCONTROL = new System.Windows.Forms.Button();
-            this.F1 = new System.Windows.Forms.Button();
-            this.RMENU = new System.Windows.Forms.Button();
-            this.F2 = new System.Windows.Forms.Button();
-            this.RSHIFT = new System.Windows.Forms.Button();
-            this.F3 = new System.Windows.Forms.Button();
-            this.button85 = new System.Windows.Forms.Button();
-            this.F4 = new System.Windows.Forms.Button();
-            this.ENTER = new System.Windows.Forms.Button();
-            this.F5 = new System.Windows.Forms.Button();
-            this.button83 = new System.Windows.Forms.Button();
-            this.F6 = new System.Windows.Forms.Button();
-            this.button82 = new System.Windows.Forms.Button();
-            this.F7 = new System.Windows.Forms.Button();
-            this.button81 = new System.Windows.Forms.Button();
-            this.F8 = new System.Windows.Forms.Button();
-            this.button80 = new System.Windows.Forms.Button();
-            this.F10 = new System.Windows.Forms.Button();
-            this.BACKSPACE = new System.Windows.Forms.Button();
-            this.F9 = new System.Windows.Forms.Button();
-            this.button78 = new System.Windows.Forms.Button();
-            this.KEY_1 = new System.Windows.Forms.Button();
-            this.F12 = new System.Windows.Forms.Button();
-            this.KEY_2 = new System.Windows.Forms.Button();
-            this.F11 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.RALT = new System.Windows.Forms.Button();
-            this.KEY_3 = new System.Windows.Forms.Button();
-            this.SPACE_BAR = new System.Windows.Forms.Button();
-            this.KEY_4 = new System.Windows.Forms.Button();
-            this.button59 = new System.Windows.Forms.Button();
-            this.KEY_6 = new System.Windows.Forms.Button();
-            this.button58 = new System.Windows.Forms.Button();
-            this.KEY_5 = new System.Windows.Forms.Button();
-            this.button57 = new System.Windows.Forms.Button();
-            this.KEY_8 = new System.Windows.Forms.Button();
-            this.LCONTROL = new System.Windows.Forms.Button();
-            this.KEY_7 = new System.Windows.Forms.Button();
-            this.LWIN = new System.Windows.Forms.Button();
-            this.KEY_0 = new System.Windows.Forms.Button();
-            this.LALT = new System.Windows.Forms.Button();
-            this.KEY_9 = new System.Windows.Forms.Button();
-            this.KEY_N = new System.Windows.Forms.Button();
-            this.KEY_W = new System.Windows.Forms.Button();
-            this.KEY_M = new System.Windows.Forms.Button();
-            this.KEY_Q = new System.Windows.Forms.Button();
-            this.KEY_V = new System.Windows.Forms.Button();
-            this.KEY_T = new System.Windows.Forms.Button();
-            this.KEY_B = new System.Windows.Forms.Button();
-            this.TAB = new System.Windows.Forms.Button();
-            this.KEY_X = new System.Windows.Forms.Button();
-            this.KEY_E = new System.Windows.Forms.Button();
-            this.KEY_C = new System.Windows.Forms.Button();
-            this.KEY_R = new System.Windows.Forms.Button();
-            this.button47 = new System.Windows.Forms.Button();
-            this.KEY_Y = new System.Windows.Forms.Button();
-            this.KEY_L = new System.Windows.Forms.Button();
-            this.KEY_I = new System.Windows.Forms.Button();
-            this.KEY_K = new System.Windows.Forms.Button();
-            this.KEY_O = new System.Windows.Forms.Button();
-            this.LSHIFT = new System.Windows.Forms.Button();
-            this.KEY_U = new System.Windows.Forms.Button();
-            this.KEY_Z = new System.Windows.Forms.Button();
-            this.CAPS_LOCK = new System.Windows.Forms.Button();
-            this.KEY_F = new System.Windows.Forms.Button();
-            this.KEY_A = new System.Windows.Forms.Button();
-            this.KEY_D = new System.Windows.Forms.Button();
-            this.KEY_P = new System.Windows.Forms.Button();
-            this.KEY_J = new System.Windows.Forms.Button();
-            this.KEY_G = new System.Windows.Forms.Button();
-            this.KEY_S = new System.Windows.Forms.Button();
-            this.KEY_H = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -360,35 +360,35 @@
             this.panel1.Controls.Add(this.F2);
             this.panel1.Controls.Add(this.RSHIFT);
             this.panel1.Controls.Add(this.F3);
-            this.panel1.Controls.Add(this.button85);
+            this.panel1.Controls.Add(this.OEM_7);
             this.panel1.Controls.Add(this.F4);
             this.panel1.Controls.Add(this.ENTER);
             this.panel1.Controls.Add(this.F5);
-            this.panel1.Controls.Add(this.button83);
+            this.panel1.Controls.Add(this.OEM_6);
             this.panel1.Controls.Add(this.F6);
-            this.panel1.Controls.Add(this.button82);
+            this.panel1.Controls.Add(this.OEM_5);
             this.panel1.Controls.Add(this.F7);
-            this.panel1.Controls.Add(this.button81);
+            this.panel1.Controls.Add(this.OEM_MINUS);
             this.panel1.Controls.Add(this.F8);
-            this.panel1.Controls.Add(this.button80);
+            this.panel1.Controls.Add(this.OEM_PLUS);
             this.panel1.Controls.Add(this.F10);
             this.panel1.Controls.Add(this.BACKSPACE);
             this.panel1.Controls.Add(this.F9);
-            this.panel1.Controls.Add(this.button78);
+            this.panel1.Controls.Add(this.OEM_4);
             this.panel1.Controls.Add(this.KEY_1);
             this.panel1.Controls.Add(this.F12);
             this.panel1.Controls.Add(this.KEY_2);
             this.panel1.Controls.Add(this.F11);
-            this.panel1.Controls.Add(this.button14);
+            this.panel1.Controls.Add(this.OEM_3);
             this.panel1.Controls.Add(this.RALT);
             this.panel1.Controls.Add(this.KEY_3);
             this.panel1.Controls.Add(this.SPACE_BAR);
             this.panel1.Controls.Add(this.KEY_4);
-            this.panel1.Controls.Add(this.button59);
+            this.panel1.Controls.Add(this.OEM_COMMA);
             this.panel1.Controls.Add(this.KEY_6);
-            this.panel1.Controls.Add(this.button58);
+            this.panel1.Controls.Add(this.OEM_PERIOD);
             this.panel1.Controls.Add(this.KEY_5);
-            this.panel1.Controls.Add(this.button57);
+            this.panel1.Controls.Add(this.OEM_2);
             this.panel1.Controls.Add(this.KEY_8);
             this.panel1.Controls.Add(this.LCONTROL);
             this.panel1.Controls.Add(this.KEY_7);
@@ -408,7 +408,7 @@
             this.panel1.Controls.Add(this.KEY_E);
             this.panel1.Controls.Add(this.KEY_C);
             this.panel1.Controls.Add(this.KEY_R);
-            this.panel1.Controls.Add(this.button47);
+            this.panel1.Controls.Add(this.OEM_1);
             this.panel1.Controls.Add(this.KEY_Y);
             this.panel1.Controls.Add(this.KEY_L);
             this.panel1.Controls.Add(this.KEY_I);
@@ -431,919 +431,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(899, 404);
             this.panel1.TabIndex = 201;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.button28);
-            this.panel2.Controls.Add(this.button26);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button4);
-            this.panel2.Controls.Add(this.button5);
-            this.panel2.Controls.Add(this.button6);
-            this.panel2.Controls.Add(this.button7);
-            this.panel2.Controls.Add(this.button8);
-            this.panel2.Controls.Add(this.button9);
-            this.panel2.Controls.Add(this.button10);
-            this.panel2.Controls.Add(this.button11);
-            this.panel2.Controls.Add(this.button12);
-            this.panel2.Controls.Add(this.button13);
-            this.panel2.Controls.Add(this.button15);
-            this.panel2.Controls.Add(this.button16);
-            this.panel2.Controls.Add(this.button17);
-            this.panel2.Controls.Add(this.button18);
-            this.panel2.Controls.Add(this.button19);
-            this.panel2.Controls.Add(this.button20);
-            this.panel2.Controls.Add(this.button21);
-            this.panel2.Controls.Add(this.button22);
-            this.panel2.Controls.Add(this.button23);
-            this.panel2.Controls.Add(this.button24);
-            this.panel2.Controls.Add(this.button25);
-            this.panel2.Controls.Add(this.button27);
-            this.panel2.Controls.Add(this.button29);
-            this.panel2.Controls.Add(this.button30);
-            this.panel2.Controls.Add(this.button31);
-            this.panel2.Controls.Add(this.button32);
-            this.panel2.Controls.Add(this.button33);
-            this.panel2.Controls.Add(this.button34);
-            this.panel2.Controls.Add(this.button35);
-            this.panel2.Controls.Add(this.button36);
-            this.panel2.Controls.Add(this.button37);
-            this.panel2.Controls.Add(this.button38);
-            this.panel2.Controls.Add(this.button39);
-            this.panel2.Controls.Add(this.button40);
-            this.panel2.Controls.Add(this.button41);
-            this.panel2.Controls.Add(this.button42);
-            this.panel2.Controls.Add(this.button43);
-            this.panel2.Controls.Add(this.button44);
-            this.panel2.Controls.Add(this.button45);
-            this.panel2.Controls.Add(this.button46);
-            this.panel2.Controls.Add(this.button48);
-            this.panel2.Controls.Add(this.button49);
-            this.panel2.Controls.Add(this.button51);
-            this.panel2.Controls.Add(this.button52);
-            this.panel2.Controls.Add(this.button53);
-            this.panel2.Controls.Add(this.button54);
-            this.panel2.Controls.Add(this.button55);
-            this.panel2.Controls.Add(this.button56);
-            this.panel2.Controls.Add(this.button60);
-            this.panel2.Controls.Add(this.button61);
-            this.panel2.Controls.Add(this.button62);
-            this.panel2.Controls.Add(this.button63);
-            this.panel2.Controls.Add(this.button64);
-            this.panel2.Controls.Add(this.button65);
-            this.panel2.Controls.Add(this.button66);
-            this.panel2.Controls.Add(this.button67);
-            this.panel2.Controls.Add(this.button68);
-            this.panel2.Controls.Add(this.button69);
-            this.panel2.Controls.Add(this.button70);
-            this.panel2.Controls.Add(this.button71);
-            this.panel2.Controls.Add(this.button72);
-            this.panel2.Controls.Add(this.button73);
-            this.panel2.Controls.Add(this.button74);
-            this.panel2.Controls.Add(this.button75);
-            this.panel2.Controls.Add(this.button76);
-            this.panel2.Controls.Add(this.button77);
-            this.panel2.Controls.Add(this.button79);
-            this.panel2.Controls.Add(this.button84);
-            this.panel2.Location = new System.Drawing.Point(0, 408);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(899, 404);
-            this.panel2.TabIndex = 276;
-            // 
-            // button28
-            // 
-            this.button28.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button28.Location = new System.Drawing.Point(749, 78);
-            this.button28.Margin = new System.Windows.Forms.Padding(4);
-            this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(56, 54);
-            this.button28.TabIndex = 277;
-            this.button28.Text = "=";
-            this.button28.UseVisualStyleBackColor = true;
-            // 
-            // button26
-            // 
-            this.button26.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button26.Location = new System.Drawing.Point(819, 78);
-            this.button26.Margin = new System.Windows.Forms.Padding(4);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(56, 54);
-            this.button26.TabIndex = 276;
-            this.button26.Text = "+";
-            this.button26.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(16, 336);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(56, 54);
-            this.button1.TabIndex = 275;
-            this.button1.Text = "abc";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Switch_Layout_To_Main);
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(13, 11);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(56, 54);
-            this.button2.TabIndex = 228;
-            this.button2.Tag = "ESC";
-            this.button2.Text = "Esc";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Special_Key_Click);
-            // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(829, 335);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(56, 54);
-            this.button3.TabIndex = 274;
-            this.button3.Tag = "RCONTOL";
-            this.button3.Text = "Ctrl";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.CONTROL_Click);
-            // 
-            // button4
-            // 
-            this.button4.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(89, 11);
-            this.button4.Margin = new System.Windows.Forms.Padding(4);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(56, 54);
-            this.button4.TabIndex = 229;
-            this.button4.Text = "1";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(770, 335);
-            this.button5.Margin = new System.Windows.Forms.Padding(4);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(56, 54);
-            this.button5.TabIndex = 273;
-            this.button5.Tag = "RMENU";
-            this.button5.Text = "🪟";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(149, 11);
-            this.button6.Margin = new System.Windows.Forms.Padding(4);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(56, 54);
-            this.button6.TabIndex = 230;
-            this.button6.Text = "2";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(749, 269);
-            this.button7.Margin = new System.Windows.Forms.Padding(4);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(136, 54);
-            this.button7.TabIndex = 272;
-            this.button7.Tag = "RSHIFT";
-            this.button7.Text = "Shift";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.shift_Click);
-            // 
-            // button8
-            // 
-            this.button8.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(209, 11);
-            this.button8.Margin = new System.Windows.Forms.Padding(4);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(56, 54);
-            this.button8.TabIndex = 231;
-            this.button8.Text = "3";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // button9
-            // 
-            this.button9.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(707, 204);
-            this.button9.Margin = new System.Windows.Forms.Padding(4);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(56, 54);
-            this.button9.TabIndex = 271;
-            this.button9.Text = "\"";
-            this.button9.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            this.button10.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.Location = new System.Drawing.Point(269, 11);
-            this.button10.Margin = new System.Windows.Forms.Padding(4);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(56, 54);
-            this.button10.TabIndex = 232;
-            this.button10.Text = "4";
-            this.button10.UseVisualStyleBackColor = true;
-            // 
-            // button11
-            // 
-            this.button11.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.Location = new System.Drawing.Point(769, 204);
-            this.button11.Margin = new System.Windows.Forms.Padding(4);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(117, 54);
-            this.button11.TabIndex = 270;
-            this.button11.Tag = "ENTER";
-            this.button11.Text = "Enter";
-            this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.Special_Key_Click);
-            // 
-            // button12
-            // 
-            this.button12.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.Location = new System.Drawing.Point(339, 11);
-            this.button12.Margin = new System.Windows.Forms.Padding(4);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(56, 54);
-            this.button12.TabIndex = 233;
-            this.button12.Text = "5";
-            this.button12.UseVisualStyleBackColor = true;
-            // 
-            // button13
-            // 
-            this.button13.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.Location = new System.Drawing.Point(769, 140);
-            this.button13.Margin = new System.Windows.Forms.Padding(4);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(56, 54);
-            this.button13.TabIndex = 269;
-            this.button13.Text = "}";
-            this.button13.UseVisualStyleBackColor = true;
-            // 
-            // button15
-            // 
-            this.button15.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button15.Location = new System.Drawing.Point(399, 11);
-            this.button15.Margin = new System.Windows.Forms.Padding(4);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(56, 54);
-            this.button15.TabIndex = 234;
-            this.button15.Text = "6";
-            this.button15.UseVisualStyleBackColor = true;
-            // 
-            // button16
-            // 
-            this.button16.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button16.Location = new System.Drawing.Point(829, 140);
-            this.button16.Margin = new System.Windows.Forms.Padding(4);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(56, 54);
-            this.button16.TabIndex = 268;
-            this.button16.Text = "|";
-            this.button16.UseVisualStyleBackColor = true;
-            // 
-            // button17
-            // 
-            this.button17.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button17.Location = new System.Drawing.Point(459, 11);
-            this.button17.Margin = new System.Windows.Forms.Padding(4);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(56, 54);
-            this.button17.TabIndex = 235;
-            this.button17.Text = "7";
-            this.button17.UseVisualStyleBackColor = true;
-            // 
-            // button18
-            // 
-            this.button18.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button18.Location = new System.Drawing.Point(616, 78);
-            this.button18.Margin = new System.Windows.Forms.Padding(4);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(56, 54);
-            this.button18.TabIndex = 267;
-            this.button18.Text = "_";
-            this.button18.UseVisualStyleBackColor = true;
-            // 
-            // button19
-            // 
-            this.button19.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button19.Location = new System.Drawing.Point(519, 11);
-            this.button19.Margin = new System.Windows.Forms.Padding(4);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(56, 54);
-            this.button19.TabIndex = 236;
-            this.button19.Text = "8";
-            this.button19.UseVisualStyleBackColor = true;
-            // 
-            // button20
-            // 
-            this.button20.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button20.Location = new System.Drawing.Point(676, 78);
-            this.button20.Margin = new System.Windows.Forms.Padding(4);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(56, 54);
-            this.button20.TabIndex = 266;
-            this.button20.Text = "-";
-            this.button20.UseVisualStyleBackColor = true;
-            // 
-            // button21
-            // 
-            this.button21.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button21.Location = new System.Drawing.Point(649, 11);
-            this.button21.Margin = new System.Windows.Forms.Padding(4);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(56, 54);
-            this.button21.TabIndex = 237;
-            this.button21.Text = "0";
-            this.button21.UseVisualStyleBackColor = true;
-            // 
-            // button22
-            // 
-            this.button22.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button22.Location = new System.Drawing.Point(722, 11);
-            this.button22.Margin = new System.Windows.Forms.Padding(4);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(152, 54);
-            this.button22.TabIndex = 265;
-            this.button22.Tag = "BACKSPACE";
-            this.button22.Text = "Backspace";
-            this.button22.UseVisualStyleBackColor = true;
-            this.button22.Click += new System.EventHandler(this.Special_Key_Click);
-            // 
-            // button23
-            // 
-            this.button23.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button23.Location = new System.Drawing.Point(590, 11);
-            this.button23.Margin = new System.Windows.Forms.Padding(4);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(56, 54);
-            this.button23.TabIndex = 238;
-            this.button23.Text = "9";
-            this.button23.UseVisualStyleBackColor = true;
-            // 
-            // button24
-            // 
-            this.button24.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button24.Location = new System.Drawing.Point(709, 140);
-            this.button24.Margin = new System.Windows.Forms.Padding(4);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(56, 54);
-            this.button24.TabIndex = 264;
-            this.button24.Text = "{";
-            this.button24.UseVisualStyleBackColor = true;
-            // 
-            // button25
-            // 
-            this.button25.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button25.Location = new System.Drawing.Point(16, 78);
-            this.button25.Margin = new System.Windows.Forms.Padding(4);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(56, 54);
-            this.button25.TabIndex = 239;
-            this.button25.Text = "!";
-            this.button25.UseVisualStyleBackColor = true;
-            // 
-            // button27
-            // 
-            this.button27.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button27.Location = new System.Drawing.Point(76, 78);
-            this.button27.Margin = new System.Windows.Forms.Padding(4);
-            this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(56, 54);
-            this.button27.TabIndex = 240;
-            this.button27.Text = "@";
-            this.button27.UseVisualStyleBackColor = true;
-            // 
-            // button29
-            // 
-            this.button29.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button29.Location = new System.Drawing.Point(109, 142);
-            this.button29.Margin = new System.Windows.Forms.Padding(4);
-            this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(56, 54);
-            this.button29.TabIndex = 241;
-            this.button29.Text = "`";
-            this.button29.UseVisualStyleBackColor = true;
-            // 
-            // button30
-            // 
-            this.button30.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button30.Location = new System.Drawing.Point(707, 335);
-            this.button30.Margin = new System.Windows.Forms.Padding(4);
-            this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(56, 54);
-            this.button30.TabIndex = 261;
-            this.button30.Tag = "RALT";
-            this.button30.Text = "Alt";
-            this.button30.UseVisualStyleBackColor = true;
-            this.button30.Click += new System.EventHandler(this.ALT_Click);
-            // 
-            // button31
-            // 
-            this.button31.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button31.Location = new System.Drawing.Point(136, 78);
-            this.button31.Margin = new System.Windows.Forms.Padding(4);
-            this.button31.Name = "button31";
-            this.button31.Size = new System.Drawing.Size(56, 54);
-            this.button31.TabIndex = 242;
-            this.button31.Text = "#";
-            this.button31.UseVisualStyleBackColor = true;
-            // 
-            // button32
-            // 
-            this.button32.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button32.Location = new System.Drawing.Point(253, 336);
-            this.button32.Margin = new System.Windows.Forms.Padding(4);
-            this.button32.Name = "button32";
-            this.button32.Size = new System.Drawing.Size(450, 54);
-            this.button32.TabIndex = 260;
-            this.button32.Tag = "SPACE_BAR";
-            this.button32.UseVisualStyleBackColor = true;
-            this.button32.Click += new System.EventHandler(this.Special_Key_Click);
-            // 
-            // button33
-            // 
-            this.button33.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button33.Location = new System.Drawing.Point(196, 78);
-            this.button33.Margin = new System.Windows.Forms.Padding(4);
-            this.button33.Name = "button33";
-            this.button33.Size = new System.Drawing.Size(56, 54);
-            this.button33.TabIndex = 243;
-            this.button33.Text = "$";
-            this.button33.UseVisualStyleBackColor = true;
-            // 
-            // button34
-            // 
-            this.button34.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button34.Location = new System.Drawing.Point(569, 269);
-            this.button34.Margin = new System.Windows.Forms.Padding(4);
-            this.button34.Name = "button34";
-            this.button34.Size = new System.Drawing.Size(56, 54);
-            this.button34.TabIndex = 259;
-            this.button34.Text = "0";
-            this.button34.UseVisualStyleBackColor = true;
-            // 
-            // button35
-            // 
-            this.button35.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button35.Location = new System.Drawing.Point(316, 78);
-            this.button35.Margin = new System.Windows.Forms.Padding(4);
-            this.button35.Name = "button35";
-            this.button35.Size = new System.Drawing.Size(56, 54);
-            this.button35.TabIndex = 244;
-            this.button35.Text = "^";
-            this.button35.UseVisualStyleBackColor = true;
-            // 
-            // button36
-            // 
-            this.button36.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button36.Location = new System.Drawing.Point(629, 269);
-            this.button36.Margin = new System.Windows.Forms.Padding(4);
-            this.button36.Name = "button36";
-            this.button36.Size = new System.Drawing.Size(56, 54);
-            this.button36.TabIndex = 258;
-            this.button36.Text = "0";
-            this.button36.UseVisualStyleBackColor = true;
-            // 
-            // button37
-            // 
-            this.button37.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button37.Location = new System.Drawing.Point(256, 78);
-            this.button37.Margin = new System.Windows.Forms.Padding(4);
-            this.button37.Name = "button37";
-            this.button37.Size = new System.Drawing.Size(56, 54);
-            this.button37.TabIndex = 245;
-            this.button37.Text = "%";
-            this.button37.UseVisualStyleBackColor = true;
-            // 
-            // button38
-            // 
-            this.button38.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button38.Location = new System.Drawing.Point(689, 269);
-            this.button38.Margin = new System.Windows.Forms.Padding(4);
-            this.button38.Name = "button38";
-            this.button38.Size = new System.Drawing.Size(56, 54);
-            this.button38.TabIndex = 257;
-            this.button38.Text = "0";
-            this.button38.UseVisualStyleBackColor = true;
-            // 
-            // button39
-            // 
-            this.button39.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button39.Location = new System.Drawing.Point(436, 78);
-            this.button39.Margin = new System.Windows.Forms.Padding(4);
-            this.button39.Name = "button39";
-            this.button39.Size = new System.Drawing.Size(56, 54);
-            this.button39.TabIndex = 246;
-            this.button39.Text = "*";
-            this.button39.UseVisualStyleBackColor = true;
-            // 
-            // button40
-            // 
-            this.button40.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button40.Location = new System.Drawing.Point(76, 335);
-            this.button40.Margin = new System.Windows.Forms.Padding(4);
-            this.button40.Name = "button40";
-            this.button40.Size = new System.Drawing.Size(56, 54);
-            this.button40.TabIndex = 256;
-            this.button40.Tag = "LCONTROL";
-            this.button40.Text = "Ctrl";
-            this.button40.UseVisualStyleBackColor = true;
-            this.button40.Click += new System.EventHandler(this.CONTROL_Click);
-            // 
-            // button41
-            // 
-            this.button41.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button41.Location = new System.Drawing.Point(372, 76);
-            this.button41.Margin = new System.Windows.Forms.Padding(4);
-            this.button41.Name = "button41";
-            this.button41.Size = new System.Drawing.Size(56, 54);
-            this.button41.TabIndex = 247;
-            this.button41.Text = "&";
-            this.button41.UseVisualStyleBackColor = true;
-            // 
-            // button42
-            // 
-            this.button42.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button42.Location = new System.Drawing.Point(133, 335);
-            this.button42.Margin = new System.Windows.Forms.Padding(4);
-            this.button42.Name = "button42";
-            this.button42.Size = new System.Drawing.Size(56, 54);
-            this.button42.TabIndex = 255;
-            this.button42.Tag = "LWIN";
-            this.button42.Text = "🪟";
-            this.button42.UseVisualStyleBackColor = true;
-            // 
-            // button43
-            // 
-            this.button43.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button43.Location = new System.Drawing.Point(556, 78);
-            this.button43.Margin = new System.Windows.Forms.Padding(4);
-            this.button43.Name = "button43";
-            this.button43.Size = new System.Drawing.Size(56, 54);
-            this.button43.TabIndex = 248;
-            this.button43.Text = ")";
-            this.button43.UseVisualStyleBackColor = true;
-            // 
-            // button44
-            // 
-            this.button44.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button44.Location = new System.Drawing.Point(193, 335);
-            this.button44.Margin = new System.Windows.Forms.Padding(4);
-            this.button44.Name = "button44";
-            this.button44.Size = new System.Drawing.Size(56, 54);
-            this.button44.TabIndex = 254;
-            this.button44.Tag = "LALT";
-            this.button44.Text = "Alt";
-            this.button44.UseVisualStyleBackColor = true;
-            this.button44.Click += new System.EventHandler(this.ALT_Click);
-            // 
-            // button45
-            // 
-            this.button45.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button45.Location = new System.Drawing.Point(496, 78);
-            this.button45.Margin = new System.Windows.Forms.Padding(4);
-            this.button45.Name = "button45";
-            this.button45.Size = new System.Drawing.Size(56, 54);
-            this.button45.TabIndex = 249;
-            this.button45.Text = "(";
-            this.button45.UseVisualStyleBackColor = true;
-            // 
-            // button46
-            // 
-            this.button46.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button46.Location = new System.Drawing.Point(451, 267);
-            this.button46.Margin = new System.Windows.Forms.Padding(4);
-            this.button46.Name = "button46";
-            this.button46.Size = new System.Drawing.Size(56, 54);
-            this.button46.TabIndex = 1;
-            this.button46.Text = "0";
-            this.button46.UseVisualStyleBackColor = true;
-            // 
-            // button48
-            // 
-            this.button48.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button48.Location = new System.Drawing.Point(170, 140);
-            this.button48.Margin = new System.Windows.Forms.Padding(4);
-            this.button48.Name = "button48";
-            this.button48.Size = new System.Drawing.Size(56, 54);
-            this.button48.TabIndex = 1;
-            this.button48.Tag = "";
-            this.button48.Text = "~";
-            this.button48.UseVisualStyleBackColor = true;
-            // 
-            // button49
-            // 
-            this.button49.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button49.Location = new System.Drawing.Point(509, 269);
-            this.button49.Margin = new System.Windows.Forms.Padding(4);
-            this.button49.Name = "button49";
-            this.button49.Size = new System.Drawing.Size(56, 54);
-            this.button49.TabIndex = 1;
-            this.button49.Text = "0";
-            this.button49.UseVisualStyleBackColor = true;
-            // 
-            // button51
-            // 
-            this.button51.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button51.Location = new System.Drawing.Point(329, 269);
-            this.button51.Margin = new System.Windows.Forms.Padding(4);
-            this.button51.Name = "button51";
-            this.button51.Size = new System.Drawing.Size(56, 54);
-            this.button51.TabIndex = 1;
-            this.button51.Text = "0";
-            this.button51.UseVisualStyleBackColor = true;
-            // 
-            // button52
-            // 
-            this.button52.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button52.Location = new System.Drawing.Point(350, 140);
-            this.button52.Margin = new System.Windows.Forms.Padding(4);
-            this.button52.Name = "button52";
-            this.button52.Size = new System.Drawing.Size(56, 54);
-            this.button52.TabIndex = 1;
-            this.button52.Text = ">";
-            this.button52.UseVisualStyleBackColor = true;
-            // 
-            // button53
-            // 
-            this.button53.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button53.Location = new System.Drawing.Point(389, 269);
-            this.button53.Margin = new System.Windows.Forms.Padding(4);
-            this.button53.Name = "button53";
-            this.button53.Size = new System.Drawing.Size(56, 54);
-            this.button53.TabIndex = 1;
-            this.button53.Tag = "char";
-            this.button53.Text = "0";
-            this.button53.UseVisualStyleBackColor = true;
-            // 
-            // button54
-            // 
-            this.button54.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button54.Location = new System.Drawing.Point(13, 140);
-            this.button54.Margin = new System.Windows.Forms.Padding(4);
-            this.button54.Name = "button54";
-            this.button54.Size = new System.Drawing.Size(83, 54);
-            this.button54.TabIndex = 250;
-            this.button54.Tag = "TAB";
-            this.button54.Text = "Tab";
-            this.button54.UseVisualStyleBackColor = true;
-            this.button54.Click += new System.EventHandler(this.Special_Key_Click);
-            // 
-            // button55
-            // 
-            this.button55.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button55.Location = new System.Drawing.Point(209, 269);
-            this.button55.Margin = new System.Windows.Forms.Padding(4);
-            this.button55.Name = "button55";
-            this.button55.Size = new System.Drawing.Size(56, 54);
-            this.button55.TabIndex = 1;
-            this.button55.Text = "0";
-            this.button55.UseVisualStyleBackColor = true;
-            // 
-            // button56
-            // 
-            this.button56.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button56.Location = new System.Drawing.Point(230, 140);
-            this.button56.Margin = new System.Windows.Forms.Padding(4);
-            this.button56.Name = "button56";
-            this.button56.Size = new System.Drawing.Size(56, 54);
-            this.button56.TabIndex = 1;
-            this.button56.Tag = "";
-            this.button56.Text = "%";
-            this.button56.UseVisualStyleBackColor = true;
-            // 
-            // button60
-            // 
-            this.button60.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button60.Location = new System.Drawing.Point(269, 269);
-            this.button60.Margin = new System.Windows.Forms.Padding(4);
-            this.button60.Name = "button60";
-            this.button60.Size = new System.Drawing.Size(56, 54);
-            this.button60.TabIndex = 1;
-            this.button60.Text = "0";
-            this.button60.UseVisualStyleBackColor = true;
-            // 
-            // button61
-            // 
-            this.button61.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button61.Location = new System.Drawing.Point(290, 140);
-            this.button61.Margin = new System.Windows.Forms.Padding(4);
-            this.button61.Name = "button61";
-            this.button61.Size = new System.Drawing.Size(56, 54);
-            this.button61.TabIndex = 1;
-            this.button61.Text = "<";
-            this.button61.UseVisualStyleBackColor = true;
-            // 
-            // button62
-            // 
-            this.button62.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button62.Location = new System.Drawing.Point(647, 204);
-            this.button62.Margin = new System.Windows.Forms.Padding(4);
-            this.button62.Name = "button62";
-            this.button62.Size = new System.Drawing.Size(56, 54);
-            this.button62.TabIndex = 253;
-            this.button62.Text = "\'";
-            this.button62.UseVisualStyleBackColor = true;
-            // 
-            // button63
-            // 
-            this.button63.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button63.Location = new System.Drawing.Point(410, 140);
-            this.button63.Margin = new System.Windows.Forms.Padding(4);
-            this.button63.Name = "button63";
-            this.button63.Size = new System.Drawing.Size(56, 54);
-            this.button63.TabIndex = 1;
-            this.button63.Text = "€";
-            this.button63.UseVisualStyleBackColor = true;
-            // 
-            // button64
-            // 
-            this.button64.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button64.Location = new System.Drawing.Point(589, 204);
-            this.button64.Margin = new System.Windows.Forms.Padding(4);
-            this.button64.Name = "button64";
-            this.button64.Size = new System.Drawing.Size(56, 54);
-            this.button64.TabIndex = 1;
-            this.button64.Text = ":";
-            this.button64.UseVisualStyleBackColor = true;
-            // 
-            // button65
-            // 
-            this.button65.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button65.Location = new System.Drawing.Point(530, 140);
-            this.button65.Margin = new System.Windows.Forms.Padding(4);
-            this.button65.Name = "button65";
-            this.button65.Size = new System.Drawing.Size(56, 54);
-            this.button65.TabIndex = 1;
-            this.button65.Text = "¥";
-            this.button65.UseVisualStyleBackColor = true;
-            // 
-            // button66
-            // 
-            this.button66.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button66.Location = new System.Drawing.Point(529, 204);
-            this.button66.Margin = new System.Windows.Forms.Padding(4);
-            this.button66.Name = "button66";
-            this.button66.Size = new System.Drawing.Size(56, 54);
-            this.button66.TabIndex = 1;
-            this.button66.Text = ";";
-            this.button66.UseVisualStyleBackColor = true;
-            // 
-            // button67
-            // 
-            this.button67.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button67.Location = new System.Drawing.Point(590, 140);
-            this.button67.Margin = new System.Windows.Forms.Padding(4);
-            this.button67.Name = "button67";
-            this.button67.Size = new System.Drawing.Size(56, 54);
-            this.button67.TabIndex = 1;
-            this.button67.Text = "[";
-            this.button67.UseVisualStyleBackColor = true;
-            // 
-            // button68
-            // 
-            this.button68.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button68.Location = new System.Drawing.Point(13, 269);
-            this.button68.Margin = new System.Windows.Forms.Padding(4);
-            this.button68.Name = "button68";
-            this.button68.Size = new System.Drawing.Size(132, 54);
-            this.button68.TabIndex = 252;
-            this.button68.Tag = "LSHIFT";
-            this.button68.Text = "Shift";
-            this.button68.UseVisualStyleBackColor = true;
-            this.button68.Click += new System.EventHandler(this.shift_Click);
-            // 
-            // button69
-            // 
-            this.button69.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button69.Location = new System.Drawing.Point(470, 140);
-            this.button69.Margin = new System.Windows.Forms.Padding(4);
-            this.button69.Name = "button69";
-            this.button69.Size = new System.Drawing.Size(56, 54);
-            this.button69.TabIndex = 1;
-            this.button69.Text = "£";
-            this.button69.UseVisualStyleBackColor = true;
-            // 
-            // button70
-            // 
-            this.button70.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button70.Location = new System.Drawing.Point(149, 269);
-            this.button70.Margin = new System.Windows.Forms.Padding(4);
-            this.button70.Name = "button70";
-            this.button70.Size = new System.Drawing.Size(56, 54);
-            this.button70.TabIndex = 1;
-            this.button70.Text = "0";
-            this.button70.UseVisualStyleBackColor = true;
-            // 
-            // button71
-            // 
-            this.button71.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button71.Location = new System.Drawing.Point(13, 204);
-            this.button71.Margin = new System.Windows.Forms.Padding(4);
-            this.button71.Name = "button71";
-            this.button71.Size = new System.Drawing.Size(93, 54);
-            this.button71.TabIndex = 251;
-            this.button71.Tag = "CAPS_LOCK";
-            this.button71.Text = "Caps Lock";
-            this.button71.UseVisualStyleBackColor = true;
-            this.button71.Click += new System.EventHandler(this.CAPS_LOCK_Click);
-            // 
-            // button72
-            // 
-            this.button72.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button72.Location = new System.Drawing.Point(289, 204);
-            this.button72.Margin = new System.Windows.Forms.Padding(4);
-            this.button72.Name = "button72";
-            this.button72.Size = new System.Drawing.Size(56, 54);
-            this.button72.TabIndex = 1;
-            this.button72.Text = "÷";
-            this.button72.UseVisualStyleBackColor = true;
-            // 
-            // button73
-            // 
-            this.button73.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button73.Location = new System.Drawing.Point(109, 204);
-            this.button73.Margin = new System.Windows.Forms.Padding(4);
-            this.button73.Name = "button73";
-            this.button73.Size = new System.Drawing.Size(56, 54);
-            this.button73.TabIndex = 1;
-            this.button73.Text = "+";
-            this.button73.UseVisualStyleBackColor = true;
-            // 
-            // button74
-            // 
-            this.button74.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button74.Location = new System.Drawing.Point(229, 204);
-            this.button74.Margin = new System.Windows.Forms.Padding(4);
-            this.button74.Name = "button74";
-            this.button74.Size = new System.Drawing.Size(56, 54);
-            this.button74.TabIndex = 1;
-            this.button74.Text = "*";
-            this.button74.UseVisualStyleBackColor = true;
-            // 
-            // button75
-            // 
-            this.button75.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button75.Location = new System.Drawing.Point(649, 140);
-            this.button75.Margin = new System.Windows.Forms.Padding(4);
-            this.button75.Name = "button75";
-            this.button75.Size = new System.Drawing.Size(56, 54);
-            this.button75.TabIndex = 1;
-            this.button75.Text = "]";
-            this.button75.UseVisualStyleBackColor = true;
-            // 
-            // button76
-            // 
-            this.button76.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button76.Location = new System.Drawing.Point(469, 204);
-            this.button76.Margin = new System.Windows.Forms.Padding(4);
-            this.button76.Name = "button76";
-            this.button76.Size = new System.Drawing.Size(56, 54);
-            this.button76.TabIndex = 1;
-            this.button76.Text = "?";
-            this.button76.UseVisualStyleBackColor = true;
-            // 
-            // button77
-            // 
-            this.button77.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button77.Location = new System.Drawing.Point(349, 204);
-            this.button77.Margin = new System.Windows.Forms.Padding(4);
-            this.button77.Name = "button77";
-            this.button77.Size = new System.Drawing.Size(56, 54);
-            this.button77.TabIndex = 1;
-            this.button77.Text = "\\";
-            this.button77.UseVisualStyleBackColor = true;
-            // 
-            // button79
-            // 
-            this.button79.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button79.Location = new System.Drawing.Point(169, 204);
-            this.button79.Margin = new System.Windows.Forms.Padding(4);
-            this.button79.Name = "button79";
-            this.button79.Size = new System.Drawing.Size(56, 54);
-            this.button79.TabIndex = 1;
-            this.button79.Text = "-";
-            this.button79.UseVisualStyleBackColor = true;
-            // 
-            // button84
-            // 
-            this.button84.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button84.Location = new System.Drawing.Point(409, 204);
-            this.button84.Margin = new System.Windows.Forms.Padding(4);
-            this.button84.Name = "button84";
-            this.button84.Size = new System.Drawing.Size(56, 54);
-            this.button84.TabIndex = 1;
-            this.button84.Text = "/";
-            this.button84.UseVisualStyleBackColor = true;
             // 
             // btn_change_to_num
             // 
@@ -1404,8 +491,9 @@
             this.RMENU.Size = new System.Drawing.Size(56, 54);
             this.RMENU.TabIndex = 273;
             this.RMENU.Tag = "RMENU";
-            this.RMENU.Text = "🪟";
+            this.RMENU.Text = "🧾";
             this.RMENU.UseVisualStyleBackColor = true;
+            this.RMENU.Click += new System.EventHandler(this.Special_Key_Click);
             // 
             // F2
             // 
@@ -1444,16 +532,17 @@
             this.F3.UseVisualStyleBackColor = true;
             this.F3.Click += new System.EventHandler(this.FunctionKey_Click);
             // 
-            // button85
+            // OEM_7
             // 
-            this.button85.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button85.Location = new System.Drawing.Point(707, 204);
-            this.button85.Margin = new System.Windows.Forms.Padding(4);
-            this.button85.Name = "button85";
-            this.button85.Size = new System.Drawing.Size(56, 54);
-            this.button85.TabIndex = 271;
-            this.button85.Text = "\"\r\n\'\r\n";
-            this.button85.UseVisualStyleBackColor = true;
+            this.OEM_7.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OEM_7.Location = new System.Drawing.Point(707, 204);
+            this.OEM_7.Margin = new System.Windows.Forms.Padding(4);
+            this.OEM_7.Name = "OEM_7";
+            this.OEM_7.Size = new System.Drawing.Size(56, 54);
+            this.OEM_7.TabIndex = 271;
+            this.OEM_7.Text = "\"\r\n\'\r\n";
+            this.OEM_7.UseVisualStyleBackColor = true;
+            this.OEM_7.Click += new System.EventHandler(this.Special_Key_Click);
             // 
             // F4
             // 
@@ -1492,16 +581,17 @@
             this.F5.UseVisualStyleBackColor = true;
             this.F5.Click += new System.EventHandler(this.FunctionKey_Click);
             // 
-            // button83
+            // OEM_6
             // 
-            this.button83.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button83.Location = new System.Drawing.Point(769, 140);
-            this.button83.Margin = new System.Windows.Forms.Padding(4);
-            this.button83.Name = "button83";
-            this.button83.Size = new System.Drawing.Size(56, 54);
-            this.button83.TabIndex = 269;
-            this.button83.Text = "}\r\n]\r\n";
-            this.button83.UseVisualStyleBackColor = true;
+            this.OEM_6.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OEM_6.Location = new System.Drawing.Point(769, 140);
+            this.OEM_6.Margin = new System.Windows.Forms.Padding(4);
+            this.OEM_6.Name = "OEM_6";
+            this.OEM_6.Size = new System.Drawing.Size(56, 54);
+            this.OEM_6.TabIndex = 269;
+            this.OEM_6.Text = "}\r\n]\r\n";
+            this.OEM_6.UseVisualStyleBackColor = true;
+            this.OEM_6.Click += new System.EventHandler(this.Special_Key_Click);
             // 
             // F6
             // 
@@ -1515,16 +605,18 @@
             this.F6.UseVisualStyleBackColor = true;
             this.F6.Click += new System.EventHandler(this.FunctionKey_Click);
             // 
-            // button82
+            // OEM_5
             // 
-            this.button82.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button82.Location = new System.Drawing.Point(829, 140);
-            this.button82.Margin = new System.Windows.Forms.Padding(4);
-            this.button82.Name = "button82";
-            this.button82.Size = new System.Drawing.Size(56, 54);
-            this.button82.TabIndex = 268;
-            this.button82.Text = "|\r\n\\";
-            this.button82.UseVisualStyleBackColor = true;
+            this.OEM_5.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OEM_5.Location = new System.Drawing.Point(829, 140);
+            this.OEM_5.Margin = new System.Windows.Forms.Padding(4);
+            this.OEM_5.Name = "OEM_5";
+            this.OEM_5.Size = new System.Drawing.Size(56, 54);
+            this.OEM_5.TabIndex = 268;
+            this.OEM_5.Tag = "OEM_5";
+            this.OEM_5.Text = "|\r\n\\";
+            this.OEM_5.UseVisualStyleBackColor = true;
+            this.OEM_5.Click += new System.EventHandler(this.Special_Key_Click);
             // 
             // F7
             // 
@@ -1538,16 +630,17 @@
             this.F7.UseVisualStyleBackColor = true;
             this.F7.Click += new System.EventHandler(this.FunctionKey_Click);
             // 
-            // button81
+            // OEM_MINUS
             // 
-            this.button81.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button81.Location = new System.Drawing.Point(673, 75);
-            this.button81.Margin = new System.Windows.Forms.Padding(4);
-            this.button81.Name = "button81";
-            this.button81.Size = new System.Drawing.Size(56, 54);
-            this.button81.TabIndex = 267;
-            this.button81.Text = "_\r\n-\r\n";
-            this.button81.UseVisualStyleBackColor = true;
+            this.OEM_MINUS.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OEM_MINUS.Location = new System.Drawing.Point(673, 75);
+            this.OEM_MINUS.Margin = new System.Windows.Forms.Padding(4);
+            this.OEM_MINUS.Name = "OEM_MINUS";
+            this.OEM_MINUS.Size = new System.Drawing.Size(56, 54);
+            this.OEM_MINUS.TabIndex = 267;
+            this.OEM_MINUS.Text = "_\r\n-\r\n";
+            this.OEM_MINUS.UseVisualStyleBackColor = true;
+            this.OEM_MINUS.Click += new System.EventHandler(this.Special_Key_Click);
             // 
             // F8
             // 
@@ -1561,16 +654,17 @@
             this.F8.UseVisualStyleBackColor = true;
             this.F8.Click += new System.EventHandler(this.FunctionKey_Click);
             // 
-            // button80
+            // OEM_PLUS
             // 
-            this.button80.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button80.Location = new System.Drawing.Point(733, 75);
-            this.button80.Margin = new System.Windows.Forms.Padding(4);
-            this.button80.Name = "button80";
-            this.button80.Size = new System.Drawing.Size(56, 54);
-            this.button80.TabIndex = 266;
-            this.button80.Text = "+\r\n=";
-            this.button80.UseVisualStyleBackColor = true;
+            this.OEM_PLUS.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OEM_PLUS.Location = new System.Drawing.Point(733, 75);
+            this.OEM_PLUS.Margin = new System.Windows.Forms.Padding(4);
+            this.OEM_PLUS.Name = "OEM_PLUS";
+            this.OEM_PLUS.Size = new System.Drawing.Size(56, 54);
+            this.OEM_PLUS.TabIndex = 266;
+            this.OEM_PLUS.Text = "+\r\n=";
+            this.OEM_PLUS.UseVisualStyleBackColor = true;
+            this.OEM_PLUS.Click += new System.EventHandler(this.Special_Key_Click);
             // 
             // F10
             // 
@@ -1609,16 +703,17 @@
             this.F9.UseVisualStyleBackColor = true;
             this.F9.Click += new System.EventHandler(this.FunctionKey_Click);
             // 
-            // button78
+            // OEM_4
             // 
-            this.button78.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button78.Location = new System.Drawing.Point(709, 140);
-            this.button78.Margin = new System.Windows.Forms.Padding(4);
-            this.button78.Name = "button78";
-            this.button78.Size = new System.Drawing.Size(56, 54);
-            this.button78.TabIndex = 264;
-            this.button78.Text = "{\r\n[\r\n";
-            this.button78.UseVisualStyleBackColor = true;
+            this.OEM_4.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OEM_4.Location = new System.Drawing.Point(709, 140);
+            this.OEM_4.Margin = new System.Windows.Forms.Padding(4);
+            this.OEM_4.Name = "OEM_4";
+            this.OEM_4.Size = new System.Drawing.Size(56, 54);
+            this.OEM_4.TabIndex = 264;
+            this.OEM_4.Text = "{\r\n[\r\n";
+            this.OEM_4.UseVisualStyleBackColor = true;
+            this.OEM_4.Click += new System.EventHandler(this.Special_Key_Click);
             // 
             // KEY_1
             // 
@@ -1668,16 +763,17 @@
             this.F11.UseVisualStyleBackColor = true;
             this.F11.Click += new System.EventHandler(this.FunctionKey_Click);
             // 
-            // button14
+            // OEM_3
             // 
-            this.button14.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.Location = new System.Drawing.Point(13, 75);
-            this.button14.Margin = new System.Windows.Forms.Padding(4);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(56, 54);
-            this.button14.TabIndex = 241;
-            this.button14.Text = "~\r\n`";
-            this.button14.UseVisualStyleBackColor = true;
+            this.OEM_3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OEM_3.Location = new System.Drawing.Point(13, 75);
+            this.OEM_3.Margin = new System.Windows.Forms.Padding(4);
+            this.OEM_3.Name = "OEM_3";
+            this.OEM_3.Size = new System.Drawing.Size(56, 54);
+            this.OEM_3.TabIndex = 241;
+            this.OEM_3.Text = "~\r\n`";
+            this.OEM_3.UseVisualStyleBackColor = true;
+            this.OEM_3.Click += new System.EventHandler(this.Special_Key_Click);
             // 
             // RALT
             // 
@@ -1728,16 +824,17 @@
             this.KEY_4.UseVisualStyleBackColor = true;
             this.KEY_4.Click += new System.EventHandler(this.btn_char_Click);
             // 
-            // button59
+            // OEM_COMMA
             // 
-            this.button59.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button59.Location = new System.Drawing.Point(569, 269);
-            this.button59.Margin = new System.Windows.Forms.Padding(4);
-            this.button59.Name = "button59";
-            this.button59.Size = new System.Drawing.Size(56, 54);
-            this.button59.TabIndex = 259;
-            this.button59.Text = "<\r\n,";
-            this.button59.UseVisualStyleBackColor = true;
+            this.OEM_COMMA.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OEM_COMMA.Location = new System.Drawing.Point(569, 269);
+            this.OEM_COMMA.Margin = new System.Windows.Forms.Padding(4);
+            this.OEM_COMMA.Name = "OEM_COMMA";
+            this.OEM_COMMA.Size = new System.Drawing.Size(56, 54);
+            this.OEM_COMMA.TabIndex = 259;
+            this.OEM_COMMA.Text = "<\r\n,";
+            this.OEM_COMMA.UseVisualStyleBackColor = true;
+            this.OEM_COMMA.Click += new System.EventHandler(this.Special_Key_Click);
             // 
             // KEY_6
             // 
@@ -1751,16 +848,17 @@
             this.KEY_6.UseVisualStyleBackColor = true;
             this.KEY_6.Click += new System.EventHandler(this.btn_char_Click);
             // 
-            // button58
+            // OEM_PERIOD
             // 
-            this.button58.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button58.Location = new System.Drawing.Point(629, 269);
-            this.button58.Margin = new System.Windows.Forms.Padding(4);
-            this.button58.Name = "button58";
-            this.button58.Size = new System.Drawing.Size(56, 54);
-            this.button58.TabIndex = 258;
-            this.button58.Text = ">\r\n.";
-            this.button58.UseVisualStyleBackColor = true;
+            this.OEM_PERIOD.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OEM_PERIOD.Location = new System.Drawing.Point(629, 269);
+            this.OEM_PERIOD.Margin = new System.Windows.Forms.Padding(4);
+            this.OEM_PERIOD.Name = "OEM_PERIOD";
+            this.OEM_PERIOD.Size = new System.Drawing.Size(56, 54);
+            this.OEM_PERIOD.TabIndex = 258;
+            this.OEM_PERIOD.Text = ">\r\n.";
+            this.OEM_PERIOD.UseVisualStyleBackColor = true;
+            this.OEM_PERIOD.Click += new System.EventHandler(this.Special_Key_Click);
             // 
             // KEY_5
             // 
@@ -1770,20 +868,21 @@
             this.KEY_5.Name = "KEY_5";
             this.KEY_5.Size = new System.Drawing.Size(56, 54);
             this.KEY_5.TabIndex = 245;
-            this.KEY_5.Text = "%\r\n5";
+            this.KEY_5.Text = "%\r\n";
             this.KEY_5.UseVisualStyleBackColor = true;
             this.KEY_5.Click += new System.EventHandler(this.btn_char_Click);
             // 
-            // button57
+            // OEM_2
             // 
-            this.button57.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button57.Location = new System.Drawing.Point(689, 269);
-            this.button57.Margin = new System.Windows.Forms.Padding(4);
-            this.button57.Name = "button57";
-            this.button57.Size = new System.Drawing.Size(56, 54);
-            this.button57.TabIndex = 257;
-            this.button57.Text = "?\r\n/";
-            this.button57.UseVisualStyleBackColor = true;
+            this.OEM_2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OEM_2.Location = new System.Drawing.Point(689, 269);
+            this.OEM_2.Margin = new System.Windows.Forms.Padding(4);
+            this.OEM_2.Name = "OEM_2";
+            this.OEM_2.Size = new System.Drawing.Size(56, 54);
+            this.OEM_2.TabIndex = 257;
+            this.OEM_2.Text = "?\r\n/";
+            this.OEM_2.UseVisualStyleBackColor = true;
+            this.OEM_2.Click += new System.EventHandler(this.Special_Key_Click);
             // 
             // KEY_8
             // 
@@ -1818,7 +917,7 @@
             this.KEY_7.Name = "KEY_7";
             this.KEY_7.Size = new System.Drawing.Size(56, 54);
             this.KEY_7.TabIndex = 247;
-            this.KEY_7.Text = "\r\n7";
+            this.KEY_7.Text = "&\r\n7";
             this.KEY_7.UseVisualStyleBackColor = true;
             this.KEY_7.Click += new System.EventHandler(this.btn_char_Click);
             // 
@@ -1833,6 +932,7 @@
             this.LWIN.Tag = "LWIN";
             this.LWIN.Text = "🪟";
             this.LWIN.UseVisualStyleBackColor = true;
+            this.LWIN.Click += new System.EventHandler(this.Special_Key_Click);
             // 
             // KEY_0
             // 
@@ -2022,16 +1122,17 @@
             this.KEY_R.UseVisualStyleBackColor = true;
             this.KEY_R.Click += new System.EventHandler(this.btn_char_Click);
             // 
-            // button47
+            // OEM_1
             // 
-            this.button47.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button47.Location = new System.Drawing.Point(647, 204);
-            this.button47.Margin = new System.Windows.Forms.Padding(4);
-            this.button47.Name = "button47";
-            this.button47.Size = new System.Drawing.Size(56, 54);
-            this.button47.TabIndex = 253;
-            this.button47.Text = ":\r\n;";
-            this.button47.UseVisualStyleBackColor = true;
+            this.OEM_1.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OEM_1.Location = new System.Drawing.Point(647, 204);
+            this.OEM_1.Margin = new System.Windows.Forms.Padding(4);
+            this.OEM_1.Name = "OEM_1";
+            this.OEM_1.Size = new System.Drawing.Size(56, 54);
+            this.OEM_1.TabIndex = 253;
+            this.OEM_1.Text = ":\r\n;";
+            this.OEM_1.UseVisualStyleBackColor = true;
+            this.OEM_1.Click += new System.EventHandler(this.Special_Key_Click);
             // 
             // KEY_Y
             // 
@@ -2239,6 +1340,999 @@
             this.KEY_H.UseVisualStyleBackColor = true;
             this.KEY_H.Click += new System.EventHandler(this.btn_char_Click);
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.button28);
+            this.panel2.Controls.Add(this.button26);
+            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.button3);
+            this.panel2.Controls.Add(this.NUMPAD1);
+            this.panel2.Controls.Add(this.button5);
+            this.panel2.Controls.Add(this.NUMPAD2);
+            this.panel2.Controls.Add(this.button7);
+            this.panel2.Controls.Add(this.NUMPAD3);
+            this.panel2.Controls.Add(this.button9);
+            this.panel2.Controls.Add(this.NUMPAD4);
+            this.panel2.Controls.Add(this.button11);
+            this.panel2.Controls.Add(this.NUMPAD5);
+            this.panel2.Controls.Add(this.button13);
+            this.panel2.Controls.Add(this.NUMPAD6);
+            this.panel2.Controls.Add(this.button16);
+            this.panel2.Controls.Add(this.NUMPAD7);
+            this.panel2.Controls.Add(this.button18);
+            this.panel2.Controls.Add(this.NUMPAD8);
+            this.panel2.Controls.Add(this.button20);
+            this.panel2.Controls.Add(this.NUMPAD0);
+            this.panel2.Controls.Add(this.button22);
+            this.panel2.Controls.Add(this.NUMPAD9);
+            this.panel2.Controls.Add(this.button24);
+            this.panel2.Controls.Add(this.button25);
+            this.panel2.Controls.Add(this.button27);
+            this.panel2.Controls.Add(this.button29);
+            this.panel2.Controls.Add(this.button30);
+            this.panel2.Controls.Add(this.button31);
+            this.panel2.Controls.Add(this.button32);
+            this.panel2.Controls.Add(this.button33);
+            this.panel2.Controls.Add(this.button34);
+            this.panel2.Controls.Add(this.button35);
+            this.panel2.Controls.Add(this.button36);
+            this.panel2.Controls.Add(this.button37);
+            this.panel2.Controls.Add(this.button38);
+            this.panel2.Controls.Add(this.button39);
+            this.panel2.Controls.Add(this.button40);
+            this.panel2.Controls.Add(this.button41);
+            this.panel2.Controls.Add(this.button42);
+            this.panel2.Controls.Add(this.button43);
+            this.panel2.Controls.Add(this.button44);
+            this.panel2.Controls.Add(this.button45);
+            this.panel2.Controls.Add(this.button46);
+            this.panel2.Controls.Add(this.button48);
+            this.panel2.Controls.Add(this.button49);
+            this.panel2.Controls.Add(this.button51);
+            this.panel2.Controls.Add(this.button52);
+            this.panel2.Controls.Add(this.button53);
+            this.panel2.Controls.Add(this.button54);
+            this.panel2.Controls.Add(this.button55);
+            this.panel2.Controls.Add(this.button56);
+            this.panel2.Controls.Add(this.button60);
+            this.panel2.Controls.Add(this.button61);
+            this.panel2.Controls.Add(this.button62);
+            this.panel2.Controls.Add(this.button63);
+            this.panel2.Controls.Add(this.button64);
+            this.panel2.Controls.Add(this.button65);
+            this.panel2.Controls.Add(this.button66);
+            this.panel2.Controls.Add(this.button67);
+            this.panel2.Controls.Add(this.button68);
+            this.panel2.Controls.Add(this.button69);
+            this.panel2.Controls.Add(this.button70);
+            this.panel2.Controls.Add(this.button71);
+            this.panel2.Controls.Add(this.button72);
+            this.panel2.Controls.Add(this.button73);
+            this.panel2.Controls.Add(this.button74);
+            this.panel2.Controls.Add(this.button75);
+            this.panel2.Controls.Add(this.button76);
+            this.panel2.Controls.Add(this.button77);
+            this.panel2.Controls.Add(this.button79);
+            this.panel2.Controls.Add(this.button84);
+            this.panel2.Location = new System.Drawing.Point(0, 408);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(899, 404);
+            this.panel2.TabIndex = 276;
+            // 
+            // button28
+            // 
+            this.button28.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button28.Location = new System.Drawing.Point(749, 78);
+            this.button28.Margin = new System.Windows.Forms.Padding(4);
+            this.button28.Name = "button28";
+            this.button28.Size = new System.Drawing.Size(56, 54);
+            this.button28.TabIndex = 277;
+            this.button28.Tag = "OEM_PLUS";
+            this.button28.Text = "=";
+            this.button28.UseVisualStyleBackColor = true;
+            this.button28.Click += new System.EventHandler(this.Key_Without_Shift);
+            // 
+            // button26
+            // 
+            this.button26.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button26.Location = new System.Drawing.Point(819, 78);
+            this.button26.Margin = new System.Windows.Forms.Padding(4);
+            this.button26.Name = "button26";
+            this.button26.Size = new System.Drawing.Size(56, 54);
+            this.button26.TabIndex = 276;
+            this.button26.Tag = "OEM_PLUS";
+            this.button26.Text = "+";
+            this.button26.UseVisualStyleBackColor = true;
+            this.button26.Click += new System.EventHandler(this.Key_With_Shift);
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(16, 336);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(56, 54);
+            this.button1.TabIndex = 275;
+            this.button1.Text = "abc";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Switch_Layout_To_Main);
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(13, 11);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(56, 54);
+            this.button2.TabIndex = 228;
+            this.button2.Tag = "ESC";
+            this.button2.Text = "Esc";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.Special_Key_Click);
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(829, 335);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(56, 54);
+            this.button3.TabIndex = 274;
+            this.button3.Tag = "RCONTOL";
+            this.button3.Text = "Ctrl";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.CONTROL_Click);
+            // 
+            // NUMPAD1
+            // 
+            this.NUMPAD1.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NUMPAD1.Location = new System.Drawing.Point(89, 11);
+            this.NUMPAD1.Margin = new System.Windows.Forms.Padding(4);
+            this.NUMPAD1.Name = "NUMPAD1";
+            this.NUMPAD1.Size = new System.Drawing.Size(56, 54);
+            this.NUMPAD1.TabIndex = 229;
+            this.NUMPAD1.Text = "1";
+            this.NUMPAD1.UseVisualStyleBackColor = true;
+            this.NUMPAD1.Click += new System.EventHandler(this.btn_char_Click);
+            // 
+            // button5
+            // 
+            this.button5.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(770, 335);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(56, 54);
+            this.button5.TabIndex = 273;
+            this.button5.Tag = "RMENU";
+            this.button5.Text = "🧾";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.Special_Key_Click);
+            // 
+            // NUMPAD2
+            // 
+            this.NUMPAD2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NUMPAD2.Location = new System.Drawing.Point(149, 11);
+            this.NUMPAD2.Margin = new System.Windows.Forms.Padding(4);
+            this.NUMPAD2.Name = "NUMPAD2";
+            this.NUMPAD2.Size = new System.Drawing.Size(56, 54);
+            this.NUMPAD2.TabIndex = 230;
+            this.NUMPAD2.Text = "2";
+            this.NUMPAD2.UseVisualStyleBackColor = true;
+            this.NUMPAD2.Click += new System.EventHandler(this.btn_char_Click);
+            // 
+            // button7
+            // 
+            this.button7.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Location = new System.Drawing.Point(749, 269);
+            this.button7.Margin = new System.Windows.Forms.Padding(4);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(136, 54);
+            this.button7.TabIndex = 272;
+            this.button7.Tag = "RSHIFT";
+            this.button7.Text = "Shift";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.shift_Click);
+            // 
+            // NUMPAD3
+            // 
+            this.NUMPAD3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NUMPAD3.Location = new System.Drawing.Point(209, 11);
+            this.NUMPAD3.Margin = new System.Windows.Forms.Padding(4);
+            this.NUMPAD3.Name = "NUMPAD3";
+            this.NUMPAD3.Size = new System.Drawing.Size(56, 54);
+            this.NUMPAD3.TabIndex = 231;
+            this.NUMPAD3.Text = "3";
+            this.NUMPAD3.UseVisualStyleBackColor = true;
+            this.NUMPAD3.Click += new System.EventHandler(this.btn_char_Click);
+            // 
+            // button9
+            // 
+            this.button9.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.Location = new System.Drawing.Point(707, 204);
+            this.button9.Margin = new System.Windows.Forms.Padding(4);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(56, 54);
+            this.button9.TabIndex = 271;
+            this.button9.Tag = "OEM_7";
+            this.button9.Text = "\"";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.Key_With_Shift);
+            // 
+            // NUMPAD4
+            // 
+            this.NUMPAD4.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NUMPAD4.Location = new System.Drawing.Point(269, 11);
+            this.NUMPAD4.Margin = new System.Windows.Forms.Padding(4);
+            this.NUMPAD4.Name = "NUMPAD4";
+            this.NUMPAD4.Size = new System.Drawing.Size(56, 54);
+            this.NUMPAD4.TabIndex = 232;
+            this.NUMPAD4.Text = "4";
+            this.NUMPAD4.UseVisualStyleBackColor = true;
+            this.NUMPAD4.Click += new System.EventHandler(this.btn_char_Click);
+            // 
+            // button11
+            // 
+            this.button11.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.Location = new System.Drawing.Point(769, 204);
+            this.button11.Margin = new System.Windows.Forms.Padding(4);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(117, 54);
+            this.button11.TabIndex = 270;
+            this.button11.Tag = "ENTER";
+            this.button11.Text = "Enter";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.Special_Key_Click);
+            // 
+            // NUMPAD5
+            // 
+            this.NUMPAD5.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NUMPAD5.Location = new System.Drawing.Point(339, 11);
+            this.NUMPAD5.Margin = new System.Windows.Forms.Padding(4);
+            this.NUMPAD5.Name = "NUMPAD5";
+            this.NUMPAD5.Size = new System.Drawing.Size(56, 54);
+            this.NUMPAD5.TabIndex = 233;
+            this.NUMPAD5.Text = "5";
+            this.NUMPAD5.UseVisualStyleBackColor = true;
+            this.NUMPAD5.Click += new System.EventHandler(this.btn_char_Click);
+            // 
+            // button13
+            // 
+            this.button13.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button13.Location = new System.Drawing.Point(769, 140);
+            this.button13.Margin = new System.Windows.Forms.Padding(4);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(56, 54);
+            this.button13.TabIndex = 269;
+            this.button13.Tag = "OEM_6";
+            this.button13.Text = "}";
+            this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.Key_With_Shift);
+            // 
+            // NUMPAD6
+            // 
+            this.NUMPAD6.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NUMPAD6.Location = new System.Drawing.Point(399, 11);
+            this.NUMPAD6.Margin = new System.Windows.Forms.Padding(4);
+            this.NUMPAD6.Name = "NUMPAD6";
+            this.NUMPAD6.Size = new System.Drawing.Size(56, 54);
+            this.NUMPAD6.TabIndex = 234;
+            this.NUMPAD6.Text = "6";
+            this.NUMPAD6.UseVisualStyleBackColor = true;
+            this.NUMPAD6.Click += new System.EventHandler(this.btn_char_Click);
+            // 
+            // button16
+            // 
+            this.button16.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button16.Location = new System.Drawing.Point(829, 140);
+            this.button16.Margin = new System.Windows.Forms.Padding(4);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(56, 54);
+            this.button16.TabIndex = 268;
+            this.button16.Tag = "OEM_5";
+            this.button16.Text = "|";
+            this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.Key_With_Shift);
+            // 
+            // NUMPAD7
+            // 
+            this.NUMPAD7.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NUMPAD7.Location = new System.Drawing.Point(459, 11);
+            this.NUMPAD7.Margin = new System.Windows.Forms.Padding(4);
+            this.NUMPAD7.Name = "NUMPAD7";
+            this.NUMPAD7.Size = new System.Drawing.Size(56, 54);
+            this.NUMPAD7.TabIndex = 235;
+            this.NUMPAD7.Text = "7";
+            this.NUMPAD7.UseVisualStyleBackColor = true;
+            this.NUMPAD7.Click += new System.EventHandler(this.btn_char_Click);
+            // 
+            // button18
+            // 
+            this.button18.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button18.Location = new System.Drawing.Point(616, 78);
+            this.button18.Margin = new System.Windows.Forms.Padding(4);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(56, 54);
+            this.button18.TabIndex = 267;
+            this.button18.Tag = "OEM_MINUS";
+            this.button18.Text = "_";
+            this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.Key_With_Shift);
+            // 
+            // NUMPAD8
+            // 
+            this.NUMPAD8.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NUMPAD8.Location = new System.Drawing.Point(519, 11);
+            this.NUMPAD8.Margin = new System.Windows.Forms.Padding(4);
+            this.NUMPAD8.Name = "NUMPAD8";
+            this.NUMPAD8.Size = new System.Drawing.Size(56, 54);
+            this.NUMPAD8.TabIndex = 236;
+            this.NUMPAD8.Text = "8";
+            this.NUMPAD8.UseVisualStyleBackColor = true;
+            this.NUMPAD8.Click += new System.EventHandler(this.btn_char_Click);
+            // 
+            // button20
+            // 
+            this.button20.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button20.Location = new System.Drawing.Point(676, 78);
+            this.button20.Margin = new System.Windows.Forms.Padding(4);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(56, 54);
+            this.button20.TabIndex = 266;
+            this.button20.Tag = "OEM_MINUS";
+            this.button20.Text = "-";
+            this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.Key_Without_Shift);
+            // 
+            // NUMPAD0
+            // 
+            this.NUMPAD0.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NUMPAD0.Location = new System.Drawing.Point(649, 11);
+            this.NUMPAD0.Margin = new System.Windows.Forms.Padding(4);
+            this.NUMPAD0.Name = "NUMPAD0";
+            this.NUMPAD0.Size = new System.Drawing.Size(56, 54);
+            this.NUMPAD0.TabIndex = 237;
+            this.NUMPAD0.Text = "0";
+            this.NUMPAD0.UseVisualStyleBackColor = true;
+            this.NUMPAD0.Click += new System.EventHandler(this.btn_char_Click);
+            // 
+            // button22
+            // 
+            this.button22.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button22.Location = new System.Drawing.Point(722, 11);
+            this.button22.Margin = new System.Windows.Forms.Padding(4);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(152, 54);
+            this.button22.TabIndex = 265;
+            this.button22.Tag = "BACKSPACE";
+            this.button22.Text = "Backspace";
+            this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.Special_Key_Click);
+            // 
+            // NUMPAD9
+            // 
+            this.NUMPAD9.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NUMPAD9.Location = new System.Drawing.Point(590, 11);
+            this.NUMPAD9.Margin = new System.Windows.Forms.Padding(4);
+            this.NUMPAD9.Name = "NUMPAD9";
+            this.NUMPAD9.Size = new System.Drawing.Size(56, 54);
+            this.NUMPAD9.TabIndex = 238;
+            this.NUMPAD9.Text = "9";
+            this.NUMPAD9.UseVisualStyleBackColor = true;
+            this.NUMPAD9.Click += new System.EventHandler(this.btn_char_Click);
+            // 
+            // button24
+            // 
+            this.button24.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button24.Location = new System.Drawing.Point(709, 140);
+            this.button24.Margin = new System.Windows.Forms.Padding(4);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(56, 54);
+            this.button24.TabIndex = 264;
+            this.button24.Tag = "OEM_4";
+            this.button24.Text = "{";
+            this.button24.UseVisualStyleBackColor = true;
+            this.button24.Click += new System.EventHandler(this.Key_With_Shift);
+            // 
+            // button25
+            // 
+            this.button25.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button25.Location = new System.Drawing.Point(16, 78);
+            this.button25.Margin = new System.Windows.Forms.Padding(4);
+            this.button25.Name = "button25";
+            this.button25.Size = new System.Drawing.Size(56, 54);
+            this.button25.TabIndex = 239;
+            this.button25.Tag = "KEY_1";
+            this.button25.Text = "!";
+            this.button25.UseVisualStyleBackColor = true;
+            this.button25.Click += new System.EventHandler(this.Key_With_Shift);
+            // 
+            // button27
+            // 
+            this.button27.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button27.Location = new System.Drawing.Point(76, 78);
+            this.button27.Margin = new System.Windows.Forms.Padding(4);
+            this.button27.Name = "button27";
+            this.button27.Size = new System.Drawing.Size(56, 54);
+            this.button27.TabIndex = 240;
+            this.button27.Tag = "KEY_2";
+            this.button27.Text = "@";
+            this.button27.UseVisualStyleBackColor = true;
+            this.button27.Click += new System.EventHandler(this.Key_With_Shift);
+            // 
+            // button29
+            // 
+            this.button29.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button29.Location = new System.Drawing.Point(109, 142);
+            this.button29.Margin = new System.Windows.Forms.Padding(4);
+            this.button29.Name = "button29";
+            this.button29.Size = new System.Drawing.Size(56, 54);
+            this.button29.TabIndex = 241;
+            this.button29.Tag = "OEM_3";
+            this.button29.Text = "`";
+            this.button29.UseVisualStyleBackColor = true;
+            this.button29.Click += new System.EventHandler(this.Key_Without_Shift);
+            // 
+            // button30
+            // 
+            this.button30.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button30.Location = new System.Drawing.Point(707, 335);
+            this.button30.Margin = new System.Windows.Forms.Padding(4);
+            this.button30.Name = "button30";
+            this.button30.Size = new System.Drawing.Size(56, 54);
+            this.button30.TabIndex = 261;
+            this.button30.Tag = "OEM_PERIOD";
+            this.button30.Text = ".";
+            this.button30.UseVisualStyleBackColor = true;
+            this.button30.Click += new System.EventHandler(this.ALT_Click);
+            // 
+            // button31
+            // 
+            this.button31.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button31.Location = new System.Drawing.Point(136, 78);
+            this.button31.Margin = new System.Windows.Forms.Padding(4);
+            this.button31.Name = "button31";
+            this.button31.Size = new System.Drawing.Size(56, 54);
+            this.button31.TabIndex = 242;
+            this.button31.Tag = "KEY_3";
+            this.button31.Text = "#";
+            this.button31.UseVisualStyleBackColor = true;
+            this.button31.Click += new System.EventHandler(this.Key_With_Shift);
+            // 
+            // button32
+            // 
+            this.button32.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button32.Location = new System.Drawing.Point(253, 336);
+            this.button32.Margin = new System.Windows.Forms.Padding(4);
+            this.button32.Name = "button32";
+            this.button32.Size = new System.Drawing.Size(450, 54);
+            this.button32.TabIndex = 260;
+            this.button32.Tag = "SPACE_BAR";
+            this.button32.UseVisualStyleBackColor = true;
+            this.button32.Click += new System.EventHandler(this.Special_Key_Click);
+            // 
+            // button33
+            // 
+            this.button33.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button33.Location = new System.Drawing.Point(196, 78);
+            this.button33.Margin = new System.Windows.Forms.Padding(4);
+            this.button33.Name = "button33";
+            this.button33.Size = new System.Drawing.Size(56, 54);
+            this.button33.TabIndex = 243;
+            this.button33.Tag = "KEY_4";
+            this.button33.Text = "$";
+            this.button33.UseVisualStyleBackColor = true;
+            this.button33.Click += new System.EventHandler(this.Key_With_Shift);
+            // 
+            // button34
+            // 
+            this.button34.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button34.Location = new System.Drawing.Point(569, 269);
+            this.button34.Margin = new System.Windows.Forms.Padding(4);
+            this.button34.Name = "button34";
+            this.button34.Size = new System.Drawing.Size(56, 54);
+            this.button34.TabIndex = 259;
+            this.button34.Text = "0";
+            this.button34.UseVisualStyleBackColor = true;
+            // 
+            // button35
+            // 
+            this.button35.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button35.Location = new System.Drawing.Point(316, 78);
+            this.button35.Margin = new System.Windows.Forms.Padding(4);
+            this.button35.Name = "button35";
+            this.button35.Size = new System.Drawing.Size(56, 54);
+            this.button35.TabIndex = 244;
+            this.button35.Tag = "KEY_6";
+            this.button35.Text = "^";
+            this.button35.UseVisualStyleBackColor = true;
+            this.button35.Click += new System.EventHandler(this.Key_With_Shift);
+            // 
+            // button36
+            // 
+            this.button36.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button36.Location = new System.Drawing.Point(629, 269);
+            this.button36.Margin = new System.Windows.Forms.Padding(4);
+            this.button36.Name = "button36";
+            this.button36.Size = new System.Drawing.Size(56, 54);
+            this.button36.TabIndex = 258;
+            this.button36.Text = "0";
+            this.button36.UseVisualStyleBackColor = true;
+            // 
+            // button37
+            // 
+            this.button37.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button37.Location = new System.Drawing.Point(256, 78);
+            this.button37.Margin = new System.Windows.Forms.Padding(4);
+            this.button37.Name = "button37";
+            this.button37.Size = new System.Drawing.Size(56, 54);
+            this.button37.TabIndex = 245;
+            this.button37.Tag = "KEY_5";
+            this.button37.Text = "%";
+            this.button37.UseVisualStyleBackColor = true;
+            this.button37.Click += new System.EventHandler(this.Key_With_Shift);
+            // 
+            // button38
+            // 
+            this.button38.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button38.Location = new System.Drawing.Point(689, 269);
+            this.button38.Margin = new System.Windows.Forms.Padding(4);
+            this.button38.Name = "button38";
+            this.button38.Size = new System.Drawing.Size(56, 54);
+            this.button38.TabIndex = 257;
+            this.button38.Text = "0";
+            this.button38.UseVisualStyleBackColor = true;
+            // 
+            // button39
+            // 
+            this.button39.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button39.Location = new System.Drawing.Point(436, 78);
+            this.button39.Margin = new System.Windows.Forms.Padding(4);
+            this.button39.Name = "button39";
+            this.button39.Size = new System.Drawing.Size(56, 54);
+            this.button39.TabIndex = 246;
+            this.button39.Tag = "KEY_8";
+            this.button39.Text = "*";
+            this.button39.UseVisualStyleBackColor = true;
+            this.button39.Click += new System.EventHandler(this.Key_With_Shift);
+            // 
+            // button40
+            // 
+            this.button40.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button40.Location = new System.Drawing.Point(76, 335);
+            this.button40.Margin = new System.Windows.Forms.Padding(4);
+            this.button40.Name = "button40";
+            this.button40.Size = new System.Drawing.Size(56, 54);
+            this.button40.TabIndex = 256;
+            this.button40.Tag = "LCONTROL";
+            this.button40.Text = "Ctrl";
+            this.button40.UseVisualStyleBackColor = true;
+            this.button40.Click += new System.EventHandler(this.CONTROL_Click);
+            // 
+            // button41
+            // 
+            this.button41.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button41.Location = new System.Drawing.Point(373, 78);
+            this.button41.Margin = new System.Windows.Forms.Padding(4);
+            this.button41.Name = "button41";
+            this.button41.Size = new System.Drawing.Size(56, 54);
+            this.button41.TabIndex = 247;
+            this.button41.Tag = "KEY_7";
+            this.button41.Text = "&";
+            this.button41.UseVisualStyleBackColor = true;
+            this.button41.Click += new System.EventHandler(this.Key_With_Shift);
+            // 
+            // button42
+            // 
+            this.button42.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button42.Location = new System.Drawing.Point(133, 335);
+            this.button42.Margin = new System.Windows.Forms.Padding(4);
+            this.button42.Name = "button42";
+            this.button42.Size = new System.Drawing.Size(56, 54);
+            this.button42.TabIndex = 255;
+            this.button42.Tag = "LWIN";
+            this.button42.Text = "🪟";
+            this.button42.UseVisualStyleBackColor = true;
+            this.button42.Click += new System.EventHandler(this.Special_Key_Click);
+            // 
+            // button43
+            // 
+            this.button43.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button43.Location = new System.Drawing.Point(556, 78);
+            this.button43.Margin = new System.Windows.Forms.Padding(4);
+            this.button43.Name = "button43";
+            this.button43.Size = new System.Drawing.Size(56, 54);
+            this.button43.TabIndex = 248;
+            this.button43.Tag = "KEY_0";
+            this.button43.Text = ")";
+            this.button43.UseVisualStyleBackColor = true;
+            this.button43.Click += new System.EventHandler(this.Key_With_Shift);
+            // 
+            // button44
+            // 
+            this.button44.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button44.Location = new System.Drawing.Point(193, 335);
+            this.button44.Margin = new System.Windows.Forms.Padding(4);
+            this.button44.Name = "button44";
+            this.button44.Size = new System.Drawing.Size(56, 54);
+            this.button44.TabIndex = 254;
+            this.button44.Tag = "LALT";
+            this.button44.Text = "Alt";
+            this.button44.UseVisualStyleBackColor = true;
+            this.button44.Click += new System.EventHandler(this.ALT_Click);
+            // 
+            // button45
+            // 
+            this.button45.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button45.Location = new System.Drawing.Point(496, 78);
+            this.button45.Margin = new System.Windows.Forms.Padding(4);
+            this.button45.Name = "button45";
+            this.button45.Size = new System.Drawing.Size(56, 54);
+            this.button45.TabIndex = 249;
+            this.button45.Tag = "KEY_9";
+            this.button45.Text = "(";
+            this.button45.UseVisualStyleBackColor = true;
+            this.button45.Click += new System.EventHandler(this.Key_With_Shift);
+            // 
+            // button46
+            // 
+            this.button46.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button46.Location = new System.Drawing.Point(451, 267);
+            this.button46.Margin = new System.Windows.Forms.Padding(4);
+            this.button46.Name = "button46";
+            this.button46.Size = new System.Drawing.Size(56, 54);
+            this.button46.TabIndex = 1;
+            this.button46.Text = "0";
+            this.button46.UseVisualStyleBackColor = true;
+            // 
+            // button48
+            // 
+            this.button48.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button48.Location = new System.Drawing.Point(170, 140);
+            this.button48.Margin = new System.Windows.Forms.Padding(4);
+            this.button48.Name = "button48";
+            this.button48.Size = new System.Drawing.Size(56, 54);
+            this.button48.TabIndex = 1;
+            this.button48.Tag = "OEM_3";
+            this.button48.Text = "~";
+            this.button48.UseVisualStyleBackColor = true;
+            this.button48.Click += new System.EventHandler(this.Key_With_Shift);
+            // 
+            // button49
+            // 
+            this.button49.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button49.Location = new System.Drawing.Point(509, 269);
+            this.button49.Margin = new System.Windows.Forms.Padding(4);
+            this.button49.Name = "button49";
+            this.button49.Size = new System.Drawing.Size(56, 54);
+            this.button49.TabIndex = 1;
+            this.button49.Text = "0";
+            this.button49.UseVisualStyleBackColor = true;
+            // 
+            // button51
+            // 
+            this.button51.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button51.Location = new System.Drawing.Point(329, 269);
+            this.button51.Margin = new System.Windows.Forms.Padding(4);
+            this.button51.Name = "button51";
+            this.button51.Size = new System.Drawing.Size(56, 54);
+            this.button51.TabIndex = 1;
+            this.button51.Text = "0";
+            this.button51.UseVisualStyleBackColor = true;
+            // 
+            // button52
+            // 
+            this.button52.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button52.Location = new System.Drawing.Point(350, 140);
+            this.button52.Margin = new System.Windows.Forms.Padding(4);
+            this.button52.Name = "button52";
+            this.button52.Size = new System.Drawing.Size(56, 54);
+            this.button52.TabIndex = 1;
+            this.button52.Tag = "OEM_PERIOD";
+            this.button52.Text = ">";
+            this.button52.UseVisualStyleBackColor = true;
+            this.button52.Click += new System.EventHandler(this.Key_With_Shift);
+            // 
+            // button53
+            // 
+            this.button53.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button53.Location = new System.Drawing.Point(389, 269);
+            this.button53.Margin = new System.Windows.Forms.Padding(4);
+            this.button53.Name = "button53";
+            this.button53.Size = new System.Drawing.Size(56, 54);
+            this.button53.TabIndex = 1;
+            this.button53.Tag = "char";
+            this.button53.Text = "0";
+            this.button53.UseVisualStyleBackColor = true;
+            // 
+            // button54
+            // 
+            this.button54.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button54.Location = new System.Drawing.Point(13, 140);
+            this.button54.Margin = new System.Windows.Forms.Padding(4);
+            this.button54.Name = "button54";
+            this.button54.Size = new System.Drawing.Size(83, 54);
+            this.button54.TabIndex = 250;
+            this.button54.Tag = "TAB";
+            this.button54.Text = "Tab";
+            this.button54.UseVisualStyleBackColor = true;
+            this.button54.Click += new System.EventHandler(this.Special_Key_Click);
+            // 
+            // button55
+            // 
+            this.button55.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button55.Location = new System.Drawing.Point(209, 269);
+            this.button55.Margin = new System.Windows.Forms.Padding(4);
+            this.button55.Name = "button55";
+            this.button55.Size = new System.Drawing.Size(56, 54);
+            this.button55.TabIndex = 1;
+            this.button55.Text = "0";
+            this.button55.UseVisualStyleBackColor = true;
+            // 
+            // button56
+            // 
+            this.button56.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button56.Location = new System.Drawing.Point(230, 140);
+            this.button56.Margin = new System.Windows.Forms.Padding(4);
+            this.button56.Name = "button56";
+            this.button56.Size = new System.Drawing.Size(56, 54);
+            this.button56.TabIndex = 1;
+            this.button56.Tag = "OEM_COMMA";
+            this.button56.Text = ",";
+            this.button56.UseVisualStyleBackColor = true;
+            this.button56.Click += new System.EventHandler(this.Key_Without_Shift);
+            // 
+            // button60
+            // 
+            this.button60.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button60.Location = new System.Drawing.Point(269, 269);
+            this.button60.Margin = new System.Windows.Forms.Padding(4);
+            this.button60.Name = "button60";
+            this.button60.Size = new System.Drawing.Size(56, 54);
+            this.button60.TabIndex = 1;
+            this.button60.Text = "0";
+            this.button60.UseVisualStyleBackColor = true;
+            // 
+            // button61
+            // 
+            this.button61.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button61.Location = new System.Drawing.Point(290, 140);
+            this.button61.Margin = new System.Windows.Forms.Padding(4);
+            this.button61.Name = "button61";
+            this.button61.Size = new System.Drawing.Size(56, 54);
+            this.button61.TabIndex = 1;
+            this.button61.Tag = "OEM_COMMA";
+            this.button61.Text = "<";
+            this.button61.UseVisualStyleBackColor = true;
+            this.button61.Click += new System.EventHandler(this.Key_With_Shift);
+            // 
+            // button62
+            // 
+            this.button62.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button62.Location = new System.Drawing.Point(647, 204);
+            this.button62.Margin = new System.Windows.Forms.Padding(4);
+            this.button62.Name = "button62";
+            this.button62.Size = new System.Drawing.Size(56, 54);
+            this.button62.TabIndex = 253;
+            this.button62.Tag = "OEM_7";
+            this.button62.Text = "\'";
+            this.button62.UseVisualStyleBackColor = true;
+            this.button62.Click += new System.EventHandler(this.Key_Without_Shift);
+            // 
+            // button63
+            // 
+            this.button63.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button63.Location = new System.Drawing.Point(410, 140);
+            this.button63.Margin = new System.Windows.Forms.Padding(4);
+            this.button63.Name = "button63";
+            this.button63.Size = new System.Drawing.Size(56, 54);
+            this.button63.TabIndex = 1;
+            this.button63.Text = "€";
+            this.button63.UseVisualStyleBackColor = true;
+            // 
+            // button64
+            // 
+            this.button64.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button64.Location = new System.Drawing.Point(589, 204);
+            this.button64.Margin = new System.Windows.Forms.Padding(4);
+            this.button64.Name = "button64";
+            this.button64.Size = new System.Drawing.Size(56, 54);
+            this.button64.TabIndex = 1;
+            this.button64.Tag = "OEM_1";
+            this.button64.Text = ":";
+            this.button64.UseVisualStyleBackColor = true;
+            this.button64.Click += new System.EventHandler(this.Key_With_Shift);
+            // 
+            // button65
+            // 
+            this.button65.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button65.Location = new System.Drawing.Point(530, 140);
+            this.button65.Margin = new System.Windows.Forms.Padding(4);
+            this.button65.Name = "button65";
+            this.button65.Size = new System.Drawing.Size(56, 54);
+            this.button65.TabIndex = 1;
+            this.button65.Text = "¥";
+            this.button65.UseVisualStyleBackColor = true;
+            // 
+            // button66
+            // 
+            this.button66.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button66.Location = new System.Drawing.Point(529, 204);
+            this.button66.Margin = new System.Windows.Forms.Padding(4);
+            this.button66.Name = "button66";
+            this.button66.Size = new System.Drawing.Size(56, 54);
+            this.button66.TabIndex = 1;
+            this.button66.Tag = "OEM_1";
+            this.button66.Text = ";";
+            this.button66.UseVisualStyleBackColor = true;
+            this.button66.Click += new System.EventHandler(this.Key_Without_Shift);
+            // 
+            // button67
+            // 
+            this.button67.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button67.Location = new System.Drawing.Point(590, 140);
+            this.button67.Margin = new System.Windows.Forms.Padding(4);
+            this.button67.Name = "button67";
+            this.button67.Size = new System.Drawing.Size(56, 54);
+            this.button67.TabIndex = 1;
+            this.button67.Tag = "OEM_4";
+            this.button67.Text = "[";
+            this.button67.UseVisualStyleBackColor = true;
+            this.button67.Click += new System.EventHandler(this.Key_Without_Shift);
+            // 
+            // button68
+            // 
+            this.button68.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button68.Location = new System.Drawing.Point(16, 269);
+            this.button68.Margin = new System.Windows.Forms.Padding(4);
+            this.button68.Name = "button68";
+            this.button68.Size = new System.Drawing.Size(132, 54);
+            this.button68.TabIndex = 252;
+            this.button68.Tag = "LSHIFT";
+            this.button68.Text = "Shift";
+            this.button68.UseVisualStyleBackColor = true;
+            this.button68.Click += new System.EventHandler(this.shift_Click);
+            // 
+            // button69
+            // 
+            this.button69.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button69.Location = new System.Drawing.Point(470, 140);
+            this.button69.Margin = new System.Windows.Forms.Padding(4);
+            this.button69.Name = "button69";
+            this.button69.Size = new System.Drawing.Size(56, 54);
+            this.button69.TabIndex = 1;
+            this.button69.Text = "£";
+            this.button69.UseVisualStyleBackColor = true;
+            // 
+            // button70
+            // 
+            this.button70.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button70.Location = new System.Drawing.Point(149, 269);
+            this.button70.Margin = new System.Windows.Forms.Padding(4);
+            this.button70.Name = "button70";
+            this.button70.Size = new System.Drawing.Size(56, 54);
+            this.button70.TabIndex = 1;
+            this.button70.Text = "0";
+            this.button70.UseVisualStyleBackColor = true;
+            // 
+            // button71
+            // 
+            this.button71.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button71.Location = new System.Drawing.Point(13, 204);
+            this.button71.Margin = new System.Windows.Forms.Padding(4);
+            this.button71.Name = "button71";
+            this.button71.Size = new System.Drawing.Size(93, 54);
+            this.button71.TabIndex = 251;
+            this.button71.Tag = "CAPS_LOCK";
+            this.button71.Text = "Caps Lock";
+            this.button71.UseVisualStyleBackColor = true;
+            this.button71.Click += new System.EventHandler(this.CAPS_LOCK_Click);
+            // 
+            // button72
+            // 
+            this.button72.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button72.Location = new System.Drawing.Point(289, 204);
+            this.button72.Margin = new System.Windows.Forms.Padding(4);
+            this.button72.Name = "button72";
+            this.button72.Size = new System.Drawing.Size(56, 54);
+            this.button72.TabIndex = 1;
+            this.button72.Tag = "OEM_2";
+            this.button72.Text = "÷";
+            this.button72.UseVisualStyleBackColor = true;
+            this.button72.Click += new System.EventHandler(this.Key_Without_Shift);
+            // 
+            // button73
+            // 
+            this.button73.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button73.Location = new System.Drawing.Point(109, 204);
+            this.button73.Margin = new System.Windows.Forms.Padding(4);
+            this.button73.Name = "button73";
+            this.button73.Size = new System.Drawing.Size(56, 54);
+            this.button73.TabIndex = 1;
+            this.button73.Tag = "OEM_PLUS";
+            this.button73.Text = "+";
+            this.button73.UseVisualStyleBackColor = true;
+            this.button73.Click += new System.EventHandler(this.Key_With_Shift);
+            // 
+            // button74
+            // 
+            this.button74.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button74.Location = new System.Drawing.Point(229, 204);
+            this.button74.Margin = new System.Windows.Forms.Padding(4);
+            this.button74.Name = "button74";
+            this.button74.Size = new System.Drawing.Size(56, 54);
+            this.button74.TabIndex = 1;
+            this.button74.Tag = "KEY_8";
+            this.button74.Text = "*";
+            this.button74.UseVisualStyleBackColor = true;
+            this.button74.Click += new System.EventHandler(this.Key_With_Shift);
+            // 
+            // button75
+            // 
+            this.button75.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button75.Location = new System.Drawing.Point(649, 140);
+            this.button75.Margin = new System.Windows.Forms.Padding(4);
+            this.button75.Name = "button75";
+            this.button75.Size = new System.Drawing.Size(56, 54);
+            this.button75.TabIndex = 1;
+            this.button75.Tag = "OEM_6";
+            this.button75.Text = "]";
+            this.button75.UseVisualStyleBackColor = true;
+            this.button75.Click += new System.EventHandler(this.Key_Without_Shift);
+            // 
+            // button76
+            // 
+            this.button76.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button76.Location = new System.Drawing.Point(469, 204);
+            this.button76.Margin = new System.Windows.Forms.Padding(4);
+            this.button76.Name = "button76";
+            this.button76.Size = new System.Drawing.Size(56, 54);
+            this.button76.TabIndex = 1;
+            this.button76.Tag = "OEM_2";
+            this.button76.Text = "?";
+            this.button76.UseVisualStyleBackColor = true;
+            this.button76.Click += new System.EventHandler(this.Key_With_Shift);
+            // 
+            // button77
+            // 
+            this.button77.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button77.Location = new System.Drawing.Point(349, 204);
+            this.button77.Margin = new System.Windows.Forms.Padding(4);
+            this.button77.Name = "button77";
+            this.button77.Size = new System.Drawing.Size(56, 54);
+            this.button77.TabIndex = 1;
+            this.button77.Tag = "OEM_5";
+            this.button77.Text = "\\";
+            this.button77.UseVisualStyleBackColor = true;
+            this.button77.Click += new System.EventHandler(this.Key_Without_Shift);
+            // 
+            // button79
+            // 
+            this.button79.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button79.Location = new System.Drawing.Point(169, 204);
+            this.button79.Margin = new System.Windows.Forms.Padding(4);
+            this.button79.Name = "button79";
+            this.button79.Size = new System.Drawing.Size(56, 54);
+            this.button79.TabIndex = 1;
+            this.button79.Tag = "OEM_MINUS";
+            this.button79.Text = "-";
+            this.button79.UseVisualStyleBackColor = true;
+            this.button79.Click += new System.EventHandler(this.Key_Without_Shift);
+            // 
+            // button84
+            // 
+            this.button84.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button84.Location = new System.Drawing.Point(409, 204);
+            this.button84.Margin = new System.Windows.Forms.Padding(4);
+            this.button84.Name = "button84";
+            this.button84.Size = new System.Drawing.Size(56, 54);
+            this.button84.TabIndex = 1;
+            this.button84.Tag = "OEM_2";
+            this.button84.Text = "/";
+            this.button84.UseVisualStyleBackColor = true;
+            this.button84.Click += new System.EventHandler(this.Key_Without_Shift);
+            // 
             // virtualkeyboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2259,9 +2353,11 @@
             this.Controls.Add(this.SCROLL_LOCK);
             this.Controls.Add(this.PAUSE_BREAK);
             this.Controls.Add(this.INSERT);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "virtualkeyboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Bàn phím ảo";
+            this.Text = "                                   ";
             this.Load += new System.EventHandler(this.virtualkeyboard_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -2292,35 +2388,35 @@
         private System.Windows.Forms.Button F2;
         private System.Windows.Forms.Button RSHIFT;
         private System.Windows.Forms.Button F3;
-        private System.Windows.Forms.Button button85;
+        private System.Windows.Forms.Button OEM_7;
         private System.Windows.Forms.Button F4;
         private System.Windows.Forms.Button ENTER;
         private System.Windows.Forms.Button F5;
-        private System.Windows.Forms.Button button83;
+        private System.Windows.Forms.Button OEM_6;
         private System.Windows.Forms.Button F6;
-        private System.Windows.Forms.Button button82;
+        private System.Windows.Forms.Button OEM_5;
         private System.Windows.Forms.Button F7;
-        private System.Windows.Forms.Button button81;
+        private System.Windows.Forms.Button OEM_MINUS;
         private System.Windows.Forms.Button F8;
-        private System.Windows.Forms.Button button80;
+        private System.Windows.Forms.Button OEM_PLUS;
         private System.Windows.Forms.Button F10;
         private System.Windows.Forms.Button BACKSPACE;
         private System.Windows.Forms.Button F9;
-        private System.Windows.Forms.Button button78;
+        private System.Windows.Forms.Button OEM_4;
         private System.Windows.Forms.Button KEY_1;
         private System.Windows.Forms.Button F12;
         private System.Windows.Forms.Button KEY_2;
         private System.Windows.Forms.Button F11;
-        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button OEM_3;
         private System.Windows.Forms.Button RALT;
         private System.Windows.Forms.Button KEY_3;
         private System.Windows.Forms.Button SPACE_BAR;
         private System.Windows.Forms.Button KEY_4;
-        private System.Windows.Forms.Button button59;
+        private System.Windows.Forms.Button OEM_COMMA;
         private System.Windows.Forms.Button KEY_6;
-        private System.Windows.Forms.Button button58;
+        private System.Windows.Forms.Button OEM_PERIOD;
         private System.Windows.Forms.Button KEY_5;
-        private System.Windows.Forms.Button button57;
+        private System.Windows.Forms.Button OEM_2;
         private System.Windows.Forms.Button KEY_8;
         private System.Windows.Forms.Button LCONTROL;
         private System.Windows.Forms.Button KEY_7;
@@ -2338,7 +2434,7 @@
         private System.Windows.Forms.Button KEY_E;
         private System.Windows.Forms.Button KEY_C;
         private System.Windows.Forms.Button KEY_R;
-        private System.Windows.Forms.Button button47;
+        private System.Windows.Forms.Button OEM_1;
         private System.Windows.Forms.Button KEY_Y;
         private System.Windows.Forms.Button KEY_L;
         private System.Windows.Forms.Button KEY_I;
@@ -2364,25 +2460,25 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button NUMPAD1;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button NUMPAD2;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button NUMPAD3;
         private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button NUMPAD4;
         private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button NUMPAD5;
         private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button NUMPAD6;
         private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Button NUMPAD7;
         private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Button NUMPAD8;
         private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.Button NUMPAD0;
         private System.Windows.Forms.Button button22;
-        private System.Windows.Forms.Button button23;
+        private System.Windows.Forms.Button NUMPAD9;
         private System.Windows.Forms.Button button24;
         private System.Windows.Forms.Button button25;
         private System.Windows.Forms.Button button27;
