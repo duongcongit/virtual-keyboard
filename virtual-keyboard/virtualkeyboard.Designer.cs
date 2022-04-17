@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(virtualkeyboard));
             this.LEFT = new System.Windows.Forms.Button();
             this.DOWN = new System.Windows.Forms.Button();
             this.RIGHT = new System.Windows.Forms.Button();
@@ -2358,6 +2359,7 @@
             this.Controls.Add(this.PAUSE_BREAK);
             this.Controls.Add(this.INSERT);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "virtualkeyboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
