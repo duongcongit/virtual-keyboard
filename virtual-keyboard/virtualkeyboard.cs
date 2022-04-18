@@ -54,6 +54,12 @@ namespace virtual_keyboard
             
         }
 
+        // Xử lý khi đóng ứng dụng
+        private void virtualkeyboard_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Reset_Special_Key();
+        }
+
         // Overide method
         // Windows sẽ không focus vào bàn phím ảo khi thao tác 
         // mà vẫn focus vào ô nhập liệu
@@ -1054,6 +1060,8 @@ namespace virtual_keyboard
             UP = 0x26,
 
         }
+
+        
 
         // 
     }

@@ -2364,6 +2364,7 @@
             this.Name = "virtualkeyboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "                                   ";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.virtualkeyboard_FormClosing);
             this.Load += new System.EventHandler(this.virtualkeyboard_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
